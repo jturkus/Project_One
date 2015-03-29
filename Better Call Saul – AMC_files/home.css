@@ -1,0 +1,308 @@
+/** @package amc
+ * Home Page-specific Rules
+ -------------------------------------------------- */
+
+body.home #body-c {
+	margin: 0 auto 0;
+	overflow: hidden;
+	width: 980px;
+	padding-top: 5px;
+}
+
+body.home #header {
+	/*background:url("../img/layout/home-background-header.png") repeat-x scroll 0 0 #000000;*/
+	/*background-position: 0 -900px;*/
+	padding: 25px 0 0 0;
+	height: 115px;
+}
+body.home #header #nav-global{
+	/*background:url("../img/layout/home-ghosted-logo.png") no-repeat center top;*/
+	/*background-position: 273px -1100px;*/
+	height: 107px;
+}
+body.home #header #site-logo {
+	background: url(../img/amc-header-logo-gold.png) no-repeat top left;
+	width: 123px;
+	left: 0px;
+	height: 79px;
+	margin: 0;
+	position: absolute;
+	top: 0px;
+}
+body.home #header #nav-global-group {
+	position: absolute;
+	left: 150px;
+	top: 23px;
+}
+
+body.home #nav-global-content a{
+	color: #c5ba99;
+}
+
+body.home #nav-global-login {
+	margin-right: 0;
+}
+body.home #nav-global-content {
+	font-size: 13px;
+	margin-right: 20px;
+}
+body.home #nav-global-login {
+	float: left;
+}
+body.home #header #site-tagline {
+	/*
+	background: url(../img/sprite-y.8bit.png) no-repeat 0 -800px;
+	display: block;
+	height: 20px;
+	left: 143px;
+	position: absolute;
+	top: 21px;
+	width: 211px;
+	*/
+	display: none;
+}
+body.home #nav-global-programming {
+	left: 133px;
+	line-height: 16px;
+	position: absolute;
+	top: 55px;
+}
+body.home #nav-global-programming {
+}
+body.home #nav-global-programming ul {
+	display: none;
+}
+body.home #nav-global-programming a {
+	padding: 9px 10px 14px;
+	font-size: 18px;
+}
+
+body.home #nav-global-programming-live a{
+	padding-bottom: 11px;
+	padding-right: 0px;
+	width: 125px;
+}
+body.home #nav-global-programming-shows {
+	margin-right: 0px;
+}
+body.home #nav-global-programming-shows a {
+	
+}
+body.home #nav-global-programming-shows.open {
+	background-color: #2b525c;
+}
+body.home #nav-global-programming-movies a {
+	
+}
+body.home #nav-global-programming-movies.open {
+	background-color: #681a21;
+}
+body.home .search-container .s-button{
+	background: url(../img/search-btn.png) no-repeat top left;
+	height: 28px;
+	width: 62px;
+}
+body.home #search {
+	left: auto;
+	margin: 0;
+	left: 755px;
+	top: 59px;
+	width: 400px;
+	margin-top: 5px;
+}
+body.home #search .s-input {
+	width: 140px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+body.home #home-title-tw,
+body.home #home-section-tw,
+body.home #social-links,
+body.home .home-social{
+	background: transparent;
+	margin: 0;
+}
+body.home .home-social{
+	background: #000 !important;
+}
+body.home #social-links{
+	/*
+	padding: 5px 10px;
+	width: 280px;
+	border-top: 1px solid #474747;
+	*/
+	border-top: none;
+}
+body.home #social-links .twbg{
+	background: url(../img/hp_follow_us_on_twitter.png) no-repeat top left;
+	height: 17px;
+	width: 206px;
+	display: block;
+	text-indent: -10000px;
+}
+body.home #social-links a{
+	color: #FFD292;
+}
+body.home #home-title-tw{
+	padding: 7px 0 0 10px;
+	width: 290px;
+	margin: 15px 0 0 0;
+	display: none;
+}
+body.home #home-section-tw{
+	width: 300px;
+}
+body.home .popular-on-twitter .pot-url .text{
+	color: #CCCCCC;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+}
+body.home .popular-on-twitter .pot-tweets .count{
+	color: #808080;
+	font-size: 11px;
+	clear: left;
+	display: block;
+}
+body.home .popular-on-twitter .pot{
+	margin-bottom: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+	list-style: none;
+	border-bottom: 1px solid #474747;
+}
+body.home .popular-on-twitter div{
+	margin:0;
+	padding: 5px 0 5px 10px;
+}
+body.home .popular-on-twitter .pot li{
+	padding: 5px 0;
+	list-style: none;
+}
+
+/*** Possible CSS Fix for Header Position ***/
+
+body.home #body-f{
+	position: relative;
+}
+
+body.home #dropdown-shows{
+	position: absolute;
+	top: 90px !important;
+	left: 13px !important;
+}
+
+body.home #dropdown-movies{
+	position: absolute;
+	top: 90px !important;
+	left: 13px !important;
+}
+
+body.home #dropdown-tve{
+	position: absolute;
+	top: 95px !important;
+	left: 13px !important;
+}
+
+body.home .cfct-module-video-loop,
+body.home .media-gallery{
+	margin-bottom: 0px;
+}
+
+body.home .hpvideos,
+body.home .hpvideos h2.title{
+	margin-bottom: 0px;
+}
+
+body.home .hpvideos .cfct-mod-content{
+	padding-top: 0px;
+}
+
+body.home .rb-header-touts-carousel,
+body.home .carousel-featured{
+	margin-bottom: 10px;
+}
+
+body.home #tve-menu{
+	float: right;
+	margin-right: 2px;
+	margin-top: 4px;
+	position: relative;
+}
+
+body.home #tve-menu #availability{
+	position: absolute;
+	top: -40px;
+	right: 0px;
+}
+
+html.js body.home .dropdown .dropdown-in{
+	margin: 5px 0 0 0px;
+}
+
+/* TVE Styles */
+
+
+.popup .close-button {
+    position: absolute;
+    z-index: 3001;
+    left: 98%;
+    top: -15px;
+}
+
+.popup a {
+    color: #ccc;
+}
+
+body.home span#login{color: #C5BA92; font-family: Arial, helvetica;text-transform: lowercase;}
+
+body.home span#login a{
+	color: #fff; 
+	font-family: Arial, helvetica;
+	text-transform: none;
+}
+
+span#login a,
+span#login{color: #fff;font-size: 13px;font-family: Arial, helvetica;}
+
+h2.more-full{margin-top: 35px;}
+
+#login-overlay {
+    width: 100%;
+    height: 3000px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+    display: none;
+    z-index: 1999;
+}
+
+#learn-more, #wheres-my-provider, #login-welcome, #newsletter-signup {
+    font-family: helvetica;
+    position: fixed;
+    margin: 0 auto;
+    width: 400px;
+    left: 45%;
+    top:20%;
+    margin-left: -200px;
+    min-height: 200px;
+    text-align: center;
+    padding: 30px 50px 50px 50px;
+    border: 2px solid #EDE592;
+    display: none;
+    z-index: 2000;
+    background-color: black;
+}
+
+.home #nav-global-content{display: block !important; }
+
+.home ul#nav-global-programming li#nav-global-programming-tve{
+	margin-left: 0px !important;
+}
+
+
+/* END TVE Styles */

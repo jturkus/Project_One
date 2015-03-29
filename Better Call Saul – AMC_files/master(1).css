@@ -1,0 +1,149 @@
+/* Better Call Saul Styles */
+
+body.show-better-call-saul #header-promo{
+	/* background: #000 url(../img/bb_header_promo_bg.jpg) no-repeat center bottom; */
+	background: none;
+}
+
+body.show-better-call-saul #body-b {
+	background:#000 url('http://images.amcnetworks.com/amctv.com/wp-content/uploads/2014/08/better-call-saul-header-notunein-980x300.jpg') no-repeat top center;
+	margin-top: -100px;
+	padding-top: 100px;
+}
+
+body.show-better-call-saul #body-c{
+	background: none;
+}
+
+body.show-better-call-saul {
+	/*color: #D9EFA1;*/
+	color: #bcff6a;
+}
+
+/**
+ * Subheader styles
+ */
+
+body.show-better-call-saul #header {
+	background: none;
+}
+
+body.show-better-call-saul #subheader {padding-top: 147px;}
+
+body.show-better-call-saul #subheader-home-link  {width: 200px;}
+
+body.show-better-call-saul #subheader-title .accessibility{
+	top: 60px; left: 545px;
+	font-size: 23px;
+	font-family: Arial, Helvetica;
+}
+
+body.show-better-call-saul #subheader .additional-info{
+	top: 100px;
+	left: 203px;
+	background:none;
+	font-size:18px;
+}
+
+body.show-better-call-saul #subheader .additional-info:hover {
+	text-decoration:none;
+}
+
+/* RESKIN - Khalilah F. Martin - March 2013 */
+body.show-better-call-saul #subheader .additional-info,
+body.show-better-call-saul #subheader .additional-info a{
+	color: #D9EFA1;
+	font-family: Arial, Helvetica;
+}
+
+/*
+ * breaking-bad Anchor Styles
+ */
+
+/* RESKIN - Khalilah F. Martin - March 2013 */
+
+body.show-better-call-saul a {
+
+	color: #bcff6a;
+}
+
+
+body.show-better-call-saul #nav-subheader {background-color:#657970;}
+
+body.show-better-call-saul #nav-subheader a {
+	color: #fff;
+}
+body.show-better-call-saul #nav-subheader .sub-menu a {
+	color: #D9EFA1;
+}
+body.show-better-call-saul #nav-subheader .sub-menu a:hover {
+	color: #fff;
+}
+body.show-better-call-saul {
+	color: #fff;
+}
+
+/* Video Extras, More Extras, and Latest News Header */
+
+body.show-better-call-saul .amc-module-video-loop h2.title,
+body.show-better-call-sual .cfct-module-video-loop h2.title{
+    background: url('../img/video-extras-BCS.png') no-repeat 0 0;
+}
+
+body.show-better-call-saul .cfct-row-abc h2.cfct-mod-title,
+body.show-better-call-saul .exclusives-online h2.cfct-mod-title{
+    background: transparent url('../img/more-extras-BCS.png') no-repeat scroll left top;
+    display: block;
+    height: 24px;
+    text-indent: -5000px;
+    width: 226px;
+}
+
+body.show-better-call-saul .episode-exclusives h2.cfct-mod-title {
+	background:url("../img/more-extras-BCS.png") no-repeat scroll left top transparent;
+	display: block;
+    height: 24px;
+    text-indent: -5000px;
+    width: 226px;
+}
+
+body.show-better-call-saul .imr-our-blogs {
+background-image: url("../img/latest-news-BCS.png");
+height: 24px;
+width: 200px;
+}
+
+/**
+ * Tabs for Episode Page
+ */
+
+
+body.show-better-call-saul #page-tabs .nav {
+  border-bottom-color: #dabc42;
+}
+
+body.show-better-call-saul #page-tabs .tabs-nav {
+  border-bottom-color: #dabc42 !important;
+  height: 32px;
+}
+
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a {
+  border-color: #dabc42;
+}
+body.show-better-call-saul .tabs .episode-detail {
+  background: #f0ece1;
+  font-size: 15px;
+  color: #000;
+  padding: 19px 20px 1px;
+}
+body.show-better-call-saul .tabs .episode-detail a {
+  color: #bcff6a;
+  text-decoration: underline;
+}
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a.tab-to-episode-detail,
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a.tab-to-episode-cast-crew
+ {
+  color: #040404;
+  background: #f0ece1;
+  border-bottom-color: #f0ece1;
+}

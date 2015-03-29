@@ -1,0 +1,543 @@
+/*
+--- Rainbow Schedule Styles ---
+Make sure to use relative paths for images
+For example: url(../img/my-image.jpg)
+*/
+/* --- by Jesse Gardner ---------- */
+
+
+
+body.page-template-page-schedule-php {
+	font: normal 13px/1.3 Helvetica, Arial, sans-serif;
+}
+
+body.page-template-page-schedule-php #container {
+	background: #fff;
+	width: 970px;
+	margin: 0 auto;
+	padding: 8px;
+	overflow: hidden;
+}
+body.page-template-page-schedule-php a {
+	text-decoration: none;
+}
+body.page-template-page-schedule-php a:hover {
+	text-decoration: underline;
+}
+
+/* SCHEDULE NAVBAR
+---------------------------------------*/
+body.page-template-page-schedule-php #schedule-navbar {
+padding: 0;
+	height: 80px;
+}
+body.page-template-page-schedule-php #schedule-navbar.inactive {
+	opacity: 0.3;
+}
+body.page-template-page-schedule-php #day-selector {
+	width: 625px;
+	height: 80px;
+	float: left;
+	overflow: hidden;
+}
+body.page-template-page-schedule-php #day-selector ol {
+	float: left;
+	list-style: none;
+	margin-left: 0;
+}
+body.page-template-page-schedule-php ul {
+	list-style: none;
+	margin-left:  0px;
+}
+body.page-template-page-schedule-php #week-previous {
+	padding: 0 10px 0 0;
+}
+body.page-template-page-schedule-php #week-next {
+	padding: 0 6px;
+}
+body.page-template-page-schedule-php #week-previous a,
+body.page-template-page-schedule-php #week-next a {
+	display: block;
+	height: 70px;
+	width: 18px;
+	text-indent: -9999em;
+	opacity: 1;
+}
+body.page-template-page-schedule-php #week-previous a.disabled:hover,
+body.page-template-page-schedule-php #week-next a.disabled:hover,
+body.page-template-page-schedule-php #week-previous a.disabled,
+body.page-template-page-schedule-php #week-next a.disabled {
+	opacity: .3;
+	cursor: default;
+}
+body.page-template-page-schedule-php #week-previous {
+	float: left;
+}
+body.page-template-page-schedule-php #week-next {
+	float: right;
+}
+body.page-template-page-schedule-php #week-previous a {
+	background: url(../img/week-prev.png) no-repeat right top;
+}
+body.page-template-page-schedule-php #week-next a {
+	background: url(../img/week-next.png) no-repeat right top;
+}
+
+body.page-template-page-schedule-php #schedule-navbar ol li {
+	float: left;
+	width: 81px;
+	height: 77x;
+	margin: 0;
+	text-align: center;
+}
+
+body.page-template-page-schedule-php #day-selector ol li a {
+	display: block;
+	font-size: 15px;
+	text-transform: lowercase;
+	color: #444;
+	line-height: 1;
+	padding: 8px 0 20px 0;
+	margin-bottom: 12px;
+	background-position: 1px -3px;
+}
+body.page-template-page-schedule-php #day-selector ol li a abbr {
+	display: block;
+	font-weight: bold;
+	font-size: 23px;
+	color: #222;
+}
+
+/* -- Make day selector scrollable -- */
+
+body.page-template-page-schedule-php #selector-pane {
+	float: left;
+	overflow: hidden;
+	width: 565px;
+}
+body.page-template-page-schedule-php #selector-content {
+	width: 3000px;
+}
+
+
+/* -- Active State for Current Day -- */
+body.page-template-page-schedule-php #day-selector ol li.today a {
+	background: #666;
+}
+body.page-template-page-schedule-php #day-selector ol li.active a {
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	cursor: default;
+}
+body.page-template-page-schedule-php #day-selector ol li a span {
+	visibility: hidden;
+	font-size: 12px;
+	color: #a2a0a1;
+	display: block;
+	margin-bottom: 3px;
+}
+body.page-template-page-schedule-php #day-selector ol li.active a span {
+	visibility: visible;
+}
+
+/* -- Hover State for Days -- */
+
+body.page-template-page-schedule-php #day-selector ol li a:hover {
+	background: #fff;
+	text-decoration: none;
+	color: #000;
+}
+
+/* SCHEDULE STRUCTURE
+---------------------------------------*/
+body.page-template-page-schedule-php #schedule-column1 {
+	width: 620px;
+	float: left;
+}
+body.page-template-page-schedule-php #schedule-column2 {
+	width: 310px;
+	float: left;
+	margin: 12px 0 0 30px;
+}
+
+
+/* SCHEDULE SEARCH FIELD
+---------------------------------------*/
+
+body.page-template-page-schedule-php #schedule-search {
+	clear: left;
+}
+body.page-template-page-schedule-php #schedule-search .field label {
+	display: none;
+}
+body.page-template-page-schedule-php #schedule-search-field {
+	width: 522px;
+	float: left;
+	color: #ebebeb;
+	font: normal 20px/1.3 Helvetica, Arial, sans-serif;
+	padding: 3px;
+}
+body.page-template-page-schedule-php #schedule-search .button input {
+	width: 84px;
+	margin-left: 5px;
+}
+body.page-template-page-schedule-php #schedule-search-submit {
+	font: normal 20px/1.3 Helvetica, Arial, sans-serif;
+	border: solid 1px #000;
+}
+
+
+/* SCHEDULE RESULTS
+---------------------------------------*/
+
+body.page-template-page-schedule-php #panel-all {
+	clear: left;
+}
+
+body.page-template-page-schedule-php #schedule-results {
+	clear: left;
+	margin-top: 30px;
+}
+body.page-template-page-schedule-php #schedule-results table {
+	width: 100% !important;
+}
+body.page-template-page-schedule-php .panel {
+/*
+height: 700px;
+overflow: scroll;
+*/
+}
+body.page-template-page-schedule-php .panel table {
+	margin-right: 10px;
+}
+body.page-template-page-schedule-php .item {
+	background: #eaeaea;
+	margin-bottom: 10px;
+	border: solid 1px transparent;
+	padding: 4px;
+}
+body.page-template-page-schedule-php .item td {
+	padding: 10px 8px;
+	vertical-align: top;
+}
+body.page-template-page-schedule-php .item .item-meta{
+	width: 360px;
+}
+body.page-template-page-schedule-php .item-time {
+	width: 70px;
+	font-size: 18px;
+	color: #565553;
+	text-align: right;
+}
+body.page-template-page-schedule-php td.item-thumb {
+	display:  block;
+	width: 120px;
+	overflow: hidden;
+}
+body.page-template-page-schedule-php td.item-thumb img{
+	max-width:  120px;
+	/*height:  90px;*/
+}
+
+body.page-template-page-schedule-php .time-alt {
+	display: block;
+	color: #888;
+	font-style: normal;
+	font-size: 15px;
+}
+
+body.page-template-page-schedule-php .item-meta{
+	color: #fff;
+}
+
+body.page-template-page-schedule-php .item-title {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0px;
+	padding:  0px;
+	color: #fff;
+}
+body.page-template-page-schedule-php .item-title a {
+	color: #333;
+}
+
+body.page-template-page-schedule-php .new .item-title a {
+	padding-right: 85px;
+	background: url(../img/schedule-new.png) no-repeat right top;
+}
+
+body.page-template-page-schedule-php .item .episode-title {
+	display: block;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	line-height:  normal;
+}
+
+body.page-template-page-schedule-php .item-title + span{
+	margin: 0;
+	padding: 0;
+}
+
+body.page-template-page-schedule-php .item-description {
+	color: #7a7677;
+	font-size: 12px;
+}
+body.page-template-page-schedule-php .item-description a {
+	color: #555;
+	font-weight: bold;
+}
+body.page-template-page-schedule-php .item-details {
+	font-size: 11px;
+	font-weight: bold;
+	color: #999;
+	padding: 2px 0;
+	margin-bottom: 0;
+	line-height: normal;
+}
+body.page-template-page-schedule-php .item-actions li {
+	display: inline;
+	padding-right: 8px;
+	font-weight: bold;
+	font-size: 13px;
+}
+body.page-template-page-schedule-php .item-actions li a {
+	color: #f2c888;
+	font-size: 12px;
+}
+body.page-template-page-schedule-php .item-remind {
+	margin-top: -3px;
+	float: right;
+}
+body.page-template-page-schedule-php .item-actions .item-remind a {
+	background: #2c2a2b;
+	color: #eee;
+	padding: 3px;
+}
+body.page-template-page-schedule-php .item-actions .item-remind a:hover {
+	text-decoration: none;
+	background: #888;
+}
+body.page-template-page-schedule-php .day-header h3 {
+	padding: 24px 0;
+	font-size: 20px;
+	color: #8c8c8c;
+	text-align: left;
+	font-weight: normal;
+}
+body.page-template-page-schedule-php .day-header h3 strong {
+	color: #464543;
+}
+body.page-template-page-schedule-php #schedule-content .paid {
+	text-align: center;
+	border: solid 1px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 12px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 1px #eee;
+	color: #888 !important;
+}
+
+/* TIME ZONE SELECTOR
+---------------------------------------*/
+body.page-template-page-schedule-php #schedule-timezone p {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+body.page-template-page-schedule-php #schedule-timezone a {
+	margin-left: 0px;
+	color: #aaa;
+	padding: 6px 8px;
+}
+body.page-template-page-schedule-php #schedule-timezone a:hover,
+body.page-template-page-schedule-php #schedule-timezone a.active {
+	background: #aaa;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* CHANNEL FINDER
+---------------------------------------*/
+
+body.page-template-page-schedule-php #schedule-cfinder {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px #eee;
+}
+body.page-template-page-schedule-php #schedule-cfinder form {
+	margin-top: 20px;
+}
+body.page-template-page-schedule-php #schedule-cfinder label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+body.page-template-page-schedule-php #schedule-cfinder .field input {
+	width: 70px;
+	float: left;
+	margin: 0 6px 0 0;
+	font-size: 12px;
+	border: solid 1px #ddd;
+	padding: 4px;
+	color: #ddd;
+	text-transform: uppercase;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+body.page-template-page-schedule-php #schedule-cfinder .field select {
+	width: 170px;
+	float: left;
+	margin
+}
+body.page-template-page-schedule-php #schedule-cfinder .button input {
+	float: left;
+	margin: 0 0 0 6px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #555;
+	padding: 3px;
+	border: solid 1px #ddd;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+body.page-template-page-schedule-php #schedule-cfinder p {
+	clear: left;
+	padding-top: 6px;
+	font-size: 11px;
+}
+
+/* Show All Airtimes Link */
+
+body.page-template-page-schedule-php #show-all-link {
+	display: block;
+	text-align: center;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 5px 0 3px 0;
+	font-size: 18px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #fafafa;
+	border: solid 1px #eee;
+	color: #888 !important;
+	opacity: .5;
+}
+body.page-template-page-schedule-php #show-all-link:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Results Header */
+body.page-template-page-schedule-php #results-header {
+	font-size: 30px;
+	color: #000;
+}
+
+/* No Search Results */
+body.page-template-page-schedule-php #no-content p {
+	padding-top: 10px;
+	font-size: 15px;
+	color: #777;
+}
+body.page-template-page-schedule-php #no-content a {
+	font-weight: bold;
+}
+
+/* SCHEDULE FILTERS
+---------------------------------------*/
+
+body.page-template-page-schedule-php #schedule-filters-series,
+body.page-template-page-schedule-php #schedule-filters-genres {
+	margin-bottom: 40px;
+}
+body.page-template-page-schedule-php #schedule-filters-series h3,
+body.page-template-page-schedule-php #schedule-filters-genres h3 {
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+body.page-template-page-schedule-php #schedule-filters-series ul li a,
+body.page-template-page-schedule-php #schedule-filters-genres ul li a {
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 8px 8px 4px 8px;
+	margin-bottom: 1px;
+	overflow: hidden;
+	border: solid 1px transparent;
+	color: #f4e7d2;
+}
+
+body.page-template-page-schedule-php #schedule-filters-genres ul li a {
+	text-transform: none;
+}
+
+body.page-template-page-schedule-php #schedule-filters-series ul li a {
+	height: 45px;
+}
+body.page-template-page-schedule-php #schedule-filters-series ul li a:hover,
+body.page-template-page-schedule-php #schedule-filters-genres ul li a:hover,
+body.page-template-page-schedule-php #schedule-filters-series ul li a.active,
+body.page-template-page-schedule-php #schedule-filters-genres ul li a.active {
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+}
+body.page-template-page-schedule-php #schedule-filters-series .thumb-showfilter {
+	float: left;
+}
+body.page-template-page-schedule-php #schedule-filters-series .title-showfilter {
+	float: left;
+	margin: 12px 0 0 6px;
+}
+
+/* Results loader */
+
+body.page-template-page-schedule-php .loading-results {
+	background: transparent url(../img/ajax-loader-we.gif) left no-repeat;
+	padding-left: 24px;
+	color: #ccc;
+}
+
+/* Schedule reminder form */
+body.page-template-page-schedule-php .reminder-form {
+	padding: 10px;
+	color: #888;
+	border-top: solid 1px #ddd;
+}
+body.page-template-page-schedule-php .reminder-form h4 {
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 12px;
+	color: #000;
+}
+body.page-template-page-schedule-php .reminder-form p,
+body.page-template-page-schedule-php .reminder-form label {
+	font-size: 13px;
+	margin-bottom: 18px;
+}
+body.page-template-page-schedule-php .reminder-form label {
+	margin-bottom: 34px;
+}
+
+/* MIKE'S ADVENTURES IN CSS
+-------------------------------*/
+body.page-template-page-schedule-php .earlier {
+	display: none;
+}
+
+.item-calendar {
+    display: none;
+}

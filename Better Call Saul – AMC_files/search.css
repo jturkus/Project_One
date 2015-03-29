@@ -1,0 +1,46 @@
+/* CSS for Search non-generated */
+
+
+.page-slug-search #search-wrapper {
+	background-image: none !important;
+	padding: 25px 0 0 0;
+	float: left;
+	width: 100%;
+	
+}
+
+.page-slug-search input.gsc-input {
+	height: 29px; width: 575px; 
+	background-image:none !important;
+}
+  
+.page-slug-search input.gsc-search-button,
+.page-slug-search .cse input.gsc-search-button{
+	  background-color: #3079ED;
+	  border: 1px solid #3079ED;
+	  height: 13px; width: 13px;
+	  min-width:0;
+	  padding: 9px 25px;
+	  position:relative;
+	  top: 2px;
+  	}
+  
+.page-slug-search td.gsc-search-button {width: 5%;}
+.page-slug-search td.gsc-clear-button {width: 30%;}
+  	
+  	
+/* Input Field - Khalilah F. Martin 4-30-12 */
+
+/*
+#search-results input.gsc-input {
+	height: 29px;
+}
+
+#search-results input.gsc-search-button,
+#search-results .cse input.gsc-search-button {
+	background-color: #3079ED;
+	border: 1px solid #3079ED;
+	color: #fff;
+}
+
+*/

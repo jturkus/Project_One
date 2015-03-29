@@ -1,0 +1,279 @@
+/* @override 
+	http://dev.amctv.com/wp-content/themes/amc/assets/master/css/carrington-build.css?ver=1.0 */
+
+/**
+ * @package amc
+ * Override styles for Carrington Build core CSS
+ ================================================= */
+
+/** @section Rows
+ -------------------------------------------------- */
+/**
+ * Column margins
+ */
+.cfct-mod-content,
+.cfct-callout{
+	padding: 15px 0 0 0;
+}
+.cfct-content-large{
+	padding-top: 2px !important;
+}
+
+.cfct-block-a,
+.cfct-block-b,
+.cfct-block-ab,
+.cfct-block-d {
+	margin-right: 50px;
+}
+
+/** @section column widths inside abc
+ -------------------------------------------------- */
+
+.cfct-block-a,
+.cfct-block-b,
+.cfct-block-c {
+	width: 293px;
+}
+
+/* Case for col-ab-c rows and col-a-bc rows */
+.cfct-block-ab,
+.cfct-block-bc {
+	width: 590px;
+}
+.cfct-row-a-bc .cfct-block-a,
+.cfct-row-ab-c .cfct-block-c {
+	width: 340px;
+}
+
+/* Edge-case for a-b-c rows - per comp */
+.cfct-row-a-b-c {
+	margin-left: 21px;
+	margin-right: 21px;
+	margin-top: 10px;
+}
+.cfct-row-a-b-c .cfct-block-a,
+.cfct-row-a-b-c .cfct-block-b {
+	margin-right: 25px;
+	width: 284px;
+}
+.cfct-row-a-b-c .cfct-block-c {
+	width: 320px;
+}
+
+/* col-d-e case */
+.cfct-block-d,
+.cfct-block-e {
+	width: 465px;
+}
+
+/* Mixed row, column right */
+.cfct-stack-tower-right .cfct-stack-left,
+.cfct-stack-tower-right .cfct-stack-right {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+.cfct-stack-tower-right .cfct-stack-left {
+	width: 660px;
+}
+.cfct-stack-tower-right .cfct-stack-left .cfct-block-a,
+.cfct-stack-tower-right .cfct-stack-left .cfct-block-b {
+	margin-right: 44px;
+	width: 284px;
+}
+.cfct-stack-tower-right .cfct-stack-left .cfct-stack-ab {
+	width: 612px;
+}
+.cfct-stack-tower-right .cfct-stack-right,
+.cfct-stack-tower-right .cfct-stack-right .cfct-block-c {
+	width: 320px;
+}
+
+/* Mixed row, column left */
+.cfct-stack-tower-left .cfct-stack-left,
+.cfct-stack-tower-left .cfct-stack-right {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+.cfct-stack-tower-left .cfct-stack-right {
+	width: 612px;
+}
+.cfct-stack-tower-left .cfct-stack-right .cfct-block-b {
+	margin-right: 44px;
+}
+.cfct-stack-tower-left .cfct-stack-right .cfct-block-b,
+.cfct-stack-tower-left .cfct-stack-right .cfct-block-c {
+	width: 284px;
+}
+.cfct-stack-tower-left .cfct-stack-right .cfct-stack-bc {
+	width: 612px;
+}
+.cfct-stack-tower-left .cfct-stack-left {
+	width: 368px;
+}
+.cfct-stack-tower-left .cfct-stack-left .cfct-block-a {
+	width: 320px;
+}
+
+/** @section Column widths inside a-b-c
+ -------------------------------------------------- */
+
+.str-col-ab .cfct-row-a-b-c .cfct-block-a,
+.str-col-ab .cfct-row-a-b-c .cfct-block-b,
+.str-col-ab .cfct-block-d {
+	margin-right: 22px;
+}
+.str-col-ab .cfct-block-d,
+.str-col-ab .cfct-block-e {
+	width: 284px;
+}
+
+.str-col-ab .cfct-row-a-b-c .cfct-block-a,
+.str-col-ab .cfct-row-a-b-c .cfct-block-b,
+.str-col-ab .cfct-row-a-b-c .cfct-block-b {
+	width: 182px;
+}
+
+/** @section Modules
+ -------------------------------------------------- */
+
+/**
+ * DO NOT set overflow:hidden on this wrapping element.
+ * In most cases it wraps a .box class with a bottom margin, meaning we want to take
+ * advantage of margin collapse, not double it.
+ * Anyway, overflow is set on columns already.
+ */
+.cfct-module {
+	margin: 0 0 20px;
+}
+
+/* Tout Module content sizes */
+.cfct-content-small .content,
+.cfct-content-small .caption .title {
+	font-size: 12px !important;
+}
+.cfct-content-medium .content,
+.cfct-content-medium .caption .title {
+	font-size: 15px !important;
+}
+.cfct-content-large .content,
+.cfct-content-large .caption .title {
+	font-size: 16px !important;
+}
+
+/* Group Module */
+.rb-module-group .cfct-module {
+	/* Override default module styles for this module */
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.module-group {
+	overflow: hidden;
+}
+.module-group .cfct-mod-title {
+	font-size: 22px;
+	line-height: 1.2;
+	text-transform: lowercase;
+}
+
+.cfct-module-col {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+
+/**
+ * Override default float styles in places where it wouldn't make sense
+ * Some configurations would leave the columns far too narrow.
+ */
+.cfct-block-d .cfct-module-col,
+.cfct-block-e .cfct-module-col,
+.cfct-block-a .cfct-module-col,
+.cfct-block-b .cfct-module-col,
+.cfct-block-c .cfct-module-col {
+	display: block;
+	float: none;
+	width: auto;
+}
+
+.cfct-block-ab .cfct-module-col-a,
+.cfct-block-ab .cfct-module-col-b,
+.cfct-block-ab .cfct-module-col-d,
+.cfct-block-bc .cfct-module-col-a,
+.cfct-block-bc .cfct-module-col-b,
+.cfct-block-bc .cfct-module-col-d,
+.cfct-block-abc .cfct-module-col-a,
+.cfct-block-abc .cfct-module-col-b,
+.cfct-block-abc .cfct-module-col-d {
+	margin-right: 22px;
+}
+/* Two column groups inside ab and bc rows */
+.cfct-block-ab .cfct-module-col-d,
+.cfct-block-ab .cfct-module-col-e,
+.cfct-block-bc .cfct-module-col-d,
+.cfct-block-bc .cfct-module-col-e,
+.str-col-ab .cfct-block-abc .cfct-group-col-d,
+.str-col-ab .cfct-block-abc .cfct-group-col-e {
+	/*
+	582 -15 -15 -2 = 550 // inner width
+	( 550 -18 ) / 2
+	*/
+	width: 284px;
+}
+/* Three-column groups inside ab, bc rows */
+.cfct-block-ab .cfct-module-col-a,
+.cfct-block-ab .cfct-module-col-b,
+.cfct-block-ab .cfct-module-col-c,
+.cfct-block-bc .cfct-module-col-a,
+.cfct-block-bc .cfct-module-col-b,
+.cfct-block-bc .cfct-module-col-c,
+.str-col-ab .cfct-block-abc .cfct-module-col-a,
+.str-col-ab .cfct-block-abc .cfct-module-col-b,
+.str-col-ab .cfct-block-abc .cfct-module-col-c {
+	/*
+	(550 -18 -18) / 2
+	*/
+	width: 182px;
+}
+/* Two column groups inside abc rows */
+.cfct-block-abc .cfct-module-col-d,
+.cfct-block-abc .cfct-module-col-e {
+	width: 479px;
+}
+/* Three column groups inside abc rows */
+.cfct-block-abc .cfct-module-col-a,
+.cfct-block-abc .cfct-module-col-b,
+.cfct-block-abc .cfct-module-col-c {
+	width: 312px;
+}
+
+/* cfct-callout text */
+.cfct-block-c .cfct-row-inner .cfct-callout{
+	padding: 0;
+}
+.cfct-block-c .cfct-callout{
+	clear: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	min-height: 120px;
+}
+.cfct-block-c .cfct-callout a img{
+	width: 120px;
+	margin: 0 10px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 0 20px 0;
+}
+.cfct-callout .cfct-header-small{
+	padding: 0;
+	margin: 0 0 0 130px;
+	width: 200px;
+}
+.cfct-block-c .cfct-callout .cfct-mod-content p{
+	width: 200px;
+	color: #fff;
+	padding: 0 0 0 130px;
+}

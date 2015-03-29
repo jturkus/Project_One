@@ -1,0 +1,101 @@
+head{
+	display: none;
+}
+
+body {
+	background-image: none;
+	padding: 0 35px;
+	text-align: center;
+}
+
+* {
+	font-weight: normal;
+	display: block;
+	margin: 10px auto;
+}
+
+#submit-button {
+	background-image: url('/full-episodes/img/submit-button.png');
+	padding: 10px;
+	width: 86px;
+	height: 36px;
+	display: block;
+	text-indent: -50000px;
+	border: none;
+	cursor: pointer;
+}
+
+.provider-text-field {
+	width: 285px;
+	border: none;
+	padding: 4px;
+}
+
+table tr {
+	margin: 0;
+	padding: 0;
+}
+
+table tr td {
+    padding: 0 5px;
+    margin: 0;   
+}
+
+.newsletter-list {
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	height: 183px;
+}
+
+.newsletter-list .newsletter {
+	width: 170px;
+	padding: 0;
+	text-align: left;
+	float: left;
+	margin: 0;
+	padding-left: 20px;
+}
+
+.newsletter-list .newsletter input {
+	display: inline;
+}
+
+.newsletter-list .newsletter label {
+	display: inline;
+	padding-left: 10px;
+}
+
+label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic
+}
+
+input.error { border: 1px dotted red; }
+
+@media all and (min-width: 230px) and (max-width: 250px) {
+
+	body {
+	background-image: none;
+	padding: 10px 10px;
+	text-align: center;
+	}
+
+	.provider-text-field {
+	width: 200px;
+	border: none;
+	padding: 4px;
+	}
+
+	.newsletter-list {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	height: 150px;
+	}
+
+
+}

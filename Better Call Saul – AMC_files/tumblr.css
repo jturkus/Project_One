@@ -1,0 +1,75 @@
+.tumblr-header {
+	padding: 15px 20px;
+	position:relative;
+	overflow: hidden;
+}
+.tumblr-header h2.tumblr-title {
+	float:left;
+}
+.tumblr-header .btn {
+	position: absolute;
+    right: 0;
+    bottom: 25px;
+    background: none;
+}
+.tumblr-header .btn iframe {
+	vertical-align: bottom;
+}
+
+
+.tumblr-posts {
+	width: 970px;
+	padding-left:9px;
+}
+.tumblr-posts  a:link, .tumblr-posts  a:active, .tumblr-posts a:visited{
+	color:#000;
+	text-decoration:none;
+	-moz-transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+.tumblr-posts a:hover{
+	color:#ddd;
+	text-decoration:none;
+	-moz-transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+.tumblr-posts a img{
+	opacity:1;
+	-moz-transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+.tumblr-posts a:hover img{
+	opacity:0.8;
+	-moz-transition: 0.3s ease-in;
+	-webkit-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+.tumblr-posts img{
+	-webkit-transition: 0s linear;
+	-webkit-transition: opacity 0.6s linear;
+	-webkit-transition: 0.3s ease-in;
+}
+.tumblr-posts img:hover{
+	-webkit-transform: scale(1.04);
+	-webkit-transition: 0s linear;
+	-webkit-transition: opacity 0.6s linear;
+	-webkit-transition: 0.3s ease-in;
+}
+
+.tumblr-more {
+	text-align:center;
+	display:none;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 15px;
+}
+.tumblr-more a:hover {
+
+}

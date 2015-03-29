@@ -1,0 +1,109 @@
+body.show-better-call-saul a {
+    /*color: #F4E995;*/
+    color: #fae83e;
+}
+
+
+body.show-better-call-saul .amc-hero-carousel a {
+	color: #fff !important;
+}
+
+.hero-carousel-featured-container .content-container .content p a:before{
+	
+	color: #fae83e;
+}
+
+body.show-better-call-saul #body-b div.stage a {
+
+    color:#38B0FC !important;
+}
+
+
+body.show-better-call-saul .entry-teaser .entry-title a,
+body.show-better-call-saul .entry-teaser .blog-title a {
+
+    color: #fae83e !important;
+}
+
+body.show-better-call-saul #body-b {
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+body.show-better-call-saul #subheader {display:block;}
+body.show-better-call-saul #subheader {padding-top: 147px;}
+body.show-better-call-saul #nav-subheader .sub-menu li a {color:#fae83e;}
+body.show-better-call-saul #subheader-title .accessibility {top: 60px; left: 545px;}
+
+body.show-better-call-saul #body-b {
+    background:#000 url('http://media.amctv.com/assets/show-better-call-saul/img/bcs-s1-header.jpg') no-repeat center 164px;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+body.show-better-call-saul #nav-subheader {
+  background-color:#1e1006;
+}
+
+body.show-better-call-saul #subheader .additional-info {
+  top: 60px;
+  left: 270px;
+  background:none;
+  font-size:18px;
+  font-weight: bold;
+  color: #fff!important;
+  text-shadow: 0 2px 2px rgba(0,0,0,.75);
+}
+
+body.show-better-call-saul .tabs .episode-detail a,
+body.show-better-call-saul .episode-title,
+body.show-better-call-saul .picker .nav .has-menu:hover a.lv1, 
+body.show-better-call-saul .picker .nav .current a.lv1 {
+    
+    color: #fae83e;
+
+}
+
+body.show-better-call-saul .cfct-module-video-loop h2.title { 
+    background: url('http://www.amctv.com/wp-content/themes/amc/assets/show-better-call-saul/img/video-extras-BCS.png') top left no-repeat;
+}
+
+
+body.show-better-call-saul .tabs .episode-detail {
+
+    background:#000;
+    color:#fff;
+}
+
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a.tab-to-episode-detail, 
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a.tab-to-episode-cast-crew {
+    
+    color: #fae83e;
+    background: #000;
+    border-bottom-color: #000;
+
+}
+
+body.show-better-call-saul .box-talk .title {
+    background:url('http://media.amctv.com/assets/show-better-call-saul/img/BCS_talk_header.png') no-repeat 0 0;
+    padding: 6px 0 21px 72px;
+}
+
+body.show-better-call-saul .rb-social-widget .echo-item-content .echo-item-data a, 
+body.show-better-call-saul .rb-social-widget .echo-item-content .echo-secondaryColor a {
+    color: #fae83e;
+}
+
+body.show-better-call-saul .crew p,
+body.show-better-call-saul .crew ul {
+	font-size:15px;
+	}
+	
+body.show-better-call-saul .tabs .nav .ui-tabs-selected a {
+	background-color: #000 !important;
+	border-bottom-color:#000 !important;
+}
+
+body.show-better-call-saul .panel .echo2-wrapper a {
+	color: #fae83e !important;
+}

@@ -1,0 +1,72 @@
+#rb-shows-dashboard-tab {
+	border: 3px solid #391A12;
+	border-top: 0;
+	-moz-border-radius: 0 0 5px 5px; /* FF1+ */
+	-webkit-border-radius: 0 0 5px 5px; /* Saf3+, Chrome */
+	-khtml-border-radius: 0 0 5px 5px; /* Konqueror */
+	border-radius: 0 0 5px 5px; /* Standard. IE9 */
+	height: 0;
+	left: 50%;
+	margin-left: -445px;
+	position: fixed;
+	overflow: visible;
+	text-align: center;
+	top: 0;
+	width: 905px;
+	z-index: 999;
+}
+#rb-shows-dashboard-tab #rb-shows-dashboard {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-radius-top-left: 0;
+	-webkit-border-radius-top-right: 0;
+	-moz-box-shadow: 0 1px 3px #666;
+	-webkit-box-shadow: 0 1px 3px #666;
+	box-shadow: 0 1px 3px #666;
+	display: none;
+	margin: 0;
+	text-align: left;
+}
+#rb-shows-dashboard-tab #rb-shows-dashboard .submit input,
+#rb-shows-dashboard-tab #rb-shows-dashboard .button,
+#rb-shows-dashboard-tab #rb-shows-dashboard input.button,
+#rb-shows-dashboard-tab #rb-shows-dashboard .button-primary,
+#rb-shows-dashboard-tab #rb-shows-dashboard input.button-primary,
+#rb-shows-dashboard-tab #rb-shows-dashboard .button-secondary,
+#rb-shows-dashboard-tab #rb-shows-dashboard input.button-secondary,
+#rb-shows-dashboard-tab #rb-shows-dashboard .button-highlighted,
+#rb-shows-dashboard-tab #rb-shows-dashboard input.button-highlighted,
+#rb-shows-dashboard-tab #rb-shows-dashboard #postcustomstuff .submit input {
+    -moz-border-radius: 11px 11px 11px 11px;
+    -moz-box-sizing: content-box;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 11px !important;
+    line-height: 13px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+#rb-shows-dashboard-tab a.tab {
+	background: #666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-radius-top-left: 0;
+	-webkit-border-radius-top-right: 0;
+	-moz-box-shadow: 0 1px 3px #666;
+	-webkit-box-shadow: 0 1px 3px #666;
+	box-shadow: 0 1px 3px #666;
+	display: block;
+	height: 32px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-indent: -2000px;
+	width: 70px;
+}

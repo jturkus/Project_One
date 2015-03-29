@@ -1,0 +1,11 @@
+body.better-call-saul #nav-subheader-container #nav-subheader {
+  background-color: #1e1006;
+}
+
+body.better-call-saul #nav-subheader-container #nav-subheader .current-menu-item {
+  background-color: #1e1006;
+}
+
+body.better-call-saul #nav-subheader-container #nav-subheader .sub-menu .current-menu-item {
+  background: rgb(34, 32, 27);
+}

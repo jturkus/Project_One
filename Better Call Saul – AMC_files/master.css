@@ -1,0 +1,4984 @@
+/** @section Base Overrides
+ -------------------------------------------------- */
+body {
+	background: #000;
+	color: #fff;
+}
+
+a {
+	color: #fdb24a;
+}
+
+/** @section Content styles
+ -------------------------------------------------- */
+
+.title {
+	overflow: hidden;
+	/* text-overflow: ellipsis; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: 1.2;
+	font-family: Arial, Helvetica;
+}
+h1,
+.h1 {
+	font-size: 24px;
+}
+h2,
+.h2 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+h3,
+.h3 {
+	font-size: 22px;
+
+}
+h4,
+.h4 {
+	font-size: 16px;
+}
+h5,
+.h5 {
+	font-size: 14px;
+}
+
+.content a,
+.cfct-mod-content a {
+	font-weight: normal;
+}
+
+.content a.go {
+	white-space: nowrap;
+}
+
+/* Posts */
+.entry {
+	overflow: hidden; /* crop overflow */
+}
+.entry-header {
+	margin-bottom: 2px;
+}
+.entry-title {
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 0 0 4px;
+}
+.entry-title a {
+	color: #fff;
+}
+.entry-subtitle {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.2;
+	margin: 0;
+}
+.entry-content {
+	color: #b7b6b6;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+.entry-footer {
+	clear: both;
+	margin-bottom: 29px;
+}
+
+/* Listed entries (excerpts) */
+.entry-listed {
+	color: #DDD9D9;
+	margin-bottom: 23px;
+	overflow: hidden;
+	position: relative;
+}
+.entry-listed .blog-title {
+	color: #a7a6a7;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 4px;
+}
+.entry-listed .entry-title {
+	color: #888686;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+.entry-listed .entry-title a {
+	color: #e39b35;
+}
+.entry-listed .entry-byline {
+	display: block;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.entry-listed .entry-byline a {
+	color: inherit;
+	font-weight: inherit;
+	text-decoration: underline;
+}
+.entry-listed .entry-summary {
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 8px;
+}
+.entry-listed-has-img img.entry-img {
+	border: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.entry-listed-has-img {
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 80px;
+	min-height: 80px;
+	/* have to set overflow:visible for IE min-height emulation
+	 make up for margin collapse with larger margin */
+	margin-bottom: 31px;
+	overflow: visible;
+	padding-left: 132px;
+}
+h2.video-title-meta {
+	color: #656565;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h1.more-extras{
+	text-align: left;
+}
+/* Teaser entry. Used in tabbed box */
+.cfct-block-abc .rb-tabbed-rss{
+	margin-bottom:0;
+}
+
+.entry-teaser {
+	color: #DDD9D9;
+	margin-bottom: 9px;
+	overflow: hidden;
+	position: relative;
+}
+
+.cfct-block-abc .entry-teaser{ /
+	text-align: left;
+}
+
+.entry-teaser .blog-title {
+	color: #a7a6a7;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 4px;
+}
+
+.cfct-block-abc .entry-teaser .blog-title {
+	display: none;
+}
+
+.cfct-block-abc .tabs-our-blogs .panel{
+	background: none!important;
+}
+
+.entry-teaser .entry-title {
+	color: #fdb24a;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+
+.cfct-block-abc .entry-teaser .entry-title a,.cfct-block-abc .entry-teaser .blog-title a {
+	font-size: 26px;
+	font-weight: 100;
+}
+
+.entry-teaser .entry-title a,
+.entry-teaser .blog-title a {
+	color: #f4e995;
+}
+.entry-teaser .entry-byline {
+	display: block;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.entry-teaser .entry-byline a {
+	color: inherit;
+	font-weight: inherit;
+	text-decoration: underline;
+}
+
+.cfct-block-abc .entry-teaser .entry-summary {
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+.cfct-block-abc .entry-teaser .entry-byline {
+display: block;
+font-size: 16px;
+line-height: 1.8em;
+margin-bottom: 5px;
+}
+
+.entry-teaser .entry-summary {
+	font-size: 14px;
+	line-height: 16px;
+}
+.entry-teaser-has-img img.entry-img {
+	border: none;
+/*
+	left: 0;
+	position: absolute;
+	top: 0;
+*/
+	float: left;
+	margin-right: 20px;
+}
+
+.cfct-block-abc .entry-teaser-has-img img.entry-img {
+	width: 300px; /* to fit full row layout */
+	height: 169px;/* to fit full row layout */
+}
+.entry-teaser-has-img {
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 164px;
+	min-height: 164px;
+	overflow: visible;
+	text-align: left;
+	/*padding-left: 232px;*/
+}
+
+/** @section Utility
+-------------------------------------------------- */
+
+/* Placeholders */
+input::-webkit-input-placeholder {
+	color: #939090;
+}
+input.cfp-placeholder {
+	color: #939090;
+}
+
+/* Lists */
+.big {
+	font-size: 15px;
+	line-height: 18px;
+}
+.big li {
+	margin-bottom: 10px;
+}
+.big li ul {
+	margin-top: 10px;
+}
+#menu-dropdowns-featured-movies li{
+	list-style: none;
+	margin: 0 0 10px -20px;
+}
+
+#menu-dropdowns-featured-movies li a {
+	opacity: 0.8;
+}
+
+#menu-dropdowns-featured-movies li a:hover {
+	opacity: 1;
+}
+
+dl.meta {
+	overflow: hidden;
+	font-size: 14px;
+	/* Make sure this item clears floats */
+	zoom: 1;
+}
+dl.meta dt {
+	float: left;
+	color: #d7d6d6;
+	clear: both;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-right: 5px;
+}
+dl.meta dd {
+	margin-bottom: 15px;
+}
+
+.image-list {
+	list-style: none;
+	margin-left: 0;
+}
+.image-list li {
+	margin-bottom: 6px;
+
+}
+.image-list li a {
+	display: block;
+	opacity: 0.8;
+
+}
+.image-list li a:hover {
+	opacity: 1;
+}
+
+/* Pullquotes */
+.quote {
+	background: url(../img/quote.png) no-repeat 0 bottom;
+	margin-bottom: 20px;
+	padding-bottom: 19px;
+	overflow: hidden;
+}
+.quote-has-cite {
+	padding-bottom: 0;
+}
+.quote .quote-content {
+	background: #424040;
+	color: #fff;
+	margin: 0 0 15px;
+	/**
+	 * @workaround hasLayout top margin collaps
+	 * elements with hasLayout ignore top margin sometimes
+	 * @affected IE6, IE7
+	 */
+	padding: 15px 10px 0;
+}
+.quote .cite {
+	display: block;
+	line-height: 14px;
+	overflow: hidden;
+	padding-left: 33px;
+	padding-top: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/* Image Replacements
+ * Relies on code in base.css of Rainbow common asset package */
+.imr-all-cast-members {
+	background-image: url(../img/imr/all-cast-members.png);
+	height: 13px;
+	width: 172px;
+}
+.imr-all-characters {
+	background-image: url(../img/imr/all-characters.png);
+	height: 14px;
+	width: 154px;
+}
+.imr-video {
+	background-image: url(../img/imr/video.png);
+	height: 30px;
+	width: 105px;
+}
+.imr-episode-videos {
+	background-image: url(../img/imr/episode-videos.png);
+	height: 30px;
+	width: 218px;
+}
+.imr-series-exclusives {
+	background-image: url(../img/imr/series-exclusives.png);
+	height: 19px;
+	width: 202px;
+}
+.imr-episode-exclusives {
+	background-image: url(../img/imr/episode-exclusives.png);
+	height: 21px;
+	width: 221px;
+}
+.imr-movie-blog {
+	background-image: url(../img/imr/movie-blog.png);
+	height: 18px;
+	width: 117px;
+}
+.imr-featured {
+	background: url(../img/layout/txt-h2-featured.png) no-repeat 0 0;
+	height: 16px;
+	width: 125px;
+}
+.imr-video {
+	background: url(../img/video-extras-AMC.png) no-repeat 0 0;
+	height: 21px;
+	width: 198px;
+	margin-top: 10px;
+}
+
+.imr-exclusives-online {
+	background: url(../img/more-extras-AMC.png) no-repeat 0 0;
+	height: 21px;
+	width: 198px;
+}
+
+.imr-original-shows-events {
+	background-image: url(../img/imr/original-shows-events.png);
+	height: 21px;
+	width: 397px;
+}
+.imr-movie-guide {
+	background: url(../img/sprite-y.24bit.png) 0 -1700px no-repeat;
+	height: 21px;
+}
+.imr-amc-video-feed h2.widget-title {
+	background: url(../img/hp-amc-video.png) 0 0 no-repeat;
+	height: 21px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.imr-amc-video-feed h2.widget-title a {
+	height:21px; width:100px; display:block;
+}
+
+.imr-film-site {
+	background: url(../img/imr/film-site.png) 0 0 no-repeat;
+	height: 21px;
+}
+
+.imr-our-blogs {
+	background: url(../img/latest-news-AMC.png) -1px 0 no-repeat;
+	height: 21px;
+	width: 145px;
+}
+
+.imr-episode-topics {
+	background-image: url(../img/imr/episode-topics.png);
+	height: 19px;
+	width: 145px;
+}
+
+
+.hpMoreNewsLinks .hpMoreNews{
+	background: url(../img/hp_more_news.png) no-repeat top left;
+	height: 16px;
+	width: 122px;
+	display: block;
+	text-indent: -10000px;
+	padding-bottom: 5px;
+}
+
+body.home .hpMoreNewsLinks{
+	margin-top:20px;
+}
+
+.hpMoreNewsLinks ul,
+.hpMoreNewsLinks li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.hpMoreNewsLinks li{
+	margin-bottom: 5px;
+}
+
+.hpMoreNewsLinks li a{
+	float: left;
+	width: auto;
+	padding:0 8px;
+	border-right: 1px solid #b39055;
+	text-decoration: underline;
+	color: #fff;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+
+body.home .hpMoreNewsLinks li a {
+	padding: 0 10px!important;
+	font-size: 18px!important;
+	text-decoration: none;
+	line-height: 18px;
+	vertical-align: bottom;
+	padding-top: 2px!important;
+	border-right: 1px solid #ffffff;
+}
+
+body.home .hpMoreNewsLinks li:first-child a {
+	padding-left: 0!important;
+}
+
+.hpMoreNewsLinks li:first-child a{
+	padding-left: 0px !important;
+}
+
+.hpMoreNewsLinks li:last-child a{
+	border-right: none!important;
+
+}
+
+
+
+
+.imr-you-might-also-like {
+	background: url('../img/imr/txt-h2-you-might-also-like.png') no-repeat scroll top left;
+	width: 195px;
+	height: 13px;
+}
+
+.imr-upcoming-fearfest-movies {
+	background: url('../img/imr/txt-h2-upcoming-fearfest-movies.png') no-repeat scroll top left;
+	width: 275px;
+	height: 13px;
+}
+
+.imr-popular {
+	background: url('../img/imr/txt-h2-popular.png') no-repeat scroll top left;
+	width: 81px;
+	height: 13px;
+}
+
+.imr-online-movies-full-length {
+	background: url('../img/imr/txt-h2-online-movies-full-length.png') no-repeat scroll top left;
+	width: 281px;
+	height: 17px;
+}
+
+.imr-featured-fearfest {
+	background: url('../img/imr/txt-h2-featured-fearfest.png') no-repeat scroll top left;
+	width: 192px;
+	height: 13px;
+}
+
+.imr-fearfest-videos {
+	background: url('../img/imr/txt-h2-fearfest-videos.png') no-repeat scroll top left;
+	width: 165px;
+	height: 13px;
+}
+
+.imr-movie-blog {
+	background: url('../img/imr/txt-h3-movie-blog.png') no-repeat scroll top left;
+	width: 117px;
+	height: 18px;
+}
+
+
+.imr- {
+	background: url('../img/imr/txt-h2-accessibility-video.png') no-repeat scroll top left;
+	width: 68px;
+	height: 14px;
+}
+
+.imr- {
+	background: url('../img/imr/txt-h2-accessibility-photos.png') no-repeat scroll top left;
+	width: 76px;
+	height: 13px;
+}
+
+.imr- {
+	background: url('../img/imr/txt-h2-accessibility-featured.png') no-repeat scroll top left;
+	width: 116px;
+	height: 16px;
+}
+
+.imr- {
+	background: url('../img/imr/txt-h2-accessibility-feature.png') no-repeat scroll top left;
+	width: 82px;
+	height: 13px;
+}
+
+/**
+ * Nested list dropdowns
+ * compound class (.nav.nav-nested-dropdowns)
+ */
+.nav-nested-dropdowns ul {
+	background: #090701;
+	border: 1px solid #765a57;
+	color: #fff;
+	clear: both;
+	display: block;
+	font-size: 14px;
+	margin-top: -6px;
+	/* Off-left hiding */
+	left: -32000px;
+	padding: 12px 0;
+	position: absolute;
+	width: 220px;
+	z-index: 88;
+}
+.nav-nested-dropdowns ul ul {
+	display: none;
+}
+.nav-nested-dropdowns li:hover ul,
+.nav-nested-dropdowns li.hover ul {
+	left: auto;
+}
+.nav-nested-dropdowns li {
+	padding-right: 1px;
+}
+.nav-nested-dropdowns li.has-menu:hover {
+	background: url(../img/sprite-y.8bit.png) repeat-x right -1800px;
+	/**
+	 * @workaround sticky suckerfish bug
+	 * @affected ie7
+	 * @see http://css-class.com/articles/explorer/sticky/
+	 * This also allows us to "connect" the tab visually
+	 */
+	position: relative;
+}
+.nav-nested-dropdowns li.has-menu:hover a.lv1 {
+	background: url(../img/sprite-y.8bit.png) repeat-x 0 -1700px;
+	color: #fff;
+	z-index: 89;
+}
+.nav-nested-dropdowns li a.lv1 {
+	padding: 2px 20px 1px 20px;
+	position: relative;
+	font-family: Arial, Helvetica;
+	font-size: 20px;
+}
+body.single-shows #subheader #nav-subheader a.lv1 {
+	color:#fff;
+	font-size: 20px;
+	padding: 2px 20px 1px 20px;
+	-webkit-font-smoothing: antialiased;
+}
+/**
+ * Uses ie7.css for sizing fix
+ */
+.nav-nested-dropdowns ul li {
+	display: block;
+	float: none;
+	/* Fixes bizzarro IE bug that causes indentation */
+	list-style-position: outside;
+	margin: 0 !important;
+	padding: 0 1px;
+}
+.nav-nested-dropdowns li li a {
+	color: #b2a797;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px 20px;
+}
+.nav-nested-dropdowns ul li a:hover {
+	background: #22201b;
+	color: #fff;
+}
+/**
+ * Mega Dropdowns (used in header)
+ * JS logic contained in master.js
+ * Markup output at bottom of page and javascripted up for best SEO/accessibility
+ */
+.dropdown {
+	position: absolute;
+	z-index: 98;
+}
+html.js .dropdown-in {
+	background: #0c0909 url(../img/dropdown-gradient.png) repeat-x 0 0;
+	border: 6px solid #622424;
+	color: #857b7b;
+	display: none;
+	margin: 5px 12px 0 12px;
+	padding: 10px 10px 0;
+	/* width: 925px; */
+}
+html.js .dropdown-in a {
+	color: #e2e2e2;
+}
+
+html.js .dropdown-in a:hover {
+	color: #fff;
+}
+
+.dropdown-in ul,
+.dropdown-in p {
+	margin-bottom: 10px;
+}
+
+/**
+ * Column widths modified for dropdown
+ */
+.dropdown h2 {
+	font-size: 18px;
+	line-height: 20px;
+	text-transform: lowercase;
+  color: #dac979;
+}
+#dropdown-shows ul {
+  margin-left:0;
+}
+#dropdown-shows ul li {
+  list-style:none;
+  margin-bottom:6px!important;
+}
+#dropdown-shows ul li a {
+
+}
+
+#dropdown-tve h2{
+	text-transform: none;
+	color: #fff;
+	font-size: 18px;
+	display: inline;
+}
+
+#dropdown-tve .learnMoreTVE a{
+	display: inline;
+	color: #dbce82;
+	text-decoration: underline;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+#dropdown-tve .menu-dropdowns-tve-container{
+	width: 1000px;
+}
+
+#dropdown-tve .menu-dropdowns-tve-container ul,
+#dropdown-tve .menu-dropdowns-tve-container li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#dropdown-tve .menu-dropdowns-tve-container ul{margin-top: 15px;}
+
+#dropdown-tve .menu-dropdowns-tve-container li a{
+	display: block;
+	width: 156px;
+	margin-left: 28px;
+	float: left;
+}
+
+#dropdown-tve .menu-dropdowns-tve-container li:first-child a{
+	margin-left: 0px;
+}
+
+#dropdown-tve .menu-dropdowns-tve-container li a span{
+	text-align: center;
+	padding: 5px;
+	display: block;
+	clear: left;
+	font-size: 12px;
+}
+
+#dropdown-tve .seeAllTVE{
+	position: relative;
+	width: 900px;
+	display: block;
+	clear: both;
+}
+
+#dropdown-tve .seeAllTVE a{
+	clear: both;
+	width: 200px;
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+	padding-top: 30px;
+	font-size: 17px;
+	text-decoration: underline;
+}
+
+.dropdown-in ul {
+  margin-bottom:20px;
+}
+.dropdown .str-col-a,
+.dropdown .str-col-f {
+	width: 304px;
+}
+.dropdown .str-col-b,
+.dropdown .str-col-c {
+	width: 259px;
+}
+.str-col-g,
+.str-col-h,
+.str-col-i {
+	width: 156px;
+}
+
+/**
+ * Buttons
+ * Added specificity to override custom show style link colors in show pages.
+ */
+html body .btn {
+	background: #ff6503 url(../img/sprite-y.24bit.png) no-repeat right -1100px;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	padding-right: 5px;
+	white-space: nowrap; /* Prevent text wrapping in floats */
+	vertical-align: middle;
+}
+html body .btn span {
+	background: url(../img/sprite-y.24bit.png) no-repeat 0 -1000px;
+	display: block;
+	padding: 3px 10px 3px 15px;
+}
+
+/* button shadow wrappers */
+html body .btn-shadowed-yellow {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat right -2100px;
+	color: #000;
+	font-size: 20px;
+	line-height: 31px;
+}
+html body .btn-shadowed-yellow span {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat 0 -2000px;
+	padding: 3px 15px 3px 20px;
+}
+html body .btn-shadowed-red {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat right -2300px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 31px;
+}
+html body .btn-shadowed-red span {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat 0 -2200px;
+	padding: 3px 15px 3px 20px;
+}
+
+html body .btn-shadowed-ltgreen {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat right -2500px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 31px;
+}
+html body .btn-shadowed-ltgreen span {
+	background: transparent url(../img/sprite-y.24bit.png) no-repeat 0 -2400px;
+	padding: 3px 15px 3px 20px;
+}
+html body .btn-big-text {
+	background-position: right -1300px;
+	font-size: 18px;
+}
+html body .btn-big-text span {
+	background-position: 0 -1200px;
+	padding: 4px 10px 4px 15px;
+}
+
+.section-title {
+	color: #888686;
+	display: block;
+	font-size: 18px;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	font-weight: normal;
+	text-transform: lowercase;
+	padding: 10px 0;
+}
+
+.section-title span{
+    text-transform:none;
+}
+
+/**
+ * Seasons navigation
+ * Requires .clearfix class to function properly
+ */
+.picker {
+	margin-bottom: 14px;
+	position: relative;
+	padding-top: 10px;
+	/**
+	 * @workaround wrong z-index treatment
+	 * @affected ie7
+	 * IE creates discrete stacks for each positioned element
+	 * meaning only siblings' z-indexes interact
+	 * @see http://stackoverflow.com/questions/1287439/ie7-z-index-problem/1287680#1287680
+	 * Strangely, Webkit seems to have a problem positioning subheader dropdowns over
+	 * this element if we go any higher than 3.
+	 */
+	z-index: 3;
+}
+.picker .section-title {
+	margin-bottom: 4px;
+}
+.picker .label,
+.picker .nav {
+	display: inline;
+	float: left;
+}
+.picker .nav {
+	font-weight: bold;
+}
+.picker .nav .menu {
+	background: url(../img/picker-dropdown.png) 0 0;
+
+	-moz-border-radius: 3px; /* FF1+ */
+	-webkit-border-radius: 3px; /* Saf3+, Chrome */
+	-khtml-border-radius: 3px; /* Konqueror */
+	border-radius: 3px; /* Standard. IE9 */
+	-moz-border-radius-topleft: 0; /* FF1+ */
+	-webkit-border-top-left-radius: 0; /* Saf3+, Chrome */
+	-khtml-border-top-left-radius: 0; /* Konqueror */
+	border-top-left-radius: 0; /* Standard. IE9 */
+	color: #000;
+	clear: both;
+	display: block;
+	font-size: 14px;
+	margin-top: -7px;
+	/* Off-left hiding */
+	left: -32000px;
+	padding: 5px;
+	position: absolute;
+	z-index: 88;
+}
+.picker .nav li.has-menu:hover {
+	/**
+	 * @workaround sticky suckerfish bug
+	 * @affected ie7
+	 * @see http://css-class.com/articles/explorer/sticky/
+	 */
+	position: relative;
+}
+.picker .nav li:hover .menu,
+.picker .nav li.hover .menu {
+	left: auto;
+}
+.picker .nav .menu ul {
+	background: #090701;
+	overflow: hidden;
+	padding: 12px 0;
+	width: 210px;
+}
+.picker .nav .menu li {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	float: none;
+}
+.picker .nav .menu a {
+	color: #b2a797;
+	padding: 5px 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.picker .nav .menu a:hover {
+	background: #22201b;
+}
+.picker .nav ul ul {
+	display: none;
+}
+.picker .label {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 1px 10px 7px 0;
+	font-family: Arial, Helvetica;
+}
+.picker .nav a.lv1 {
+	color: #765209;
+	font-size: 24px;
+	line-height: 30px;
+	padding: 1px 10px 7px;
+	text-decoration: none;
+	-webkit-transition: color .2s linear;
+	-o-transition: color .2s linear;
+	transition: color .2s linear;
+	font-family: Arial, Helvetica;
+}
+.picker .nav a.lv1:hover {
+	color: #fdb914;
+}
+.picker .nav .has-menu:hover a.lv1,
+.picker .nav .current a.lv1 {
+	color: #fdb914;
+}
+.picker .nav .current a.lv1 {
+	background: url(../img/sprite-y.24bit.png) no-repeat center -400px;
+	margin-right: 10px;
+}
+.picker .nav .has-menu:hover a.lv1 {
+	background: url(../img/sprite-y.24bit.png) no-repeat center -500px;
+}
+.picker .div-wrapper {
+width: 420px;
+background: #060500;
+overflow: auto;
+}
+.picker .cf-col {
+float: left !important;
+clear: none;
+}
+.picker .nav li .menu h3 a {
+	font-weight:normal;
+	font-size:14px;
+	display:block;
+	padding:8px;
+}
+.picker .nav .cf-col {
+	width:50%!important;
+	float:left!important;
+}
+.picker .nav .cf-col ul {
+	padding-top:0!important;
+	padding-bottom:0!important;
+}
+.picker .nav .cf-col .cf-col {
+	width:100%!important;
+	float:none!important;
+}
+.picker .nav .div-wrapper {
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+/**
+ * Forward/back navigation
+ */
+.pager,
+.pager .next,
+.pager .prev {
+	display: -moz-inline-box; /* FF2 */
+	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
+	/**
+	 * @bugfix inline-block fix
+	 * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+	 * @valid no
+	 */
+	zoom: 1;
+	*display: inline;
+}
+.pager .next,
+.pager .prev {
+	background: url(../img/sprite-y.24bit.png) no-repeat 0 0;
+	color: #fff;
+	font-size: 15px;
+	height: 24px;
+	line-height: 24px;
+	text-transform: lowercase;
+	text-decoration: none;
+	text-align: center;
+	width: 72px;
+}
+.pager .next {
+	background-position: 0 -700px;
+	padding-right: 10px;
+}
+.pager .next:hover {
+	background-position: 0 -900px;
+}
+.pager .prev {
+	background-position: 0 -600px;
+	padding-left: 10px;
+}
+.pager .prev:hover {
+	background-position: 0 -800px;
+}
+
+/**
+ * @subsection Tab panels
+ */
+.tabs {
+	margin-bottom: 8px;
+}
+body.showtype-episode .tabs .tabs-nav,
+body.page-videos .tabs .tabs-nav,
+body.showtype-season .tabs .tabs-nav,
+body.shows-slug-video .tabs .tabs-nav{
+	border-bottom: 1px solid #6a6969 !important;
+	height: 31px;
+}
+
+body.showtype-episode .tabs .tabs-nav .ui-tabs-selected a,
+body.page-videos .tabs .tabs-nav .ui-tabs-selected a,
+body.showtype-season .tabs .tabs-nav .ui-tabs-selected a,
+body.shows-slug-video .tabs .tabs-nav .ui-tabs-selected a{
+	border: 1px solid #6a6969;
+	border-bottom-color: #000;
+	border-width: 1px 1px 2px;
+	padding: 5px 15px 5px;
+	color: #fff;
+	position: relative;
+	bottom: -1px;
+	top: 0px;
+}
+.tabs .tabs-nav a {
+	background: url(../img/sprite-y-2.8bit.png) no-repeat 0 0;
+	color: #8d8c8c;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 6px 16px 5px;
+	text-decoration: none;
+}
+/**
+ * Prevent JS FOUC
+ * Hide appropriate tabs while JS is parsing, then override after it's finished parsing.
+ * But only hide if JS is active.
+ * Relies on Modernizr.js
+ */
+html.js .tabs .panel {
+	display: none;
+}
+html.js .tabs .first-panel,
+html.js .ui-tabs .panel {
+	display: block;
+	clear: left;
+}
+/* Required style for jQuery UI Tabs. Do not remove. */
+.ui-tabs .ui-tabs-hide {
+     display: none !important;
+}
+/* Get rid of background when not needed */
+.tabs .tabs-nav .ui-tabs-selected a,
+.tabs .tabs-nav li:first-child a,
+.tabs .tabs-nav .ui-tabs-selected + li a {
+	background: transparent;
+}
+
+/* Removing bottom border from tabs 1/5/2012 */
+
+.tabs .tabs-nav .ui-tabs-selected a {
+	/*
+	border: 1px solid #6a6969;
+	border-bottom-color: #000;
+    border-width: 1px 1px 2px;
+    */
+	padding: 5px 15px 5px; /* -1px on all sides except bottom to make room for border */
+	color: #fff;
+    position: relative;
+    bottom: -1px;
+    top: 1px;
+
+}
+.tabs .panel {
+	overflow: hidden;
+	padding-top: 20px;
+}
+.tabs .panel .tabs-content {
+	margin-bottom: 18px;
+}
+
+/**
+ * @subsection Social icon lists (Twitter/Facebook/etc)
+ */
+
+ /* FB Section */
+
+.rb-social-home-header .home-text{
+	display: none;
+}
+.rb-social-sidebar-outer{
+	margin-top: 8px;
+}
+
+
+.home .cfct-block-abc .rb-social-sidebar-outer{
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+
+.cfct-block-abc .rb-social-sidebar-outer{
+	margin-top: 30px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+
+#home-title-fb{
+	background: transparent;
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+#home-title-fb a{
+	background: url(../img/hp_amc_on_facebook.png) top left no-repeat;
+	height: 18px;
+	width: 165px;
+	text-indent: -10000px;
+	display: block;
+}
+#home-section-fb{
+	margin: 0;
+	padding: 0 0px;
+}
+
+
+.social {
+	list-style: none;
+	margin: 0;
+}
+.social li {
+	margin-bottom: 0;
+}
+ul.social li a {
+	background: url(../img/sprite-y.24bit.png) no-repeat 0 0;
+	color: #ccc;
+	display: block;
+	font-size: 13px;
+	line-height: 20px;
+	padding-left: 19px;
+}
+ul.social li a:hover {
+	color: #fff;
+}
+body.show-mad-men ul.social li a:hover {
+	color: #666;
+}
+.social li.twitter a {
+	background-position: 0 -1400px;
+}
+.social li.facebook a {
+	background-position: 0 -1500px;
+}
+.social li.feed a {
+	background-position: 0 -1600px;
+}
+
+/* Pagination */
+.pagination {
+	font-size: 18px;
+	margin: 19px 0;
+	text-transform: lowercase;
+}
+.pagination a,
+.pagination .current {
+	float: left;
+	margin-right: 13px;
+}
+.pagination .current {
+	color: #878585;
+}
+
+.video .video-frame {
+	margin: 0 auto 54px;
+}
+
+/* Attachment page filmstrips */
+.filmstrip {
+	height: 59px;
+	margin-bottom: 18px;
+	position: relative;
+	width: 520px;
+	overflow: hidden;
+}
+html.js .filmstrip-on {
+	padding-left: 38px;
+	padding-right: 32px;
+}
+/**
+ * Prevent JS FOUC in accessible manner
+ * Uses modernizer.js
+ */
+html.js .filmstrip .screen {
+	display: none;
+}
+html.js .filmstrip .screen:first-child {
+	display: block;
+}
+.filmstrip .next,
+.filmstrip .prev {
+	background: url(../img/sprite-gallery.24bit.png) no-repeat 0 -300px;
+	font-size: 0;
+	height: 59px;
+	line-height: 0;
+	left: 0;
+	position: absolute;
+	text-indent: -32000px;
+	width: 30px;
+	top: 0;
+}
+.filmstrip .next {
+	background-position: 0 -200px;
+	left: auto;
+	right: 0;
+}
+.filmstrip img {
+	background: #939090;
+	border: 1px solid #939090;
+	margin-right: 6px;
+}
+.filmstrip .current img {
+	border-color: #ca4932;
+}
+
+/*
+Slide
+Attachment photo with next/prev links
+*/
+.slide img {
+	display: block;
+}
+.slide .frame {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.slide .next,
+.slide .prev {
+	background: url(../img/sprite-gallery.24bit.png) no-repeat 0 -100px;
+	font-size: 0;
+	height: 70px;
+	line-height: 0;
+	left: 0;
+	margin-top: -35px;
+	position: absolute;
+	text-indent: -32000px;
+	width: 31px;
+	top: 50%;
+}
+.slide .next {
+	background-position: 0 0;
+	left: auto;
+	right: 0;
+}
+.slide .x-of-y {
+	display: block;
+	font-size: 16px;
+	line-height: 32px;
+}
+.entry-attachment {
+	overflow: hidden;
+}
+.entry-attachment .content {
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
+/** @section Modules, Widgets, Boxes
+ -------------------------------------------------- */
+
+.box,
+.widget {
+	margin-bottom: 20px;
+}
+/**
+ * Cut off overflow on boxes by default
+ */
+.box {
+	overflow: hidden;
+}
+/**
+ * Make sure widgets are overflow:visible so margin collapse works.
+ */
+.widget {
+	overflow: visible;
+}
+.box .title,
+.widget .widget-title {
+	overflow: hidden;
+	/* Fancy truncation */
+	text-overflow: ellipsis;
+}
+
+/* Info Links title */
+.box-info-links {
+	margin: 0 0 23px;
+}
+.box-info-links .title {
+	color: #707070;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0 0 8px 0;
+}
+.info-links-title {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0 0 9px 0;
+	color: #FFF;
+}
+.box-info-links ul {
+	border-bottom: #474747 solid 1px;
+	margin: 0 0 4px;
+	padding: 0 0 16px;
+}
+.box-info-links li {
+	list-style: none;
+}
+
+.box-info-links li a {
+	font-size: 14px;
+}
+.box-info-links .call-to-action {
+	color: #e39b35;
+	font-size: 12px;
+	font-style: normal;
+}
+
+/**
+ * Touts module
+ */
+.touts {
+	margin-bottom: 26px;
+}
+.touts ul {
+	list-style: none;
+	margin: 0;
+}
+.touts ul li {
+	display: inline;
+	float: left;
+	/** @workaround
+	 * Using padding, not margin to avoid IE6 issue with margin collapsing hasLayout els
+	 */
+	padding: 0 22px 14px 0;
+}
+.touts-2up {
+	overflow: hidden;
+	width: 590px;
+}
+.touts li .box-tout {
+	margin-bottom: 0;
+}
+.touts-2up .box-tout {
+	width: 284px;
+}
+.touts-2up ul {
+	width: 612px;
+}
+/**
+ * Individual tout
+ */
+.box-tout {
+	background: #333;
+	height: 184px; /* Fixed height prevents collapse. Overriden for other sizes. */
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	width: 284px; /* Default size. Must have fixed width for IE6. */
+}
+.box-tout-large {
+	height: auto;
+	width: 590px;
+}
+.box-tout img {
+	display: block;
+}
+.box-tout .caption {
+	background: url(../img/black-at-.67.png);
+	bottom: 0;
+	color: #fff;
+	display: block;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	right: 0;
+}
+.box-tout .title {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 9px 12px;
+	/* Must keep visible for proper wrapping with buttons */
+	overflow: visible;
+}
+
+.box-tout .title:hover {
+	text-decoration:underline;
+}
+
+.box-tout .content {
+	display: block;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 9px 12px;
+	overflow: visible; /* Necessary for call-to-action buttons to wrap properly */
+}
+
+.box-tout .caption .call-to-action {
+	float: right;
+	margin: 9px 12px;
+}
+
+/* Tout Button Style Overrides */
+.box-tout .caption .call-to-action .btn-a {
+	background-color: #f00;
+	color: #0f0;
+}
+
+.box-tout .caption .call-to-action .btn-b {
+	background-color: #0f0;
+	color: #00f;
+}
+.box-tout .caption .call-to-action .btn-c {
+	background-color: #00f;
+	color: #f00;
+}
+
+.box-tout .caption .title a{
+	color: #fff;
+}
+
+/* Featured Carousel */
+.carousel-featured {
+	background: #000;
+	color: #fff;
+	list-style: none;
+	margin: 0 0 20px;
+}
+/**
+ * Widths for carousel - important that these are set for JS
+ */
+.carousel-featured-container,
+li.rb-header-touts-carousel-item {
+	width: 980px;
+}
+/**
+ * Smaller carousel in ab and bc rows
+ */
+.cfct-block-ab .carousel-featured-container,
+.cfct-block-bc .carousel-featured-container,
+.cfct-block-ab li.rb-header-touts-carousel-item,
+.cfct-block-bc li.rb-header-touts-carousel-item {
+	width: 590px;
+}
+.carousel-featured-container {
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-featured ul.rb-header-touts-carousel-items {
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: inherit;
+}
+.carousel-featured li {
+	height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: inherit;
+}
+
+.cfct-module-image img {
+  max-width: 100%;
+  height: auto;
+}
+.shows-slug-newsletter-subscription #content, .page-newsletter-subscription #content {
+  padding: 15px 0 0 0;
+}
+.shows-slug-newsletter-subscription .cfct-block-ab, .page-newsletter-subscription .cfct-block-ab {
+	margin-right:10px;
+	width:630px;
+}
+
+
+/* Space out cfct-module */
+.carousel-featured .cfct-module {
+	margin: 20px 96px;
+}
+/* Make sure that rb-header-tout doesn't get margin (should be flush with edge) */
+.rb-header-tout,
+.rb-header-tout-video {
+	margin: 0 !important;
+}
+.carousel-featured-control-panel a {
+	display: block;
+	height: 183px;
+	position: absolute;
+	top: 30px;
+	width: 33px;
+	z-index: 98;
+	opcaity:0.8;
+}
+
+.carousel-featured-control-panel a.prev {
+	background: url(../img/sprite-y.24bit.png) 0 0 no-repeat;
+	left: 20px;
+	opacity: 0.7;
+}
+.carousel-featured-control-panel a.prev:hover {
+	opacity:1;
+}
+.carousel-featured-control-panel a.next {
+	background: url(../img/sprite-y.24bit.png) 0 -200px no-repeat;
+	right: 20px;
+	opacity: 0.7;
+}
+.carousel-featured-control-panel a.next:hover {
+	opacity:1;
+}
+.carousel-items-1 .carousel-featured-control-panel,
+.carousel-items-0 .carousel-featured-control-panel {
+	display: none;
+}
+
+.home .pagination-carousel{
+	display: none;
+}
+
+/**
+ * Touts that go into the main carousel
+ */
+.box-tout-main {
+	height: 250px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+.box-tout-main,
+.box-tout-main-sub {
+	width: 980px;
+}
+/**
+ * Set widths - important for carousel
+ */
+.cfct-block-ab .box-tout-main,
+.cfct-block-bc .box-tout-main,
+.cfct-block-ab .box-tout-main-sub,
+.cfct-block-bc .box-tout-main-sub {
+	width: 590px;
+}
+
+.box-tout-main-sub {
+	height: 250px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	color: #fff;
+}
+.box-tout-main-sub a{
+	color: #fff;
+	opacity: 1;
+}
+.box-tout-main-sub a:hover{
+	opacity: 1;
+}
+.box-tout-main-sub .content-container {
+	left: 95px;
+	position: absolute;
+	bottom: 5%;
+	width: 400px;
+}
+.box-tout-main-sub .media-container {
+	height: 186px;
+	right: 130px;
+	position: absolute;
+	top: 30px;
+	width: 286px;
+}
+
+.box-tout-main-sub .media-container img {
+	border: #fff solid 1px;
+
+}
+
+.box-tout-main-sub .title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	opacity:1;
+}
+
+.box-tout-main-sub .title:hover {
+	opacity:1;
+}
+
+.box-tout-main-sub .content {
+	margin: 0 0 15px 0;
+}
+.box-tout-main-sub .content p {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.home #cfct-block-182af11665fde5f335bbd7fa0474b102{
+	background: url(../img/video-row-backing_v2.png) top center no-repeat;
+}
+
+
+.home .secondrow{
+	/*background: url("../img/layout/video-playlist-border-bottom.png") no-repeat scroll center bottom transparent;*/
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.home .secondrow .shows-events-list li:first-child .box-show-logo img{
+	width: 170px;
+	height: 40px;
+}
+
+.home .secondrow h2.title{
+	display: none;
+}
+
+.home .secondrow .shows-events-list{
+	width: 766px;
+	margin: 0 auto;
+    position: relative;
+    left: 80px;
+}
+
+
+.home .secondrow .box-shows-events{
+	margin-bottom: 5px;
+}
+
+
+.home .box-shows-events h2 span{
+	background-image: none;
+}
+
+.home .box-shows-events h2{
+	background: url(../img/hp_new_shows.png) top left no-repeat;
+	height: 23px;
+	width: 981px;
+	display: block;
+	text-indent: -5000px;
+}
+
+/* Box Tout Main - Current Program */
+.box-tout-main-current-program {
+	/* 617x250 */
+	height: 172px;
+	padding: 102px 0 0 78px;
+	position: relative;
+	width: 515px;
+}
+.box-tout-main-current-program img {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+.box-tout-main-current-program .title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.08;
+	margin: 0;
+	position: relative;
+	text-transform: uppercase;
+}
+.box-tout-main-current-program .media-time {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.08;
+	margin: 0 0 2px 0;
+	position: relative;
+}
+.box-tout-main-current-program .content {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.29;
+	position: relative;
+	width: 505px;
+
+}
+
+/* Video Playlist */
+/* List Styles */
+.media-gallery {
+	background: url(../img/layout/video-playlist-border-bottom.png) no-repeat center bottom;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+.amc-module-video-loop .media-gallery {
+	background: none;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+.home .media-gallery{
+	background: none;
+}
+.media-gallery .header {
+	position: relative;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.media-gallery .header .title {
+	margin: 0;
+}
+.media-gallery .header .more {
+	bottom: 0;
+	font-weight: bold;
+	line-height: 1.2;
+	position: absolute;
+	right: 0;
+}
+.media-gallery ul li {
+	margin: 0 2px;
+	width: 134px;
+}
+
+/**
+ * Special case: Video playlists in col-ab configurations (4-up)
+ */
+.str-col-ab .media-gallery ul li,
+.cfct-block-ab .media-gallery ul li {
+	margin: 0 0 0 18px;
+}
+.media-gallery ul li:first-child,
+.media-gallery ul li.first-child {
+	margin-left: 0 !important;
+}
+
+.media-gallery .box-media-gallery-item {
+	margin-bottom: 0;
+}
+/* Individual Styles */
+.box-media-gallery-item a {
+	cursor: hand;
+	display: block;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 139px;
+	margin: 0 auto;
+	min-height: 139px;
+	overflow: visible;
+	padding: 9px 0 0;
+	position: relative;
+	width: 115px;
+}
+
+.box-media-gallery-item .video-title {
+	color: #b4b3b3;
+	display: block;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+	margin: 8px 0;
+	overflow: hidden;
+	-o-text-overflow: ellipsis; /* Opera */
+	text-overflow: ellipsis; /* IE6+, Safari, Konqueror, Standard? */
+	width: 116px;
+}
+
+.box-media-gallery-item img {
+	display: block;
+	height: 80px;
+	width: 115px;
+}
+
+
+/* UPDATED AMC Video Loop Module */
+
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .media-gallery ul li {
+	margin: 0px;
+	width: 300px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .box-media-gallery-item img {
+	display: block;
+	height: auto;
+	width: 300px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .box-media-gallery-item a {
+	cursor: hand;
+	display: block;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: 169px !important;
+	margin: 0 auto;
+	min-height: 139px;
+	overflow: visible;
+	padding: 9px 0 0;
+	position: relative;
+	width: 300px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .box-media-gallery-item .video-title {
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 284px;
+	position: absolute;
+	bottom: 0px;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 8px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .media-gallery .nav li{
+	margin-right: 38px;
+	margin-bottom: 30px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad{
+	position: relative;
+	margin-top: 14px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav .loop-5{
+	margin-right: 35px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav .loop-6{
+	margin-right: 0px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .amc-video-loop-ad-container{
+	position: absolute;
+	top: 4px;
+	right: 2px;
+	width: 300px;
+	height: 250px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .amc-video-loop-ad-container .amcn-dfp {
+	margin-top: 5px;
+}
+
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .amc-video-loop-ad-container .pos-promo{
+	margin-top: 5px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav li,
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .box-media-gallery-item img{
+	width: 300px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav li{
+	margin-right: 43px;
+	margin-bottom: 30px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-1,
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-3{
+	margin-right: 0px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-2{
+	clear: left;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .box-media-gallery-item .video-title{
+	width: 285px;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-with-ad .box-media-gallery-item a{
+	width: 300px;
+	height: 169px !important;
+}
+
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-no-ad .nav .loop-2,
+.str-col-abc .cfct-block-abc .amc-module-video-loop .amc-video-loop-no-ad .nav .loop-5{
+	margin-right: 0px;
+}
+
+/* Updated More Extras (formerly exclusives online area) */
+
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col{
+	width: 300px;
+	margin-bottom: 0px;
+}
+
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-a,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-b,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-d,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-e,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-g,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-h{
+	margin-right: 40px;
+}
+
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-c,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-f,
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col-i{
+	margin-right: 0px;
+}
+
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col .box-tout{
+	width: 300px!important;
+	height: 169px!important;
+	margin-bottom:40px!important;
+}
+
+.cfct-block-abc .module-group-has-3-cols .cfct-module-col .box-tout img{
+display: block;
+width: 100%;
+height: auto;
+}
+
+
+.home .rb-module-group .cfct-module:not(:first-child) .box-tout {
+margin-bottom: 0!important;
+}
+
+
+
+/*  Series pages  */
+
+.home .amc-module-video-loop{
+	margin-bottom:-10px;
+}
+
+.amc-module-video-loop .box-media-gallery-item a:hover .state-hover{
+	border:none !important;
+}
+
+.cfct-block-ab .amc-module-video-loop .media-gallery ul li,
+.str-col-ab .amc-module-video-loop .media-gallery ul li {
+	width: 284px;
+}
+
+.cfct-block-ab .amc-module-video-loop .box-media-gallery-item img,
+.str-col-ab .amc-module-video-loop .box-media-gallery-item img {
+	display: block;
+	height: auto;
+	width: 284px;
+}
+
+.cfct-block-ab .amc-module-video-loop .box-media-gallery-item a,
+.str-col-ab .amc-module-video-loop .box-media-gallery-item a {
+	cursor: hand;
+	display: block;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: 160px !important;
+	margin: 0 auto;
+	min-height: 139px;
+	overflow: visible;
+	padding: 9px 0 0;
+	position: relative;
+	width: 284px;
+}
+
+.cfct-block-ab .amc-module-video-loop .box-media-gallery-item .video-title,
+.str-col-ab .amc-module-video-loop .box-media-gallery-item .video-title {
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	width: 268px;
+	position: absolute;
+	bottom: 0px;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 8px;
+}
+
+.cfct-block-ab .amc-module-video-loop .nav li,
+.str-col-ab .amc-module-video-loop .nav li{
+	margin:0 39px 30px 0;
+}
+
+.str-col-ab .cfct-block-abc .amc-module-video-loop .nav li{
+	margin:0 22px 10px 0;
+}
+
+.cfct-block-ab .amc-module-video-loop .nav,
+.str-col-ab .amc-module-video-loop .nav{
+	padding-bottom: 20px;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li,
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item img,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item img{
+	width: 284px;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-1,
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-3,
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-5,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-1,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-3,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .nav li.loop-5{
+	margin-right: 0px;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-1,
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-3,
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-5,
+.str-col-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-1,
+.str-col-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-3,
+.str-col-ab .amc-module-video-loop .amc-video-loop-with-ad .nav li.loop-5{
+	margin-right: 0px;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item .video-title,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item .video-title{
+	width: 268px;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item,
+.str-col-ab .amc-module-video-loop .amc-video-loop-no-ad .box-media-gallery-item{
+	width: 284px;
+	height: 166px !important;
+}
+
+.cfct-block-ab .amc-module-video-loop .amc-video-loop-with-ad .amc-video-loop-ad-container,
+.str-col-ab .amc-module-video-loop .amc-video-loop-with-ad .amc-video-loop-ad-container{
+	display: none;
+}
+
+/* END UPDATED AMC Video Loop Module */
+
+
+
+
+.box-media-gallery-item .video-title:hover {
+	text-decoration:underline;
+}
+
+
+
+/* Playlist Box States */
+.box-media-gallery-item .state-full-episode,
+.box-media-gallery-item .state-full-movie,
+.box-media-gallery-item .state-hover {
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.box-media-gallery-item a:hover .state-hover {
+	/*border-color: #d2501e;
+	border-style: solid;
+	border-width: 2px;*/
+	height: 76px;
+	top: 9px;
+	width: 111px;
+
+}
+.media-gallery .full-episode,
+.media-gallery .featured {
+
+}
+.media-gallery .full-episode .state-full-episode,
+.media-gallery .full-movie .state-full-movie,
+.media-gallery .featured .state-featured {
+	top: 9px;
+	height: 80px;
+	position: absolute;
+	width: 115px;
+}
+.media-gallery .full-episode .state-full-episode {
+	background: url(../img/layout/marker-fullepisode.png) 0 bottom no-repeat;
+}
+.media-gallery .full-movie .state-full-movie {
+	background: url(../img/layout/marker-fullmovie.png) 0 bottom no-repeat;
+}
+.media-gallery .featured .state-featured {
+	background: url(../img/layout/marker-featured.png) 0 bottom no-repeat;
+}
+
+
+
+/* Video Loop Widget */
+.cf-video-loop-widget {
+	margin: 0;
+	padding: 0;
+}
+.cf-video-loop-widget li {
+	list-style: none;
+	margin: 0 0 9px 0;
+}
+
+
+/* Crew Styles */
+
+#main-body .section-title.crew {
+
+    padding-top: 23px;
+    margin-bottom: 12px;
+}
+
+
+#main-body .crew h2
+{
+    color: #888686;
+    line-height: 1.5px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+#main-body .crew-title h3.cfct-mod-title {
+    font-size:24px;
+    padding-top: 0;
+}
+
+.crew p,
+.crew ul {
+
+    font-size: 14px;
+    line-height:18px;
+
+}
+
+.crew ul.cfct-module-loop-subpages
+{
+    text-transform: capitalize;
+}
+
+/* Character Styles */
+.characters {
+    padding-top: 10px;
+}
+
+.characters .title {
+	color: #888686;
+	display: block;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 9px;
+	padding-top: 5px;
+	text-transform: lowercase;
+}
+
+.character-title {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 25px;
+	margin-bottom: 16px;
+	padding-top: 0;
+	text-transform: lowercase;
+}
+.character-title .actor {
+	font-size: 14px;
+}
+.character-title .character {
+	color: #fff;
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+}
+img.character-photo {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+/* Character Callout */
+.box-character-callout {
+	margin: 0 0 25px 0;
+	width: 284px;
+}
+.box-character-callout .character-title {
+	margin-bottom: 8px;
+}
+.box-character-callout .character-photo,
+.box-character-callout .cfct-mod-image {
+	margin-bottom: 1px;
+}
+.box-character-callout .character-content  {
+	font-size: 13px;
+	line-height: 17px;
+	color: #fff;
+
+}
+
+/* Character Detail */
+.box-character-detail {
+	/**
+	 * Since we can count on a consistent bottom margin in the content of 18px
+	 * This will keep visual spacing consistent (18+2 = 20)
+	 */
+	margin-bottom: 2px;
+	width: 590px;
+}
+
+.box-character-detail .box-character-content {
+	font-size: 15px;
+	line-height: 20px;
+	/**
+	 * Keep bottom margin consistent with margin collapse
+	 */
+	margin-bottom: 18px;
+	color:#FFF;
+}
+.box-character-detail .box-character-content p,
+.box-character-detail .box-character-content ul,
+.box-character-detail .box-character-content ol,
+.box-character-detail .box-character-content table,
+.box-character-detail .box-character-content pre {
+	margin-bottom: 18px;
+}
+
+/* Widget - Entire Cast */
+
+.panel .cast-link{
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+.cast {
+	margin-bottom: 34px;
+	width: 356px;
+}
+.cast .cast-title,
+.cast .widget-title {
+	margin-bottom: 10px;
+}
+/**
+ * Uses ie7.css ie6.css for inline block fix.
+ */
+.cast ul {
+	list-style: none;
+	margin: 0;
+}
+.cast ul li {
+	display: -moz-inline-box; /* FF2 */
+	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
+	margin: 0 8px 14px 0;
+	position: relative;
+	vertical-align: top;
+}
+
+.box-cast-member {
+	overflow: hidden;
+	margin-bottom: 8px;
+	width: 105px;
+}
+.box-cast-member .img {
+	display: block;
+	margin-bottom: 3px;
+}
+.box-cast-member a {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+}
+.box-cast-member a:hover .title {
+	color: #fff;
+}
+.box-cast-member .title {
+	display: block;
+	line-height: 1.2;
+}
+.box-cast-member span.imr {
+	border: none;
+	display: block;
+	height:  63px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 103px;
+}
+
+.box-cast-member .current span.imr {
+	border-color: #ccc;
+	border-width: 2px;
+	border-style: solid;
+}
+
+
+.box-tout-sneak-peek {
+	background: none;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 78px;
+	min-height: 78px;
+
+	padding: 36px 0 0 123px;
+	position: relative;
+	width: auto;
+
+}
+.box-tout-sneak-peek .title {
+	font-size: 18px;
+	font-weight: bold;
+	left: 0;
+	line-height: 18px;
+	margin: 0 0 13px 0;
+	position: absolute;
+	top: 0;
+}
+.box-tout-sneak-peek .title-feature {
+	background: url('../img/imr/txt-h2-accessibility-feature.png') 0 0 no-repeat;
+	margin-bottom: 17px;
+	padding-left: 89px;
+
+}
+.box-tout-sneak-peek .title-photos {
+	background: url('../img/imr/txt-h2-accessibility-photos.png') 0 1px no-repeat;
+	padding-left: 82px;
+}
+
+.box-tout-sneak-peek .title-video {
+	background: url('../img/imr/txt-h2-accessibility-video.png') 0 -1px no-repeat;
+	padding-left: 68px;
+}
+.box-tout-sneak-peek .img-link {
+	display: block;
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	top: 36px;
+}
+.box-tout-sneak-peek .subtitle {
+	font-size: 15px;
+	line-height: 1.07;
+	margin-bottom: 1px;
+}
+.box-tout-sneak-peek .content {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+.box-tout-sneak-peek .content p {
+	margin: 0;
+}
+.box-tout-sneak-peek .call-to-action {
+	font-weight: bold;
+	overflow: hidden;
+	zoom: 1;
+}
+.box-tout-sneak-peek .call-to-action a {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 14px;
+	line-height: 1.36;
+}
+
+/*#upcoming-programs-full ul li .title{
+	color: #fff;
+}
+#upcoming-programs-full ul li .title a{
+	color: #e39b35;
+}
+*/
+
+/* Episode/Whatever Topics Box */
+.box-topics {
+	background: #1b1b1a;
+	margin: 0 0 31px;
+}
+.box-topics .title {
+	background: #000;
+}
+.box-topics .content {
+	margin: 15px 10px;
+}
+.box-topics .title {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0;
+	padding: 3px 10px;
+}
+.box-topics .go {
+	color: #fdb813;
+}
+.box-topics .call-to-action {
+	background: #000;
+	clear: both;
+	color: #fdb813;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px 10px;
+}
+
+.cfct-module-video-loop .nav li:hover{
+	background: #423a18;
+}
+
+.cfct-module-video-loop h2.title {
+	background: url(../img/video-header.png) top left no-repeat;
+	height: 29px;
+	width: 176px;
+	display: block;
+	text-indent: -5000px;
+}
+.cfct-module-video-loop h2.title-linked {
+	text-indent:0;
+}
+.cfct-module-video-loop h2.title-linked a {
+	/*background: url(../img/video-header.png) top left no-repeat;*/
+	height: 29px;
+	width: 176px;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.cfct-row-abc h2.cfct-mod-title{
+	background: url(../img/more-extras.png) no-repeat 0 0; /* show page override */
+	height: 21px;
+	width: 198px;
+	display: block;
+	text-indent: -5000px;
+}
+
+body.show-talking-dead .exclusives-online{
+	background: inherit!important;
+	display: inherit!important;
+	height: inherit!important;
+	margin: 0 0 20px!important;
+	text-indent: 140%!important;
+	white-space: nowrap!important;
+}
+
+body.show-talking-dead .exclusives-online h2 {
+	margin: 0px 0 10px!important;
+}
+
+/* Widget - Next Episode */
+.programming-next-episode-title {
+	color: #b5b3b3;
+	margin: 0 0 14px 0;
+}
+.programming-next-episode-title span {
+	color: #fff;
+}
+.programming-next-episode-thumb {
+	float: left;
+}
+.box-programming-next-episode .content p {
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0 0 0 135px;
+}
+
+
+/* MEDIA LIST ABSTRACTED STYLES */
+/* Upcoming Programs - From Fearfest Tentpole comp */
+.upcoming-programs {
+	margin: 0 0 24px 10px;
+	width: 578px;
+}
+.upcoming-programs-header {
+	margin: 0 0 20px 0;
+}
+.upcoming-programs .upcoming-programs-header .title {
+	background: url("../img/on-air-schedule-hdr.png") no-repeat scroll left top transparent;
+	font-size: 18px;
+	line-height: 18px;
+	text-indent: -5000px;
+	text-transform: uppercase;
+}
+.upcoming-programs .upcoming-programs-header .nav-display-options {
+	float: right;
+	font-size: 15px;
+	line-height: 15px;
+	margin: 2px 0 0 0;
+	padding: 0;
+	text-transform: lowercase;
+}
+.upcoming-programs .upcoming-programs-header .nav-display-options .nav-delimiter {
+	margin: 0 10px;
+	color: #e39b35;
+}
+
+.upcoming-programs ul {
+	margin: 0;
+	padding: 0;
+}
+
+.upcoming-programs ul li {
+	list-style: none;
+	margin: 24px 0 0 0;
+}
+.upcoming-programs ul li:first-child {
+	margin-top: 0;
+}
+
+/* Featured Fearfest / Fearfest Videos */
+/* List Styles */
+.featured-programs {
+	width: 356px;
+	margin: 0 0 25px 0;
+}
+.featured-programs .title {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+}
+.featured-programs ul {
+	margin: 0;
+	padding: 0;
+}
+.featured-programs ul li {
+	list-style: none;
+	margin: 0;
+}
+.featured-programs ul li.first-child,
+.featured-programs ul li:first-child {
+	margin-top: 0;
+}
+.featured-programs .box-media-item {
+	margin: 0 0 15px;
+}
+
+/*
+General Media Item
+Used for Video Loop
+*/
+.box-media-item {
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	overflow: visible !important;
+	height: 90px;
+	min-height: 90px;
+	padding: 0 0 0 134px;
+	position: relative;
+	zoom: 1;
+}
+.box-media-item-has-title {
+	padding-top: 4px;
+}
+.box-media-item .media-item-img-link {
+	height: 90px;
+	margin-left: -133px;
+	overflow: hidden;
+	position: absolute;
+	width: 120px;
+}
+.box-media-item .state-full-movie,
+.box-media-item .state-full-episode {
+	bottom: 1px;
+	height: 17px;
+	left: 1px;
+	position: absolute;
+	width: 118px;
+}
+.box-media-item .state-full-episode {
+	background: url(../img/layout/marker-fullepisode.png);
+}
+.box-media-item .state-full-movie {
+	background: url(../img/layout/marker-fullmovie.png);
+}
+.box-media-item-video .media-item-img-link span {
+	background: url(../img/layout/marker-play.png) center center no-repeat;
+	display: block;
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	height: 90px;
+	top: 0;
+	width: 120px;
+}
+.box-media-item .title {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 7px;
+	overflow: hidden;
+	width: 100%;
+}
+.box-media-item img {
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+}
+
+.box-media-item .content .go {
+	font-weight: normal;
+}
+.box-media-item .media-time {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: -7px 0 7px 0;
+	color: #fff;
+}
+.box-media-item .content {
+	color: #bcbbbb;
+	font-size: 14px;
+	line-height: 15px;
+	margin: 0 0 8px;
+}
+.box-media-item .content {
+	overflow: hidden;
+	width: 100%;
+}
+.box-media-item .content p {
+	margin-bottom: 0;
+}
+
+.box-media-item .nav-media-links {
+	margin: 0;
+	padding: 0;
+}
+.box-media-item .nav-media-links li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 11px;
+}
+.box-media-item .nav-media-links li:first-child,
+.box-media-item .nav-media-links li.first-child {
+	margin-left: 0;
+}
+
+.box-media-item .nav-media-links li a {
+	font-weight: normal;
+}
+.widget .box-media-item .title {
+font-size: 14px;
+}
+.widget .box-media-item .content {
+font-size: 12px;
+}
+
+
+/* Photo portion */
+.rb-character-photo-loop .photo-wrapper{
+	width: 340px;
+	padding: 0 0 20px 0;
+}
+.rb-character-photo-loop .photo-wrapper .photo-img-wrapper{
+	width: 120px;
+	float: left;
+	height: 90px;
+	overflow: hidden;
+}
+.rb-character-photo-loop .photo-wrapper .photo-img-wrapper img{
+	width: 120px;
+}
+.rb-character-photo-loop .photo-wrapper .photo-text-wrapper{
+	width: 191px;
+	padding: 0 0 0 15px;
+	float: left;
+}
+.rb-character-photo-loop .photo-wrapper .photo-text-wrapper .photo-text{
+	font-size: 18px;
+	line-height: 23px;
+}
+
+/* Online Programs - Horizontal strip.  from Fearfest Tentpole comp */
+
+/* List Styles */
+.online-programs .title {
+	margin-bottom: 10px;
+}
+.online-programs ul {
+	margin: 0;
+	padding: 0;
+}
+.online-programs li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 15px;
+}
+.online-programs li:first-child {
+	margin-left: 0;
+}
+
+/* Individual Styles */
+.box-online-program .program-title {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+/* Video Search Results */
+
+.video-search .video-search-module {
+	background: url(../img/layout/video-search-module-background.png) 0 0 repeat-x;
+	height: 90px;
+	margin: 0 0 6px 0;
+	padding: 8px;
+}
+
+/* Suggested Videos */
+.suggested-videos {
+	width: 350px;
+
+	margin: 0 0 25px 0;
+}
+.suggested-videos .header {
+	position: relative;
+}
+.suggested-videos .section-title {
+	margin-bottom: 19px;
+}
+.suggested-videos .more {
+	top: 0;
+	position: absolute;
+	right: 0;
+}
+.suggested-videos ul {
+	margin: 0;
+	padding: 0;
+}
+
+.suggested-videos li {
+	list-style: none;
+	margin: 0 0 9px 0;
+}
+
+
+
+
+.box-tout-suggested-video {
+	background: none;
+	height: auto;
+	margin: 0;
+	padding: 4px 0 0 133px;
+	position: relative;
+	width: auto;
+}
+.box-tout-suggested-video .img-link {
+	display: block;
+	left: 0;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+}
+.box-tout-suggested-video .title {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 7px 0;
+}
+
+.box-tout-suggested-video .content {
+	font-size: 14px;
+	line-height: 1.1;
+}
+.box-tout-suggested-video .content p {
+	color: #bcbbbb;
+	margin-bottom: 0;
+}
+.box-tout-suggested-video .content .go {
+	font-weight: normal;
+}
+
+/* Tab Styles */
+.tabs-content-search-results .tabs-nav {
+	height: 30px;
+	text-transform: lowercase;
+}
+.tabs-content-search-results .tabs-nav .label {
+	background: none;
+	color: #b5b3b3;
+	font-size: 18px;
+	margin:2px 8px 0 0;
+}
+.tabs-content-search-results .tabs-nav a {
+	background: none;
+	font-size: 15px;
+}
+.tabs-content-search-results .tabs-nav .ui-tabs-selected a {
+	padding-bottom: 4px;
+}
+
+
+
+/* List Styles */
+.content-search-resultset {
+	width: 465px;
+}
+.content-search-resultset .title {
+
+}
+.content-search-resultset ul {
+	margin: 0;
+	padding: 0;
+}
+.content-search-resultset li {
+	list-style: none;
+	margin: 11px 0 0 0;
+}
+.content-search-resultset li:first-child {
+	margin-top: 0;
+}
+
+.content-search-resultset .content-browser-list {
+	margin-bottom: 25px;
+}
+
+.content-search-resultset .content-browser-navigation {
+	font-size: 18px;
+}
+
+.content-search-resultset .content-browser-navigation p {
+	display: inline;
+	padding-right: 15px;
+	text-transform: lowercase;
+	color: #CCC;
+}
+
+
+
+
+/* Individual Styles */
+.content-search-resultset .box-media-item .title span {
+	color: #b5b3b3;
+	display: block;
+	font-size: 12px;
+	margin-top: 3px;
+}
+.content-search-resultset .box-media-item .result-alert {
+	color: #e39b35;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.box-video-browser .section-title {
+	margin-bottom: 8px;
+	text-transform: lowercase;
+}
+.box-video-browser .picker-container {
+	background:  none;
+	margin-bottom: 6px;
+	padding: 8px 8px 22px;
+}
+.box-video-browser select {
+	font-size: 16px;
+}
+
+.box-video-browser .tabs .panel {
+	padding-top: 23px;
+}
+.box-video-browser .tabs-nav .label {
+    color: #B5B3B3;
+    font-size: 18px;
+	margin: 2px 8px 0 0;
+	text-transform: lowercase;
+}
+.box-video-browser .box-media-item .title {
+	margin-bottom: 3px;
+	text-transform: none;
+}
+.box-video-browser .box-media-item .subtitle {
+	color: #b5b3b3;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.box-video-browser .box-media-item .content {
+	line-height: 1.15;
+}
+.box-video-browser .box-media-item .box-alert {
+	color:#e39b35;
+	font-size: 12px;
+	font-style: italic;
+}
+
+
+/* @deprecated - we'll use .box-media-item instead
+.box-video-result {
+	padding: 8px;
+}
+
+.box-video-result a {
+	display: block;
+	float: left;
+	line-height: 0;
+	position: relative;
+}
+
+.box-video-result .result-img {
+
+}
+.box-video-result .content {
+	color: #b5b3b3;
+	margin: 0 0 0 135px !important;
+}
+
+.box-video-result .result-title {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 6px;
+}
+
+.box-video-result .result-desc {
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+*/
+
+
+
+/* Shows & Events - Homepage */
+.box-shows-events {
+	margin: 0 0 30px 0;
+}
+
+.box-shows-events .shows-events-list {
+	margin: 0;
+	padding: 0;
+}
+.box-shows-events .shows-events-list li {
+	float: left;
+	list-style: none;
+	margin: 0 10px 0 0px;
+	overflow: hidden;
+	width: 180px;
+}
+.box-shows-events .shows-events-list li:first-child,
+.box-shows-events .shows-events-list li.first-child {
+	margin-left: 0;
+}
+.shows-events-list a {
+	color: #fff;
+	font-weight: normal;
+}
+.shows-events-list .box-show-logo {
+	margin-bottom: 0;
+}
+.shows-events-list li .box-show-logo img{
+	height: 40px;
+	max-width: 150px;
+}
+/*.shows-events-list li:first-child{
+	width: 240px;
+	margin-top: -5px;
+}
+.shows-events-list li:first-child .box-show-logo img{
+	width: 223px;
+	max-width: 223px;
+	height: 54px;
+}
+.shows-events-list li:first-child .box-show-logo .title{
+	font-size: 16px;
+	margin: 0 0 0 5px;
+}*/
+.shows-events-list .title {
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	margin: 0;
+}
+.shows-events-list .subtitle {
+	color: #b4b3b3;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.box-shows-events .shows-events-list .shows-events-info span {
+	color: #b4b3b3;
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Episodes */
+.episode-title {
+	color: #f4d078;
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+.episode-title .pager {
+	vertical-align: text-bottom;
+	margin-left: 10px;
+}
+
+/* Talk Box */
+.box-talk {
+	background: #424040;
+	margin-bottom: 20px;
+}
+.box-talk a {
+	color: #fdb813;
+}
+.box-talk .title {
+	background: #000 url(../img/talk-header.png) no-repeat 0 9px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 11px 0 21px 67px;
+	white-space: nowrap;
+}
+.box-talk .content {
+	color: #fff;
+	margin: 1px 11px 20px;
+}
+.box-talk .call-to-action {
+	background: #000;
+	clear: both;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 5px 11px;
+}
+.box-talk-type-b .call-to-action {
+	background: url(../img/talk-footer-bubble.png) no-repeat 0 0;
+	color: #000;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+	padding-top: 14px;
+	padding-bottom: 0;
+	-o-text-overflow: ellipsis; /* Opera */
+	text-overflow: ellipsis; /* IE6+, Safari, Konqueror, Standard? */
+	white-space: nowrap;
+}
+
+/* Category Lists - Like a list of Movies */
+.box-category-list {
+	background: #1b1b1a;
+	border: 3px solid #1b1b1a;
+	height: 211px;
+	overflow: auto;
+	padding: 10px;
+	position: relative;
+}
+.box-category-list ul {
+	margin: 0 0 0 14px;
+}
+.box-category-list li {
+	font-size: 14px;
+	margin: 3px 0 0 0;
+}
+.box-category-list li:first-child {
+	margin-top: 0;
+}
+
+
+.show_page_talk{
+	padding: 40px 0 0 0!important;
+	text-align: left;
+}
+
+/**
+ * Conversation lists
+ * Cool comment bubble styling
+ * @uses ie6.css
+ */
+ul.conversations {
+	list-style: none;
+	margin: 0;
+}
+ul.conversations a {
+	background: url(../img/bullet-comment.png) no-repeat 0 4px;
+	display: block;
+	font-weight: normal;
+	line-height: 20px;
+	overflow: hidden;
+	padding-left: 21px;
+}
+ul.conversations a .label {
+	cursor: pointer;
+	color: #fff;
+	float: left;
+	font-size: 13px;
+}
+ul.conversations a .go {
+	cursor: pointer;
+	float: right;
+}
+
+/* Latest News Box */
+.box-news {
+	background: #1b1b1b;
+	margin-bottom: 20px;
+}
+.box-news .content a {
+	color: #fff;
+	font-weight: normal;
+}
+.box-news .content ul {
+	font-size: 14px;
+	list-style: none;
+	margin-left: 0;
+}
+.box-news .title {
+	background: #000;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 6px 11px;
+}
+.box-news .content {
+	color: #fff;
+	margin: 1px 11px 8px;
+}
+.box-news .call-to-action {
+	background: #000;
+	clear: both;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 5px 11px 5px;
+}
+
+/* General search box styles */
+.search-container {
+	height: 30px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.search-container div {
+	display: inline;
+	float: left;
+	margin-left: 8px;
+}
+.search-container div:first-child,
+.search-container div.first-child {
+	margin-left: 0;
+}
+.search-container .s-input {
+	background: #22241e;
+	border: 1px solid #939090;
+	color: #939090;
+	display: block;
+	font-size: 14px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0;
+	padding: 5px 6px;
+	text-transform: lowercase;
+	width: 120px;
+}
+.search-container .s-button {
+	background: url(../img/search-btn.png) no-repeat top left;
+	height: 28px;
+	width: 62px;
+	border: 0;
+	cursor: pointer;
+}
+
+/* main site search results */
+#site-search-results .results-container {
+	background: #fff url(../img/layout/site-search-results-background.png) 0 0 repeat-y;
+	color: #656363;
+	padding:30px 0 0 0;
+}
+#site-search-results .results-links {
+	color: #000;
+	float: left;
+	width: 266px;
+}
+#site-search-results .results-links .links-title {
+	font-size: 20px;
+	margin: 0 0 4px 16px;
+}
+#site-search-results .results-links ul {
+	margin: 0 0 11px 0;
+}
+#site-search-results .results-links li {
+	font-size: 14px;
+	list-style: none;
+	padding: 5px 0 5px 33px;
+}
+#site-search-results .results-links a {
+	color: #000;
+}
+#site-search-results .results-links li.current {
+	background: #ecddb7;
+}
+#site-search-results .results-links li.current a {
+	font-weight: bold;
+}
+#site-search-results .results-content {
+	float: left;
+	padding: 0 21px;
+}
+#site-search-results .results-content .hr {
+	background: url(../img/layout/video-playlist-border-bottom.png) center 0 no-repeat;
+	height: 1px;
+}
+#site-search-results .results-content .hr hr {
+	display: none;
+}
+#site-search-results .results-content .results-title {
+	color: #000;
+}
+#site-search-results .results-content .results-title span {
+	font-weight: bold;
+}
+#site-search-results .results-content  .related-multimedia .multimedia-container {
+	float: left;
+	margin:0 0 0 15px;
+}
+#site-search-results .results-content  .related-multimedia .multimedia-container {
+	float: left;
+}
+#site-search-results .results-content  .related-multimedia .media-gallery {
+	background: none;
+}
+#site-search-results .results-content  .related-multimedia .media-gallery li {
+	width: 115px;
+	margin:0 0 0 15px;
+}
+#site-search-results .results-content  .related-multimedia .media-gallery li:first-child {
+	margin-left: 0px;
+}
+#site-search-results .related-programming li .programming-cell {
+	float: left;
+}
+
+/**
+ * Comments Style - used commonly
+ * Use with inline element
+ */
+.comments,
+a.comments {
+	color: #fdf7ae;
+	display: -moz-inline-box; /* FF2 */
+	display: inline-block; /* Standard. IE8+, Saf, FF3+ */
+	font-size: 30px;
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+.comments span {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+/* Callout Styling */
+
+.single-shows .cfct-block-abc .cfct-callout .cfct-mod-content{
+	padding: 0;
+}
+
+.single-shows .cfct-block-abc .cfct-callout .cfct-mod-title{
+	height: 22px;
+}
+
+/**
+ * Tab panels
+ */
+.tabs-our-blogs {
+	margin-bottom: 8px;
+}
+.tabs-our-blogs .tabs-nav {
+	/*border-bottom: 1px solid #6A6A6A;
+	height: 28px;*/
+	padding-left: 0;
+	margin-left: -7px;
+}
+.tabs-our-blogs .tabs-title {
+	margin-bottom: 0px;
+	text-align: left;
+}
+/* Get rid of background when not needed */
+.tabs-our-blogs .tabs-nav li:first-child a,
+.tabs-our-blogs .tabs-nav .ui-tabs-selected + li a {
+	background: transparent;
+}
+.tabs-our-blogs .tabs-nav a {
+	background: url(../img/sprite-y-2.8bit.png) no-repeat 0 -95px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 4px 10px 3px 10px;
+	text-decoration: underline;
+}
+.tabs-our-blogs .tabs-nav a:hover {
+	color: #e39b35;
+}
+
+.tabs-our-blogs .tabs-nav li.ui-tabs-selected a {
+	/*
+	color: #e39b35;
+	background: #4c3535;
+	border: 1px solid #6a6a6a;
+	border-bottom-width: 0;
+	*/
+	padding: 2px 9px 6px 9px;
+	/*margin-bottom: -1px;*/
+	position:relative;
+	bottom: -1px;
+	height: 20px;
+    top: 2px;
+}
+.tabs-our-blogs .panel {
+	/*
+	background: url(../img/layout/home-background-blogs-tabs.png) 0 0 repeat-x;
+	border: 1px solid #6a6a6a;
+	border-top-width: 0;
+	*/
+	color: #fff;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 265px;
+	/*min-height: 265px;*/
+	overflow: visible;
+	/*padding: 15px 10px 10px;*/
+}
+.tabs-our-blogs .entry-listed {
+	margin-bottom: 35px;
+}
+.tabs-our-blogs .panel .links-supplemental-list {
+	clear: both;
+	color: #e39b35;
+	margin-left: 22px;
+	display: none;
+}
+.tabs-our-blogs .panel .links-supplemental-list a {
+	color: inherit;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.promo.square {
+	margin-bottom:11px;
+}
+
+
+
+
+
+/* Content Browser styles */
+
+.box-content-browser .content-search-resultset {
+	padding: 23px 16px 0;
+}
+.box-content-browser .content-browser-filter-container {
+	background: url('../img/video-browser-picker-container-background.png') 0 0 repeat-x;
+	padding: 10px;
+}
+.box-content-browser .content-browser-filter-container select {
+	font-size: 16px;
+	margin-right: 8px;
+}
+.box-content-browser .box-media-item {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.box-content-browser .box-media-item .title {
+	font-size: 18px;
+	margin-bottom: 4px;
+	text-transform: none;
+}
+.box-content-browser .box-media-item .title span {
+	display: inline;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.box-content-browser .box-media-item .subtitle {
+	color: #b5b3b3;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: -4px;
+	margin-bottom: 4px;
+}
+
+.box-content-browser .content-browser-navigation {
+	color: #404040;
+	font-size: 18px;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+.loading {
+	background: url('../img/loading-overlay-background.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.loading-indicator {
+	background: url('../img/loading-indicator.gif') center no-repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+/*
+ * For Newsletter Subscription. Used across all shows, though each shows may have its own tweaks to it.
+ * 2011/02/14 Yoshitaka Ito
+ *
+ * Change the structure to match the new site design.
+ * Updated 2011/06 - Khalilah Martin
+ */
+
+.newsletter-wrapper {
+	margin:0 auto;
+	width:975px;
+	overflow:hidden;
+}
+.newsletter-wrapper .float-L {
+	float:left;
+	width:470px;
+}
+.newsletter-wrapper .float-R {
+	float:right;
+	width:345px;
+}
+.newsletter-wrapper .float-R iframe {
+	width: 345px;
+	height:500px;
+}
+
+.newsletter-wrapper #form-container {
+	padding-left: 10px;
+}
+.newsletter-wrapper #form-container #mso {
+	color:#000;
+}
+
+/* Echo River Styles */
+
+#echo-show-river {
+    height: 600px;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+}
+
+/* 2011/03/16 Yoshitaka Ito - For Flash Games */
+.flash-game-wrapper 					{ 	}
+.flash-game-wrapper .flv-holder 			{ width:810px; height:520px; padding:50px 0 10px;}
+.flash-game-wrapper .flv-holder iframe 		{ width:100%; height:100%; }
+.flash-game-wrapper .image-wrapper 			{ width:291px; }
+.flash-game-wrapper .centering-wrapper { text-align: center }
+.flash-game-wrapper .middle-container 		{ margin:0 auto; }
+.flash-game-wrapper .social-wrapper { padding : 10px 0;  }
+
+.flash-game-w-title .flv-holder { padding:30px 0 10px; }
+.flash-game-w-title h3.flv-title { font-size:20px; font-weight:normal; color:#888686; padding:20px 10px 0; margin:0; }
+
+
+/* 2011/07/26 */
+.social-counter-wrapper { padding : 0; text-align:center; }
+.social-counter-wrapper .direct-wrapper { overflow: hidden; }
+.social-counter-wrapper .align-center { text-align: center; }
+.social-counter-wrapper .align-left { text-align: left; }
+.social-counter-wrapper .align-right { text-align: right; }
+.single-videos .social-counter-wrapper { padding-bottom:20px; }
+.single-videos .social-counter-wrapper .align-left { padding-left:10px;  }
+
+
+/* 2011/03/17 Yoshitaka Ito - Adding Login Logout Control with Echo.
+   2011/04/29 Yoshitaka Ito - Added Styles for Echo Profile pages */
+.showOnLoggedIn,
+.showOnLoggedOut { display:none; }
+.fbox { overflow:hidden; }
+.fbox .f-left { float:left; }
+.fbox .f-right { float:right; }
+.echo2-submit-wrapper .login-wrapper { font-weight:bold; color: #FFF; }
+.echo2-nav { padding: 25px 0 0; }
+.echo2-nav * { color:#FFF; font-weight:bold; }
+.echo2-meta { display:none; }
+.echo-auth-logout { display:none; }
+.echo-item-container-child { margin-right:0; }
+.echo2-stream-sorter ul { list-style-type: none; }
+.echo2-stream-sorter ul li.sort-tab { display:inline; color:#444444; padding-right:10px; }
+.echo2-stream-sorter ul li.sort-tab:hover { cursor: pointer;  }
+.echo2-stream-sorter ul li.focus { display:inline; color:#CCCCCC; }
+.echo2-stream-sorter ul li.focus:hover { cursor: default; }
+.echo-item-container .echo-item-authorName .unanchored, .echo-item-container .echo-item-authorName .unanchored:hover { text-decoration:none; }
+.login-invoker:hover,
+.logout-invoker:hover { cursor:pointer; }
+.echo-item-user-role-moderator .echo-item-authorName a ,
+.echo-item-user-role-administrator .echo-item-authorName a {
+	padding: 4px 0 4px 30px;
+	background: transparent url(/users/app_img/badge/badge-admin_24.png) left top no-repeat;
+}
+.echo-stream-spoiler-wrapper { overflow:hidden; }
+.echo-stream-spoiler-wrapper .echo-stream-toggleSpoiler-wrapper {
+	margin-top:4px;
+ }
+.echo-stream-spoiler-wrapper .echo-stream-toggleSpoiler-wrapper .echo-stream-toggleSpoiler {
+	padding:4px 4px 8px 28px;
+	background: transparent url(/users/app_img/spoiler-open-icon_24.png) top left no-repeat;
+}
+.echo-stream-spoiler-wrapper .echo-stream-toggleSpoiler-wrapper .echo-stream-toggleSpoiler-visible {
+	background: transparent url(/users/app_img/spoiler-closed-icon_24.png) top left no-repeat;
+}
+.echo-stream-spoiler-wrapper .echo-stream-spoiler {
+	padding: 8px;
+}
+
+/* 2011/05/09 Yoshitaka Ito Echo Error Styling */
+#echo2-post-error-msg { padding:15px; }
+#echo2-post-error-msg .echo-error-msg { font-weight:bold; color:#000; }
+#echo2-post-error-msg .echo-error-user-comment { padding:5px 10px 20px; color:#666; }
+
+/* 2011/05/16 Yoshitaka Ito Banned Echo User Styling */
+body .echo-item-modeSwitch { margin-left:15px; }
+.echo-banned-user { margin: 15px 0; padding:20px; border:1px solid #ccc; color:#FFF; font-weight:bold; }
+.echo-item-userUtil {
+	float:right;
+	display : block;
+}
+.echo2-stream .echo-item-authorName { min-height:24px;}
+.echo-item-container .meta {
+	display : none;
+}
+.echo-item-userUtil .menu-1 {
+	display : none;
+	min-width:37px;
+	height:24px;
+	padding: 0;
+	margin-left:15px;
+	background: url("/users/app_img/gear-untouched_24x37.png") no-repeat scroll right top transparent;
+	cursor:pointer;
+	position:relative;
+	top:-1px;
+}
+.echo-item-container .echo-item-userUtil .menu-1-clicked {
+	background: url("/users/app_img/gear-clicked_24x37.png") no-repeat scroll right top transparent;
+}
+.echo-item-container:hover .echo-item-userUtil .menu-1 {
+	display : block;
+}
+.echo-item-container:hover .echo-item-userUtil .menu-1 .dropdown {
+	display : none;
+	top : 24px;
+	right : 0;
+	border: 1px solid #CCC;
+}
+.echo-item-userUtil .menu-1 a.entry {
+	display:block;
+	padding: 2px 10px;
+	background: #FFF none;
+	color: #666;
+	border-top:1px solid #b4b1b1;
+	z-index:4;
+	text-decoration:none;
+	margin: 0;
+}
+.echo-item-userUtil .menu-1 a.first-entry {
+	border-top:none;
+}
+.echo-item-userUtil .menu-1 a.entry:hover {
+	color:#000;
+	cursor:pointer;
+	background-color:#EEE;
+}
+
+#echo2-post-reportuser-msg { position:relative; top:0; left:0; }
+#reportuser-form { padding:10px; overflow:hidden; width: 400px; height:350px; }
+#reportuser-form * { color:#444; text-align:left; }
+#reportuser-form .row { padding-bottom:10px; }
+#reportuser-form .label { font-weight:bold; }
+#reportuser-form a, #reportuser-form-complete a { color:#476CB8; text-decoration:underline; }
+#reportuser-form a:hover, #reportuser-form-complete a:hover { text-decoration:none; }
+#reportuser-form .header { padding-bottom:10px;}
+#reportuser-form .header .rname { color:#000; font-weight:bold; }
+#reportuser-form .reported-user { overflow:hidden; padding: 20px 0; }
+#reportuser-form .reported-user .avatar img { float:left; max-width:48px; max-height: 48px; overflow:hidden; }
+#reportuser-form .reported-user .uname { float:left; padding-left:10px; font-weight:bold; }
+#reportuser-form .report-message { width:100%; height:80px; margin-top:5px; }
+#reportuser-form .button-wrapper div { margin:0 auto; padding-top:10px; text-align:center; }
+#reportuser-form .button-wrapper div input { padding: 0 2px; }
+#reportuser-form-complete { padding:10px; font-size:12px; color:#444; }
+#reportuser-form-complete .rname { font-weight:bold; }
+.progress-loader { background:transparent url(/users/app_img/ajax-loader-spin.gif) center center no-repeat; }
+#reportuser-form .error { color:#F00; padding:10px 10px; }
+
+/* Spam Report on 2011/05/20 Yoshitaka Ito*/
+#echo2-post-reportspammer-msg { width:400px; height:250px; padding:10px; text-align: left; }
+#echo2-post-reportspammer-msg * { color:#444;  text-align: left; font-size:12px; font-weight: normal; }
+#echo2-post-reportspammer-msg .rname { font-weight:bold; }
+#echo2-post-reportspammer-msg a { color:#476CB8; text-decoration:underline; }
+#echo2-post-reportspammer-msg a:hover { text-decoration:none; }
+
+/* DART Ad Styling
+   2011/03/16 Jesse Gardner */
+.rb-dart-sidebar {
+     margin-bottom: 20px;
+	 /*border: solid 1px #e8e8e8;*/
+     /*padding: 6px 20px 12px 20px;*/
+     color: #d8d8d8;
+     font-size: 11px;
+    /* text-align: center;*/
+}
+#social-links {
+    border-top: 1px solid #474747;
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    /*background-color: #101010;*/
+}
+
+#social-links a {
+    color: #efd6b7;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#social-links a:hover{
+	text-decoration: underline;
+}
+
+.rb-social-sidebar-outer .home-social{
+	background: transparent !important;
+}
+.rb-social-sidebar-outer #social-talk {
+
+}
+.rb-social-sidebar-outer #social-talk h1 {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+.rb-social-sidebar-outer #social-talk h1 a {
+    /* background-image: url('/wp-content/themes/amc/assets/master/img/talk-header-breaking-bad.png'); */
+    background-repeat: no-repeat;
+    background-position: 8px 4px;
+    color: #000;
+    height: 29px;
+    width: 320px;
+    display: block;
+    /* text-indent: -9999px; */
+}
+
+.rb-social-sidebar-outer #social-talk #social-talk-content {
+	/*
+    background-color: #4A3436;
+    background-image: -webkit-gradient(linear, left bottom, left top, to(#4A3436), from(#000000));
+    background-image: -moz-linear-gradient(center bottom,rgb(0,0,0) 45%,#4A3436 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A3436FF, endColorstr=#000000FF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A3436FF, endColorstr=#000000FF)";
+    */
+    background: #000 url(../img/newsletter/bg_newsletter-widget_312x97.png) repeat-x;
+    padding: 0 5px;
+    display: block;
+}
+
+
+
+.rb-social-sidebar-outer #social-talk #social-talk-content .social-bubble-tail {
+    background-image: url('/wp-content/themes/amc/assets/master/img/talk-bubble-tail.png');
+    background-repeat: no-repeat;
+    height: 13px;
+    width: 28px;
+    margin-bottom: 5px;
+}
+
+/*.rb-social-sidebar-outer.light #social-talk #social-talk-content .social-bubble-tail {
+    background-image: url('/wp-content/themes/amc/assets/master/img/talk-bubble-tail-light.png');
+}*/
+
+.rb-social-sidebar-outer #social-talk #social-talk-content .talk-article {
+    padding: 1px 0 1px 0px;
+    display: width: 100%;
+}
+
+.rb-social-sidebar-outer #social-talk #social-talk-content .talk-article .talk-link {
+    font-size: 14px;
+    display: block;
+    vertical-align: top;
+}
+
+.rb-social-sidebar-outer #social-talk #social-talk-content .talk-article .talk-title {
+    background-image: url('/wp-content/themes/amc/assets/master/img/talk-bubble.png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+    display: block;
+    vertical-align: top;
+    width: 170px;
+    padding: 0 0 0 30px;
+    font-size: 13px;
+    float: left;
+}
+
+.rb-social-sidebar-outer #social-talk #social-talk-content .talk-article .talk-replies {
+    font-size: 12px;
+    width: 85px;
+    text-align: right;
+    float: right;
+    padding: 0;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+    line-height: 22px;
+}
+
+.rb-social-sidebar-outer #social-talk .talk-link-out {
+    color: #d9efa1;
+    font-size: 14px;
+    margin:10px 0 0 0;
+    width: 300px;
+    display: block;
+}
+.rb-social-sidebar-outer #social-talk {}
+
+
+/*** Stunt Pages - Styles ***/
+
+.single-tentpoles .dart300x250Border, .single-tentpoles .advertisement.pos-mid {
+	color: #979797;
+	margin: -3px 0 0 0;
+}
+
+.single-tentpoles #subheader{
+	padding: 0;
+	display: none;
+}
+
+.single-tentpoles #subheader .additional-info{
+	position: relative;
+	left: 0;
+	top: 0;
+	background: none;
+	color: #979797;
+	padding: 10px 0 0 5px;
+}
+
+.single-tentpoles #subheader #nav-subheader-container{
+	display: none;
+}
+
+.single-tentpoles #main-body{
+	padding: 20px 0 0 0;
+}
+
+/* Online Exclusives header */
+.single-tentpoles .cfct-mod-title{
+	color: #979797;
+	background: url(../img/online-exclusives-hdr.png) top left no-repeat;
+	text-indent: -5000px;
+}
+.single-tentpoles .cfct-callout .cfct-mod-title{
+    background: none;
+    text-indent: 0px;
+}
+
+/* Echo River - Default Styling */
+
+.rb-social-widget {
+	background: #424040;
+	margin-bottom: 0px;
+}
+.rb-social-widget .box-echo-river{
+	margin: 0;
+}
+.rb-social-widget a {
+	color: #fdb813;
+}
+.rb-social-widget .title {
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 6px 0 5px 0px;
+	white-space: nowrap;
+	margin: 0;
+}
+.rb-social-widget .content {
+	color: #fff;
+	margin: 0;
+}
+.rb-social-widget .echo-stream-container{
+	padding: 0 10px;
+    background-color: #000;
+}
+.rb-social-widget .echo-stream-header{
+	margin: 5px 0;
+}
+
+.rb-social-widget .echo-item-container {
+    background-color: #000;
+}
+
+.rb-social-widget .echo-item-content .echo-item-authorName{
+	color: #fff;
+}
+.rb-social-widget .echo-item-content .echo-item-data,
+.rb-social-widget .echo-item-content .echo-item-data span,
+.rb-social-widget .echo-item-content .echo-secondaryColor{
+	color: #908e8e;
+}
+.rb-social-widget .echo-item-content .echo-item-data a,
+.rb-social-widget .echo-item-content .echo-secondaryColor a{
+	color: #dabc42;
+}
+.rb-social-links{
+	background: #000;
+}
+.rb-social-links #social-links{
+	background: #000;
+	padding: 10px;
+}
+.rb-social-links #social-links a{
+	color: #dabc42;
+}
+.rb-social-widget .echo-trinaryBackgroundColor{
+	background: #222222;
+}
+.rb-social-widget .echo-item-childrenMarker{
+	border-color: transparent transparent #222222;
+    border-style: solid;
+    border-width: 0 11px 11px;
+}
+
+/* Twitter and Social Hover States */
+
+.home-social a:hover{
+	text-decoration: underline;
+}
+
+.social-talk a:hover{
+	text-decoration: underline;
+}
+
+.box-talk a:hover{
+	text-decoration: underline;
+}
+
+.talk-link span:hover{
+	text-decoration: underline;
+}
+.talk-link-out:hover{
+	text-decoration: underline;
+}
+
+/* Discussion Section - Episode Pages */
+
+.panel .echo2-wrapper{
+	padding: 5px 20px;
+	margin: 0;
+	background: #111111;
+}
+.echo-primaryColor{
+	color: #777;
+}
+.panel .echo2-wrapper a{
+	color: #e39b35;
+}
+.panel .echo2-wrapper a:hover{
+	text-decoration: underline;
+}
+.echo2-nav li.sort-tab{
+	padding:4px 8px;
+	background-color:#222;
+	margin-right:4px;
+	color: #444444;
+}
+.panel .echo2-nav li.focus{
+	color: #fff;
+}
+.panel .echo2-nav li:hover{
+	text-decoration: underline;
+}
+.panel .counter-wrapper{
+	color: #fff;
+}
+.panel .echo-item-children .echo-item-authorName a{
+	color: #888686;
+}
+.panel .echo-submit-auth .echo-auth-name,
+.panel .echo-item-children .echo-item-authorName a{
+	color: #fff;
+}
+.echo-trinaryBackgroundColor{
+	background: #222;
+}
+.echo-item-childrenMarker{
+	border-color: transparent transparent #222;
+}
+.panel .echo-submit-body textarea{
+	color: #000;
+}
+.echo-application-message-icon{
+	color: #fff;
+}
+.echo-item-controls a{
+	color: #dedede;
+}
+.echo-item-controls a:hover{
+	text-decoration: underline;
+}
+/* set show specific colors:
+
+.panel .echo-item-controls a{
+	color: red;
+}*/
+#home-title-tw,
+#home-section-tw,
+#social-links{
+	/*background: #101010;*/
+	margin: 0;
+}
+
+body.page-videos #home-title-tw{display: none;}
+
+body.page-videos #body-b #main{
+	background: url("http://media.amctv.com/blog-rebrand-v1.0/img/video-hdr-104x80-1.png") no-repeat 5px 0px;
+	padding: 70px 0 0 0;
+}
+
+body.page-games #body-b #main{
+	background: url('http://media.amctv.com/blog-rebrand-v1.0/img/games-hdr-131x80.png') no-repeat top left;
+}
+
+body.page-games #body-b h2.cfct-mod-title{
+	background: url(http://media.amctv.com/blog-rebrand-v1.0/img/show-games-quizzes-208x26.png) no-repeat top left;
+}
+
+body.page-games #body-b .movies-games h2.cfct-mod-title{
+	background: url(http://media.amctv.com/blog-rebrand-v1.0/img/show-movie-quizzes-213x26.png) no-repeat top left;
+}
+
+body.page-shop .amc-shop .merchandise{
+	background: url('http://media.amctv.com/blog-rebrand-v1.0/img/merch-hdr-250x80.png') top left no-repeat;
+	height: 80px;
+	width: 250px;
+	display: block;
+	text-indent: -50000px;
+	left: 4px;
+}
+
+#social-links{
+	padding: 5px 0px;
+	width: 280px;
+	border-top: 1px solid #474747;
+}
+
+body.page-videos #social-links{
+	border-top: none;
+}
+
+body.page-videos #social-links .twbg{
+	background: url(../img/hp_follow_us_on_twitter.png) no-repeat top left;
+	height: 17px;
+	width: 206px;
+	display: block;
+	text-indent: -10000px;
+}
+
+#social-links a{
+	color: #e39b35;
+}
+#home-title-tw{
+	padding: 7px 0 0 10px;
+	width: 290px;
+	margin: 25px 0 0 0;
+}
+#home-section-tw{
+	width: 300px;
+}
+.popular-on-twitter .pot-url .text{
+	color: #CCCCCC;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+}
+.popular-on-twitter .pot-url .text:hover{
+	text-decoration: underline;
+}
+.single-shows .popular-on-twitter .pot-url .text{
+	font-size: 12px;
+}
+.popular-on-twitter .pot-tweets .count{
+	color: #808080;
+	font-size: 11px;
+	clear: left;
+	display: block;
+}
+.popular-on-twitter .pot-tweets .count:hover{
+	text-decoration: underline;
+}
+.popular-on-twitter .pot{
+	margin-bottom: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+	list-style: none;
+	border-bottom: 1px solid #474747;
+}
+.popular-on-twitter div{
+	margin:0;
+	padding: 5px 0 5px 10px;
+}
+.popular-on-twitter .pot li{
+	padding: 5px 0;
+	list-style: none;
+}
+
+/* Generic Styling for the Quiz Widget */
+/* note: styling the loop module for easy implementation - JDG */
+
+.single-shows .cfct-module-loop .cfct-mod-content {
+background-color: #222;
+padding: 0;
+margin: 0;
+max-height: 151px;
+overflow-y: auto;
+}
+.single-shows .cfct-module-loop .cfct-mod-content ul {
+padding: 0;
+margin: 0;
+}
+.single-shows ul.cfct-module-loop li {
+list-style: none;
+border-bottom: solid 1px #000;
+padding: 4px 12px;
+
+}
+.single-shows ul.cfct-module-loop li a {
+font-size: 13px;
+color: #ffd291;
+}
+.single-shows ul.cfct-module-loop li a:hover {
+color: #fff;
+}
+.single-shows .cfct-module-loop h2 {
+color: #fff !important;
+}
+.echo-user-list-container span{
+	color: #fff !important;
+}
+
+#upcoming-programs-full .title{
+	color: #fff;
+}
+
+/* Page Nav for Individual Video Pages */
+.page-nav-links {
+font-size: 13px;
+padding-top: 10px;
+margin-bottom: 30px;
+color: #444;
+color: rgba(255,255,255,.2);
+}
+.page-nav-links a {
+opacity: .7;
+}
+.page-nav-links a:hover {
+opacity: 1;
+}
+
+
+
+/* Weekly Polls Widget */
+body .polls-widget { width:316px; border:1px solid #d4dadb; padding-top:40px; background: #222 url(../img/weekly-question-logo_168x16.png) 14px 14px no-repeat; }
+body .polls-widget-box { margin:5px auto 16px; padding:12px; border:3px solid #6f6b6b; width:242px; background-color:#FFF; }
+body .polls-widget .polls-widget-box * { color:#000; }
+body .polls-widget .polls-widget-box a { collor:#69d5fe; }
+
+
+/*  */
+
+body .rb-character-twitter-feed-widget { -moz-border-radius: 7px; border-radius: 7px; margin-bottom:30px; }
+body .rb-character-twitter-feed-widget .twitter-widget-top { padding:8px 10px 7px; }
+body .rb-character-twitter-feed-widget .twitter-widget-bottom {  line-height:16px; Font-Family: “Trebuchet MS”, Helvetica, sans-serif; color:#FFF; font-size:14px; padding:8px 12px 7px; }
+body .rb-character-twitter-feed-widget .twitter-widget-bottom  * { line-height:16px; Font-Family: “Trebuchet MS”, Helvetica, sans-serif; color:#FFF; font-size:14px; }
+body .rb-character-twitter-feed-widget .twitter-widget-bottom img { padding-left:2px; position:relative; top:2px; }
+body .rb-character-twitter-feed-widget .twtr-hd { display:none; }
+body .rb-character-twitter-feed-widget .twtr-ft { display:none; }
+
+
+
+/** Newsletter Widget */
+/*************/
+body .newsletter-widget-module {  }
+body .newsletter-widget-module .submit-button { line-height:0!important; color:transparent; }
+body .newsletter-widget-module .field-area,
+body .newsletter-widget-module .complete-success,
+body .newsletter-widget-module .complete-fail  { }
+body .newsletter-widget-module .pp_html { clear: both; margin: 0 auto; font-size: 12px; padding: 15px 0; }
+body .newsletter-widget-module fieldset * { border:none; margin:0; padding:0; font-size:11px; }
+body .newsletter-widget-module fieldset .email-box { margin:0 auto; display:block; padding-bottom:5px; }
+body .newsletter-widget-module fieldset .signup { padding:10px 5px 5px; }
+body .newsletter-widget-module fieldset b { display: none; padding: 8px 4px; font-size: 12px; font-weight:bold; }
+body .newsletter-widget-module fieldset .text { height: 25px; width: 260px; font-size: 11px; background: #ffffff; margin-bottom:5px; color:#666; padding:0 4px; }
+body .newsletter-widget-module fieldset .email-box input { width:280px; background: #000; color: #c7c7c7; border: 1px solid #c7c7c7; }
+body .newsletter-widget-module fieldset #mso,
+body .newsletter-widget-module fieldset #mso * { color:#000; }
+body .newsletter-widget-module fieldset input.error,
+body .newsletter-widget-module fieldset select.error { border:1px dotted #F00; }
+body .newsletter-widget-module fieldset .error-msg { color:#F00; font-size:11px; font-weight:normal; line-height:14px; padding:10px 0 0; }
+body .newsletter-widget-module fieldset .watch-title { padding:20px 0px 5px; font-family: Arial, Helvetica; font-size: 17px; }
+body .newsletter-widget-module fieldset .provider-submit-box { overflow:hidden }
+body .newsletter-widget-module fieldset .provider-submit-box .cb-wrapper {float:left;}
+body .newsletter-widget-module fieldset .provider-submit-box .button-wrapper {float:left;padding-left:35px;}
+body .newsletter-widget-module-in-progress fieldset { opacity:0.7; filter:alpha(opacity=70); }
+body .newsletter-widget-module .complete-success { padding:10px 15px; }
+body .newsletter-widget-module .complete-success .description { padding:10px 0; color:#FFF; }
+body .newsletter-widget-module .complete-success ul * { color:#FFF; }
+body .newsletter-widget-module .complete-success .postscript { padding:0 0 10px; }
+body .newsletter-widget-module .complete-fail { padding:10px 15px; }
+body .newsletter-widget-module .complete-fail .description { color:#F00; padding:10px 0; color:#FFF; }
+
+
+body .newsletter-full-widget-module { background-color:#CCC; padding:10px 20px 25px;}
+body .newsletter-full-widget-module div.header { background:transparent url(../img/newsletter/amc-header_196x60.png) left top no-repeat; width:196px; height:60px; text-indent: 100%; white-space: nowrap; overflow: hidden;}
+body .newsletter-full-widget-module .email-box input { width:280px; padding:0; margin:8px 0 0; }
+body .newsletter-full-widget-module .watch-title { color:#000; font-weight:bold; padding:8px 0 8px; }
+body .newsletter-full-widget-module .cb-wrapper { padding-bottom:8px; }
+body .newsletter-full-widget-module b.title { color:#000; padding-bottom:8px; display:block; }
+body .newsletter-full-widget-module ul { margin:0 0 0 4px;padding:0 0 8px 0; }
+body .newsletter-full-widget-module ul li { color:#000; list-style-type:none; padding-bottom:2px; }
+body .newsletter-full-widget-module-in-progress fieldset { opacity:0.7; filter:alpha(opacity=70); }
+body .newsletter-full-widget-module .submit-button {  background:url("../img/newsletter/amc-submit_60x23.png") no-repeat scroll top left transparent; width:60px; height:23px; line-height:1000px; overflow:hidden; font-size:0; border:none; }
+body .newsletter-full-widget-module .error-msg { padding:10px; }
+body .newsletter-full-widget-module .error-msg * { color:#F00; }
+body .newsletter-full-widget-module .form-copy-3,
+body .newsletter-widget-form .form-copy-3 { clear: both; padding-top: 10px; margin-bottom: 10px; }
+body .newsletter-full-widget-module .form-copy-3 a,
+body .newsletter-widget-form .form-copy-3 a { text-decoration: none; }
+body .newsletter-full-widget-module-complete .header { display:none; }
+body .newsletter-full-widget-module-complete .description1 { color:#923120; font-size:16px; font-weight:bold; padding:20px 0 8px; }
+body .newsletter-full-widget-module-complete .description2 { color:#000; font-size:12px; padding:0 0 8px; }
+body .newsletter-full-widget-module-complete ul { list-style-type:disc;  }
+body .newsletter-full-widget-module-complete ul li {  list-style-type:disc; margin:0 0 0 25px; padding:0; }
+
+li.rb-video-loop{
+	list-style-type: none;
+}
+
+
+/** Video Tout Widget */
+.amc-video-tout-widget { padding:13px 13px 18px; border:1px solid #222222; }
+.amc-video-tout-widget .video-tout-header { width:233px; height:16px; background:transparent url(../img/video-tout-header_233x16_replica_font.png) left top no-repeat; margin: 5px 0; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+.amc-video-tout-widget ul.video-tout-body { margin:0; padding:12px 0 2px;  list-style-type:none;}
+.amc-video-tout-widget ul.video-tout-body li { padding:0 0 10px; }
+.amc-video-tout-widget a { overflow:hidden; display:block; }
+.amc-video-tout-widget a img { display:block; float:left; padding-right:10px; width:28px; height:20px; }
+.amc-video-tout-widget a span { display:block; float:left; line-height:20px; vertical-align:middle;  }
+
+
+/** Amc Movie List Widget */
+.amc-movie-guide-list-widget { padding:15px 0; }
+.amc-movie-guide-list-widget h4.title {
+	background:#000 url('../img/amc-movie-list-216x36.png') top left no-repeat;
+	width:249px;
+	height:36px;
+	padding: 0 0 5px 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin:0 0 0 5px;
+}
+.amc-movie-guide-list-widget ul {
+	background:#000 url(../img/movie-guide-list-widget_bg_331x155.png) top left no-repeat;
+	width:286px;
+	padding:10px 7px 0;
+}
+.amc-movie-guide-list-widget ul li { padding-bottom:5px; font-size:12px; }
+.amc-movie-guide-list-widget ul li a { color:#FFF }
+.amc-movie-guide-list-widget ul li span { color:#F2C888; padding-right:2px; }
+.amc-movie-guide-list-widget .mlw-footer { padding:0 7px 5px; }
+.amc-movie-guide-list-widget .mlw-footer * { font-size:12px;  }
+
+
+/** Newsletter Widget */
+.amc-newsletter-widget { padding:15px 0; }
+.amc-newsletter-widget div.header {
+	background:transparent url('../img/sign-up-282x23.png') left top no-repeat;
+	width:288px;
+	height:25px;
+	padding: 0 0 5px 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left:5px;
+}
+.amc-newsletter-widget .submit-button {
+	background: url("../img/submit-button.gif") no-repeat scroll top left transparent;
+	width: 62px;
+	height: 26px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+}
+
+
+
+/** AMC Original Episode Schedule Widget */
+.schedule-originals-sidebar {
+	padding-bottom: 30px;
+}
+.schedule-originals-sidebar * {
+	color: #b5b3b3;
+}
+.schedule-originals-sidebar h4.title {
+	font-size: 20px;
+	font-weight: normal;
+}
+.schedule-originals-sidebar ul * {
+	font-size: 14px;
+}
+.schedule-originals-sidebar ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+	padding-left: 0;
+	margin-left: 0;
+	overflow: visible;
+}
+.schedule-originals-sidebar ul li div {
+	padding: 0 0 2px 2px;
+	margin: 0 30px 2px 0;
+	border-bottom: 1px solid #b5b3b3;
+}
+.schedule-originals-sidebar .schedule-originals-sidebar-footer a {
+	color: #b5b3b3;
+	font-size: 14px;
+}
+
+.social-show-links {
+	width:300px;
+	height:45px;
+	text-align:right;
+	padding-right:0;
+	background-repeat:no-repeat;
+	font-size:0;
+}
+
+.social-show-links a {
+	display:inline-block;
+	margin:5px 0 0 1px;
+}
+
+
+body .newsletter-widget-module .header {
+	background-image:url("../img/AMC-sign-up-for-news.png");
+	width:300px;
+	height:36px;
+  text-indent: -5000px;
+}
+
+body.shows-slug-where-to-watch #main {
+  display:block;
+}
+
+/* Hero Tout Carousel Module */
+
+
+.hero-carousel-featured-container {
+	height: 551px;
+	position: relative;
+	overflow: hidden;
+	font-family: Arial, Helvetica;
+}
+
+.hero-carousel-featured-container ul{
+	margin-left: 0px;
+}
+
+.hero-carousel-featured .box-tout-main-sub,
+.hero-carousel-featured .box-tout-main{
+	height: 551px;
+}
+.hero-carousel-featured ul.rb-header-touts-carousel-items {
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: inherit;
+}
+.hero-carousel-featured li {
+	height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: inherit;
+}
+
+.cfct-module-image img {
+  max-width: 100%;
+  height: auto;
+}
+.shows-slug-newsletter-subscription #content, .page-newsletter-subscription #content {
+  padding: 15px 0 0 0;
+}
+.shows-slug-newsletter-subscription .cfct-block-ab, .page-newsletter-subscription .cfct-block-ab {
+	margin-right:10px;
+	width:630px;
+}
+
+
+.hero-carousel-featured .cfct-module {
+	margin: 0px;
+}
+.rb-header-tout,
+.rb-header-tout-video {
+	margin: 0 !important;
+}
+.hero-carousel-featured-control-panel a {
+	display: block;
+	height: 52px;
+	position: absolute;
+	top: 250px;
+	width: 44px;
+	z-index: 98;
+	opcaity:0.8;
+}
+
+.hero-carousel-featured-control-panel a.prev {
+	background: url(../img/hero-header-prev.png) 0 0 no-repeat;
+	left: 0px;
+	opacity: 0.7;
+}
+.hero-carousel-featured-control-panel a.prev:hover {
+	opacity:1;
+}
+.hero-carousel-featured-control-panel a.next {
+	background: url(../img/hero-header-next.png) 0 0 no-repeat;
+	right: 0px;
+	opacity: 0.7;
+}
+.hero-carousel-featured-control-panel a.next:hover {
+	opacity:1;
+}
+.carousel-items-1 .hero-carousel-featured-control-panel,
+.carousel-items-0 .hero-carousel-featured-control-panel {
+	display: none;
+}
+
+.hero-carousel-featured .content-container .btn,
+.hero-carousel-featured .content-container .btn span{
+	background: none;
+}
+
+.hero-carousel-featured .content-container .btn span{
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	padding:0px;
+	font-family: Arial, Helvetica;
+}
+
+.hero-carousel-featured .content-container .btn{
+	background-color: #e1d87e;
+	background-image: url(../img/cta_arrow.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	padding:10px 15px 10px 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.home .hero-carousel-featured .content-container .btn span,
+body.show-game-of-arms .hero-carousel-featured .content-container .btn span,
+body.show-immortalized .hero-carousel-featured .content-container .btn span{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	padding:0px;
+	font-family: Arial, Helvetica;
+}
+
+.home .hero-carousel-featured .content-container .btn,
+body.show-game-of-arms .hero-carousel-featured .content-container .btn,
+body.show-immortalized .hero-carousel-featured .content-container .btn{
+	background-color: #cd3229;
+	background-image: url(../img/cta_arrow_white.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	padding:10px 15px 10px 30px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+.hero-carousel-featured-container .content-container .content p a:before{
+	content: '\203A';
+	margin-right: 5px;
+	font-size: 25px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.hero-carousel-featured-container .content-container .content p a.ctaFullLink{
+	display: none;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .content-container{
+	width: 450px;
+	margin-top: 0px !important;
+	bottom: 15%;
+	position: absolute;
+	z-index: 2;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .content-container .graphic-logo{
+	position: relative;
+	z-index: 3;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .content-container .graphic-logo:hover{
+	opacity:.9;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .content-container .call-to-action{
+	position: relative;
+	z-index: 3;
+	display: inline;
+}
+
+
+.amc-hero-carousel-item .box-tout-main-sub a{
+	font-size: 18px;
+	font-weight: 100;
+	font-family: Helvetica, Arial;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .caption .content p a{
+	position: relative;
+	z-index: 4;
+}
+
+.amc-hero-carousel-item .ctaFullLink{
+	width: 100%;
+	display: block;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top:0;
+}
+
+
+.amc-hero-carousel-item .box-tout-main-sub .content p{
+	font-size: 18px;
+	font-weight: 100;
+	font-family: Helvetica, Arial;
+}
+
+.amc-hero-carousel-item .box-tout-main-sub .title{
+	font-size: 34px;
+	font-weight: 300;
+	font-family: Arial, Helvetica;
+}
+
+.amc-hero-carousel .hero-carousel-featured-control-panel .pagination-carousel{
+	display: block;
+	top: -45px;
+	position: relative;
+	left: -50%;
+	float: left;
+	padding: 5px;
+	z-index: 20;
+}
+
+.amc-hero-carousel .buttonContainer{
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+.hero-carousel-featured-control-panel .pagination-carousel a{
+	display: block;
+	position: relative;
+	float: left;
+	color: #fff;
+	opacity: 0.7;
+	top:0;
+	width: 8px;
+	height: 8px;
+	left: 0;
+	background-image: url(../img/pagination_btn.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	text-indent: -10000px;
+	margin: 0 4px;
+}
+
+.hero-carousel-featured-control-panel .pagination-carousel a.activeSlide,
+.hero-carousel-featured-control-panel .pagination-carousel a:hover{
+	opacity: 1;
+}
+
+.amc-hero-carousel .box-tout-main-sub .media-container{
+	top: 25px;
+	right: 0px;
+	width: 287px;
+	height: 112px;
+	z-index: 2;
+}
+
+.amc-hero-carousel .box-tout-main-sub .media-container img{
+	border: none;
+	float: right;
+	-moz-box-shadow:    -2px 3px 8px 2px #000;
+	-webkit-box-shadow: -2px 3px 8px 2px #000;
+	box-shadow:         -2px 3px 8px 2px #000;
+}
+
+
+/* END Hero Tout Carousel Module */
+
+
+/* Live Stream Header */
+
+
+#dropdown-live .stream-schedule{
+    background: none;
+    padding: 0px 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#dropdown-live .stream-now{
+    width: 47%;
+    float: left;
+    border-right: 1px solid #414141;
+    padding-right: 3%;
+}
+
+#dropdown-live .stream-next{
+    width: 45%;
+    float: left;
+    padding: 0 0 0 4%;
+}
+
+#dropdown-live #box-right{
+    margin-top: 0px;
+}
+
+#dropdown-live .stream-schedule .schedule-label{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+#dropdown-live .stream-schedule .stream-title{
+    font-weight: normal;
+    font-size: 24px;
+    display: inline;
+    padding-top: 0px;
+    text-transform: none;
+    color: #fff;
+}
+
+#dropdown-live .stream-schedule .stream-rating{
+    display: inline;
+    font-size: 15px;
+    margin-left: 7px;
+    padding-top: 7px;
+    color: #707070;
+}
+
+#dropdown-live .stream-schedule .stream-episode-title{
+    clear: both;
+    font-size: 17px;
+    display: block;
+    clear: both;
+    position: relative;
+    top: -2px;
+}
+
+#dropdown-live .stream-schedule .mobile-schedule-label{
+	display: none;
+}
+
+#dropdown-live .stream-schedule .stream-time{
+    float: right;
+    font-size: 22px;
+    margin-top: -4px;
+}
+
+#dropdown-live .stream-schedule p.stream-description{
+    color: #707070;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#dropdown-live .watchNowBtn{
+	margin-left: 25px;
+}
+
+#dropdown-live .watchNowBtn a{
+	background: url('../img/btn_watch_now.png') no-repeat top left;
+	height: 31px;
+	width: 104px;
+	color: #000;
+	font-size: 18px;
+	padding: 6px 0 0 25px;
+	display: block;
+	float: left;
+}
+
+#dropdown-live .watchNowFullSch a{
+	float: right;
+	font-size: 18px;
+	color: #d6c773;
+	margin-right: 30px;
+	margin-top: 10px;
+	display: none;
+}
+
+#dropdown-live .watchButtons{
+	padding: 25px 0;
+}
+
+#body-f #dropdown-live .stream-schedule .stream-differs{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+/* END Live Stream Header */
+
+
+
+
+
+/* Live Stream Schedule Page */
+
+
+body.page-template-page-schedule-php .scheduleLiveStream{
+	padding: 0px 0px 20px 0;
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream h3{
+	color: #fff;
+	font-size: 26px;
+	font: 32px/1em "AvantGardeGothicITCW01X", Arial, sans-serif; 
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream .lsOnNow{
+	background: #f2c888;
+	color: #000;
+	font-size: 16px;
+	padding: 7px 10px 5px 10px;
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream .lsOnSecond{
+	background: #252525;
+	color: #fff;
+	font-size: 16px;
+	padding: 7px 10px 5px 10px;
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream .lsOnThird{
+	background: #000000;
+	color: #fff;
+	font-size: 16px;
+	padding: 7px 10px 5px 10px;
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream .raquo{
+	font-size: 21px;
+	line-height: 5px;
+	font-family: Arial;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+body.page-template-page-schedule-php .scheduleLiveStream a:hover{
+	text-decoration: none !important;
+	border-bottom: none;
+}
+
+body.page-template-page-schedule-php .liveOnNow{
+	display: block;
+	float: left;
+	width: 70px;
+}
+
+body.page-template-page-schedule-php #lsActiveShow{
+	float: left;
+	width: 200px;
+}
+
+
+/* END Live Stream Schedule Page */
+
+
+/* SCHEDULE PAGE LIVE STREAM Widget */
+
+.schedulePageSmallStream{
+	margin-bottom: 30px;
+}
+
+.schedulePageSmallStream a,
+.schedulePageSmallStream a div,
+.schedulePageSmallStream a span,
+.schedulePageSmallStream a:hover,
+.schedulePageSmallStream a div:hover,
+.schedulePageSmallStream a span:hover{
+	text-decoration: none !important;
+	color: #fff;
+}
+
+.schedulePageSmallStream a .current-item div,
+.schedulePageSmallStream a .current-item span,
+.schedulePageSmallStream a .current-item h2{
+	color: #f2c888;
+}
+
+.schedulePageSmallStream .stream-rating,
+.schedulePageSmallStream .stream-episode-title,
+.schedulePageSmallStream .stream-description,
+.schedulePageSmallStream .stream-differs{
+	display: none;
+}
+
+.schedulePageSmallStream .current-item{
+	background: #000;
+	color: #f2c888;
+	padding: 7px 10px 5px;
+}
+
+.schedulePageSmallStream .current-item .stream-title{
+	display: inline;
+	margin: 0 5px;
+}
+
+.schedulePageSmallStream .current-item .schedulePageRq{
+	font-size: 21px;
+	font-family: Arial;
+	line-height: 16px;
+}
+
+.schedulePageSmallStream .schedInnerLbl,
+.schedulePageSmallStream .schedulePageRq,
+.schedulePageSmallStream .inlinecomma,
+.schedulePageSmallStream .stream-title{
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.schedulePageSmallStream .schedule-content{
+	font-size: 16px;
+}
+
+.schedulePageSmallStream .next-item{
+	background: #000;
+	padding: 9px 10px 7px;
+}
+
+.schedulePageSmallStream .third-item{
+	background: #000;
+	padding: 7px 10px 5px;
+}
+
+.schedulePageSmallStream .fourth-item{
+	background: #000;
+	padding: 7px 10px 5px;
+}
+
+.schedulePageSmallStream .amcSchedLeft{
+	width: auto;
+	float: left;
+}
+
+.schedulePageSmallStream .amcSchedRight{
+	width: 200px;
+	float: left;
+	margin-left: 5px;
+}
+
+.schedulePageSmallStream .current-item .amcSchedRight{
+	margin-left: 2px;
+}
+
+.schedulePageSmallStream .stream-time{
+	text-transform: uppercase;
+}
+
+.schedulePageSmallStream .current-item .stream-time{
+	display: none;
+}
+
+.schedulePageSmallStream .tveLiveHeader{
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/* END SCHEDULE PAGE LIVE STREAM Widget */
+
+.amc-module-video-loop h2.title-linked a{
+	text-indent: 140%;
+	background: url(../img/video-extras.png) no-repeat 0 0;
+	height: 21px;
+	width: 198px;
+	margin-top: 10px!important;
+}
+
+.amc-module-video-loop h2.title{
+	text-indent: 140%;
+	background: url(../img/video-extras.png) no-repeat 0 0;
+	height: 21px;
+	width: 198px;
+	margin-top: 10px!important;
+}
+
+.caption .content .tveLinkContainer{
+	background: #e2dc81;
+	float: left;
+	margin-right: 20px;
+   	margin-bottom: 33px;
+}
+
+.caption .content .tveLink{
+	background-image: url(../img/blk_arrow_30.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	padding: 9px 10px 5px 30px;
+	color: #000;
+	font-size: 1em;
+	display: block;
+}
+
+.picker-controls .menu h3 {
+	margin-bottom: 0;
+}

@@ -1,0 +1,43 @@
+.social-sidebar iframe {
+    border: none !important;
+}
+
+.social-sidebar .social-popular-twitter {
+    padding: 0;
+}
+.social-sidebar .social-popular-twitter ul {
+    margin: 0;
+}
+.social-sidebar .social-popular-twitter ul li {
+    list-style: none;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+.social-sidebar .social-popular-twitter ul li .pot-tweets {
+    display: block; clear: both;
+}
+.social-sidebar .social-popular-twitter ul li .pot-tweets a {
+    color: #fff;
+}
+.social-sidebar .social-popular-twitter a {
+    color: #ffd392;
+}
+
+.social-sidebar.mad-men .social-popular-twitter {
+    border: 1px solid #ccc;
+    padding: 10px; 
+}
+.social-sidebar.mad-men .social-popular-twitter ul li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.social-sidebar.mad-men .social-popular-twitter ul li .pot-tweets {
+    display: block; clear: both;
+}
+.social-sidebar.mad-men .social-popular-twitter ul li .pot-tweets a {
+    color: #000;
+}
+.social-sidebar.mad-men .social-popular-twitter a {
+    color: #7F0E00;
+}

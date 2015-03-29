@@ -1,0 +1,160 @@
+/* =========================================
+AMC Schedule Styling */
+
+
+/*body.page-template-page-schedule-php {
+	background: #000;
+}*/
+
+body.page-template-page-schedule-php #container {
+	background: transparent;
+}
+
+body.page-template-page-schedule-php a {
+	color: #f2c888;
+}
+
+/* Date Finder */
+
+body.page-template-page-schedule-php #day-selector .date-link {
+	color: #ffffcc;
+}
+body.page-template-page-schedule-php #day-selector .date-link abbr {
+	color: #ecebeb;
+}
+body.page-template-page-schedule-php #day-selector .today a {
+	background: transparent url(../img/day-selector-today-amc.png) top no-repeat !important;
+	color: #000;
+}
+body.page-template-page-schedule-php #day-selector .today a abbr {
+	color: #000;
+}
+body.page-template-page-schedule-php #day-selector .active a,
+body.page-template-page-schedule-php #day-selector .date-link:hover {
+	background: transparent url(../img/day-selector-amc.png) top no-repeat !important;
+	color: #000;
+}
+body.page-template-page-schedule-php #day-selector .active a abbr,
+body.page-template-page-schedule-php #day-selector .date-link:hover abbr {
+	color: #000;
+}
+body.page-template-page-schedule-php #week-next a {
+	background: url(../img/week-next-amc.png) no-repeat right top;
+}
+body.page-template-page-schedule-php #week-previous a {
+	background: url(../img/week-prev-amc.png) no-repeat right top;
+}
+
+/* Schedule Results */
+
+body.page-template-page-schedule-php .item {
+	background: #0f0f0f;
+	border-bottom-color: black;
+}
+body.page-template-page-schedule-php h4.item-title a {
+	color: #fff;
+}
+body.page-template-page-schedule-php .item-time {
+	font-weight: normal;
+	color: #fff;
+}
+body.page-template-page-schedule-php .item-description {
+	color: #d0d0d0;
+}
+body.page-template-page-schedule-php .item-meta a {
+	color: #f2c888;
+	font-weight: normal;
+}
+body.page-template-page-schedule-php #schedule-search-field {
+	background: #000;
+	color: #ebebeb;
+	border: 1px solid #828282;
+}
+body.page-template-page-schedule-php #schedule-search-submit {
+	width: 100px;
+	height: 30px;
+	border: solid 1px transparent;
+	color: #fff;
+	background: #c84d1d url(../img/button-search-tile-amc.png) bottom repeat-x;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+body.page-template-page-schedule-php #current {
+	border: solid 1px #493c29;
+}
+
+body.page-template-page-schedule-php #schedule-content .paid {
+	background: #222;
+	border: solid 1px transparent;
+	color: #444 !important;
+	font-size: 16px;
+}
+
+/* Show All Airtimes */
+body.page-template-page-schedule-php #show-all-link {
+	background: #333;
+	border: solid 1px #444;
+	color: #fff !important;
+	opacity: .8;
+}
+body.page-template-page-schedule-php #show-all-link:hover {
+	opacity: 1 !important;
+	text-decoration: none;
+}
+
+/* Results Header */
+
+body.page-template-page-schedule-php #results-header {
+	color: #fff;
+}
+
+/* Search Filtering */
+
+body.page-template-page-schedule-php #schedule-filters-series ul li a,
+body.page-template-page-schedule-php #schedule-filters-genres ul li a {
+	margin-bottom: 1px;
+}
+body.page-template-page-schedule-php #schedule-filters-series ul li a:hover,
+body.page-template-page-schedule-php #schedule-filters-genres ul li a:hover {
+	background-color: #e6d4ac;
+	color: #000;
+}
+body.page-template-page-schedule-php #schedule-filters-series a.active,
+body.page-template-page-schedule-php #schedule-filters-genres a.active {
+	color: #000;
+	background-color: #e6d4ac;
+}
+body.page-template-page-schedule-php #schedule-filters-series ul li a:hover,
+body.page-template-page-schedule-php #schedule-filters-series ul li a.active {
+	text-decoration: none;
+	background-color: #e6d4ac;
+	color: #000;
+	font-weight: bold;
+}
+/* Timezone Selector */
+body.page-template-page-schedule-php #schedule-timezone a.active,
+body.page-template-page-schedule-php #schedule-timezone a:hover {
+	background-color: #d65523;
+}
+/* Channel Finder */
+body.page-template-page-schedule-php #schedule-cfinder {
+	border-color: #222;
+}
+/* Schedule search loader */
+body.page-template-page-schedule-php .loading-results {
+	background: transparent url(../img/ajax-loader-amc.gif) left no-repeat;
+	color: #333;
+}
+/* Schedule reminder form */
+body.page-template-page-schedule-php .reminder-form {
+	color: #f4e7d2;
+	border: none;
+	background: #f8f4f2;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#382727', endColorstr='#000'); /* for IE */
+	background: -webkit-gradient(linear, top, bottom, from(#382727), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(90deg, #000, #382727); /* for firefox 3.6+ */
+}
+body.page-template-page-schedule-php .reminder-form h4 {
+	color: #fff;
+}
+

@@ -1,0 +1,789 @@
+/** @package amc
+ * Structural styles
+ ================================================== */
+
+/** @section structural classes
+ * Essentially mimics Build row dimensions for hard-coded templates
+ -------------------------------------------------- */
+/**
+ * Set overflow and floats
+ */
+.str-col-ab,
+.str-col-bc,
+.str-col-a,
+.str-col-b,
+.str-col-c,
+.str-col-d,
+.str-col-e,
+.str-col-f,
+.str-col-g,
+.str-col-h,
+.str-col-i {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+.str-col-abc {
+	display: block;
+	overflow: hidden;
+}
+
+/**
+ * Margins
+ */
+.str-col-ab,
+.str-col-a,
+.str-col-b,
+.str-col-d,
+.str-col-f,
+.str-col-g,
+.str-col-h {
+	margin-right: 50px;
+}
+
+/**
+ * Widths
+ */
+.str-col-ab,
+.str-col-bc {
+	width: 590px;
+}
+.str-col-a,
+.str-col-b,
+.str-col-c {
+	width: 340px;
+}
+
+.str-col-abc {
+	width: 100%;
+}
+
+/* Site Structure
+-------------------------------------------------- */
+body{
+	background: #000000;
+}
+#body-b{
+	background-image:url("../img/hp_full_hp_bg.png");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#body-c {
+	/*background: url("../img/layout/home-ghosted-logo.png") top center no-repeat; remove ghosted logo */
+	margin: 0 auto 0;
+	overflow: visible;
+	width: 980px;
+}
+
+/* Header */
+#header-promo {
+	/*height: 111px; */
+	text-align: center;
+	padding: 10px 0 10px 0;
+	background: #000 url(../img/hp_header_promo.png) bottom center no-repeat;
+    min-height: 90px;
+}
+#header-promo img {
+	/*margin: 15px 0 0;*/
+}
+/* Nav Main - Container */
+#header {
+	/*background: #221516 url(../img/sprite-y.8bit.png) repeat-x 0 -200px;  removed background  */
+	/*background:url("../img/layout/home-ghosted-logo.png") no-repeat center top;*/
+	height: 38px;
+	padding: 10px 5px 1px 69px;
+	position: relative;
+}
+#header #site-logo {
+	background: url(../img/subpage_nav_logo.png) no-repeat top left;
+	height: 36px;
+	width: 72px;
+}
+#header #site-title {
+	left: 5px;
+	margin: 0;
+	position: absolute;
+	top: 12px;
+}
+#header #site-tagline {
+	display: none;
+}
+#nav-global {
+	/* background: url(../img/sprite-y.8bit.png) no-repeat 224px -300px; removed background */
+	height: 38px;
+	line-height: 38px;
+	width: 930px;
+}
+
+.home #nav-global{
+	width: 980px;
+}
+#nav-global a {
+	text-decoration: none;
+}
+#nav-global ul {
+	display: inline;
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+#nav-global ul li {
+	margin-left: 20px;
+}
+#nav-global ul li:first-child {
+	margin-left: 0;
+}
+/* Global programming nav */
+#nav-global-programming a {
+	/* background: url(../img/sprite-y.8bit.png) no-repeat right -100px; */
+	color: #fff;
+	display: block;
+	padding: 0px 8px 0 7px;
+	font-family: Arial, Helvetica;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#nav-global-programming {
+	font-size: 20px;
+	margin-left: 0;
+}
+ul#nav-global-programming li {
+	margin-left: 0;
+}
+ul#nav-global-programming li#nav-global-programming-tve {
+	margin-left: 8px;
+}
+#nav-global-programming a:hover {
+	text-decoration: none;
+}
+#nav-global-programming-shows.open a {
+	background-color: #2b525c;
+	background-position: right -1600px;
+}
+#nav-global-programming-movies.open  a {
+	background-color: #622424;
+	background-position: right -1600px;
+}
+
+#nav-global-programming-tve.open  a {
+	background-color: #8f6d3a;
+	background-position: right -1600px;
+}
+
+#nav-global-programming-live.open a:first-child{
+	background-color: #92814b;
+	z-index: 1000;
+	position: relative;
+}
+
+#nav-global-programming-live a:first-child{
+	padding-bottom: 1px;
+	padding-right: 0px;
+	width: 110px;
+}
+
+#dropdown-live{
+	top: 43px !important;
+}
+
+#nav-global-programming-live a{
+	width: 
+}
+
+body.home #dropdown-live{
+	top: 90px !important;
+	left: 13.5px !important;
+}
+
+
+#body-f #dropdown-live .dropdown-in{
+	background: #000;
+	border: 6px solid #92814b;
+	width: 934px;
+	margin-top: 5px;
+}
+
+span#login a{font-size: 14px;}
+
+html.js #dropdown-tve .dropdown-in{
+	border:6px solid #8f6d3a;
+	margin-top: 0px;
+	width: 894px;
+	padding: 30px;
+	position: relative;
+	z-index: 100000;
+}
+#dropdown-shows .dropdown-in {
+	border-color: #2b525c;
+}
+
+/* Nav Main - Content */
+ul#nav-global-content {
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+#nav-global-content a {
+	color: #c7c5c5;
+	font-family: Arial, Helvetica;
+	text-transform: lowercase;
+	font-size: 14px;
+}
+
+#nav-global-content a:hover {
+	color: #c9c9c9;
+}
+
+/* Nav Main - Login */
+ul#nav-global-login {
+	display: none;
+	float: right;
+	font-size: 12px;
+	margin: 7px 25px 0 0;
+	position: relative;
+	z-index: 190;
+}
+ul#nav-global-login a {
+	color: #fff;
+}
+ul#nav-global-login li {
+	background: url(../img/sprite-y.8bit.png) no-repeat 0 0;
+	padding-left: 8px;
+	margin: 0;
+}
+ul#nav-global-login li:first-child,
+ul#nav-global-login li.first-child {
+	background: none;
+	padding-left: 0;
+	padding-right: 8px;
+}
+
+/* main site search */
+#search {
+	left: 570px;
+	position: absolute;
+	width: 220px;
+}
+
+/* video search */
+#s-video input.s-input {
+	width: 174px;
+}
+#s-video select {
+	font-size: 16px;
+	padding: 3px 7px 3px 0;
+}
+
+/* Subheader */
+#subheader {
+	background-repeat: none;
+	padding: 135px 0 0;
+	position: relative;
+	/**
+	 * @workaround wrong z-index stacking
+	 * @affected ie7
+	 * Set z-index of parent, since IE ads a new context for every positioned stack.
+	 */
+	z-index: 99;
+}
+#subheader-title h1,
+#subheader-title h2 {
+	margin: 0;
+}
+
+#subheader-title .accessibility{
+	top: 25px;
+	left: 235px;
+	font-size: 23px;
+}
+
+#subheader .additional-info{
+	top: 55px;
+	left: 235px;
+	background: url('https://media.amctv.com/assets/show-amc-buttons/watch_now_arrow_white.png') center right no-repeat;
+	font-size: 17px;
+	padding: 0 15px 0 0;
+	position: absolute;
+}
+
+#subheader .additional-info:hover{
+	text-decoration:underline;
+}
+
+/**
+ * Use this link to overlay the areas of the header that should be an active link
+ */
+#subheader-home-link {
+	height: 135px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 438px;
+}
+#subheader .additional-info h2 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 0 0 2px;
+	font-weight: bold;
+}
+#subheader .additional-info a.launch {
+	background: url(../img/layout/icon-link-arrow.png) no-repeat right 3px;
+	font-size: 15px;
+	line-height: 1.2;
+	padding: 0 10px 0 0;
+}
+
+#nav-subheader {
+	font-size: 16px;
+	
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 41px;
+	min-height: 41px;
+	
+	line-height: 41px;
+	/*text-transform:lowercase;*/
+}
+
+#nav-subheader .first-child{
+	margin-left: 20px;
+}
+
+#nav-subheader li {
+	margin-right: 0px;
+}
+#nav-subheader a {
+	text-decoration: none;
+}
+
+/* Content <section> */
+#main {
+	margin-bottom: 50px;
+	clear: left;
+}
+
+.single-shows #main{
+	margin-bottom:0;
+}
+
+#main #content {
+	/*margin-top: 24px;*/
+	min-height: 300px;
+}
+
+#main #sidebar {
+	margin-top: 24px;
+}
+
+/* Footer  */
+#footer {
+	/**
+	 * Keep height fixed, so body background graphics can count on spacing.
+	 */
+	height: 325px;
+	position: relative;
+}
+#nav-footer {
+	background: url(../img/amc-footer-backgrnd.jpg) no-repeat top left;
+	/**
+	 * @workaround min-height Fast Hack
+	 *
+	 * IE6 doesn't support min-height, but treats elements with
+	 * height and overflow:visible as min-height.
+	 *
+	 * @affected IE5, IE6
+	 * @see http://www.dustindiaz.com/min-height-fast-hack/
+	 */
+	height: auto !important;
+	height: 59px;
+	margin-bottom: 20px;
+	min-height: 59px;
+	padding: 85px 0px 45px 0px;
+	position: relative;
+}
+
+.home #nav-footer {
+	margin-top: -80px;
+}
+
+#footer #logo-footer {
+	background: url(../img/amc-footer-logo-sm.png) no-repeat top left;
+	height: 67px;
+	width: 260px;
+	display: block;
+	text-indent: -10000px;
+	float: right;
+	margin-top: 0px;
+}
+#footer #logo-footer img {
+	display: none;
+}
+#nav-footer-main {
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+#nav-footer-main a {
+	color: #c7c5c5;
+	font-size: 20px;
+	margin-right: 22px;
+	text-transform: lowercase;
+	font-family: Arial, Helvetica;
+}
+#nav-footer-main .featured a {
+	font-size: 16px;
+}
+.menu-footer-primary-container,
+.menu-footer-secondary-container{
+	/*
+	margin-left: 300px;
+	*/
+}
+.menu-footer-primary-container{
+	margin-top: 20px;
+}
+.menu-footer-secondary-container{
+	margin-top: -27px !important;
+}
+#nav-footer-secondary li {
+	margin-right: 18px;
+}
+#nav-footer-secondary a {
+	color: #878585;
+	font-family: Arial, Helvetica;
+}
+#footer .social {
+	position: absolute;
+	left: 0px;
+	top: 153px;
+}
+#footer .social li{
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+#colophon {
+	background: #000;
+	color: #6d6d6d;
+	font-size: 10px;
+	text-align: center;
+}
+
+#colophon p small{
+	font-size: 12px;
+}
+
+#rainbow-lockup {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+/* Footer Ads */
+
+#footer-promo{
+	width: 980px;
+	padding: 0 0 20px 0;
+}
+#footer-promo div{
+	margin: 0 auto;
+	width: 750px;
+}
+
+
+/*** Main pages (404, About, Contact, ETC.) ***/
+
+body.error404 #main-body,
+body.page-privacy #main-body,
+body.page-terms #main-body,
+body.page-faq #main-body,
+body.page-contact #main-body,
+body.page-amc-assist #main-body{
+	background: #cccccc;
+	color: #000;
+	padding: 15px;
+}
+/*body.error404 #nav-global-group,
+body.page-privacy #nav-global-group,
+body.page-terms #nav-global-group,
+body.page-faq #nav-global-group,
+body.page-contact #nav-global-group{
+	display: none;
+}*/
+
+body.error404 #main-body a,
+body.page-games #main-body a,
+body.page-privacy #main-body a,
+body.page-terms #main-body a,
+body.page-faq #main-body a,
+body.page-contact #main-body a,
+body.page-amc-assist #main-body a{
+	color: #a82420;
+}
+body.error404 #main-body a:hover,
+body.page-games #main-body a:hover,
+body.page-privacy #main-body a:hover,
+body.page-terms #main-body a:hover,
+body.page-faq #main-body a:hover,
+body.page-contact #main-body a:hover,
+body.page-amc-assist #main-body a:hover{
+	text-decoration: underline;
+}
+
+body.error404 #main-body #content,
+body.page-privacy #main-body #content,
+body.page-terms #main-body #content,
+body.page-faq #main-body #content,
+body.page-contact #main-body #content,
+body.page-amc-assist #main-body #content{
+	width: 570px;
+	margin-right: 40px;
+}
+
+body.error404 #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/sub-page-404.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-privacy #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/sub-page-privacy_v2.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-amc-assist #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/amc_assist_head.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-terms #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/sub-page-terms.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-faq #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/sub-page-faq.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-contact #main{
+	background: url('https://media.amctv.com/assets/show-amc-buttons/sub-page-contact.png') top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-mobile #main{
+	background: url("https://media.amctv.com/assets/mobile-images/mobile-page-header.png") top left no-repeat;
+	padding: 80px 0 0 0;
+}
+body.page-search #main {
+	background: url("../img/amc-search-header.png") -4px 0 no-repeat;
+	padding: 40px 0 0 0;
+}
+body.page-videos #main{
+	background: url("https://media.amctv.com/assets/mobile-images/amc_sub_pages-videos-v2.png") top left no-repeat;
+	padding: 70px 0 0 0;
+}
+body.page-videos .box-video-browser .picker-container{
+	background: none;
+}
+body.page-videos .section-title{
+	display: none;
+}
+
+
+/*** Possible CSS Fix for Header Position ***/
+
+#body-f{
+	position: relative;
+}
+/*body.single #nav-global-group{
+	display: none;
+}*/
+#dropdown-shows{
+	position: absolute;
+	top: 40px !important;
+	left: 0px !important;
+}
+#dropdown-movies{
+	position: absolute;
+	top: 40px !important;
+	left: 0px !important;
+}
+
+
+/*** Structure for Video Pages ***/
+
+.single-videos #content{
+	width: 590px;
+	float: left;
+}
+
+.single-videos .str-col-c{
+	clear: none;
+	float: right;
+	display: block;
+	margin-top: -471px;
+}
+
+.single-videos .dropdown .str-col-c {
+	margin-top:0!important;
+}
+
+.single-videos .str-col-ab{
+	clear: left;
+	display: block;
+}
+
+.single-videos .video-frame{
+	margin: 0 0 30px 0;
+}
+
+.dart300x250Border, .advertisement.pos-mid {
+	position: relative;
+	z-index: 70;
+}
+
+
+
+/* TVE Navigation updates */
+
+#nav-global #nav-global-content{display: none;}
+
+.page-schedule #nav-global #nav-global-content,
+.mt-amc_blogs #nav-global #nav-global-content,
+.page-videos #nav-global #nav-global-content,
+.page-games #nav-global #nav-global-content,
+.page-shop #nav-global #nav-global-content,
+.page-newsletter-subscription #nav-global #nav-global-content{
+	display: block;
+	position: absolute;
+	top: -18px;
+	left: 81px;
+	max-height: 27px;
+	overflow: hidden;
+}
+
+.page-schedule #dropdown-live,
+.mt-amc_blogs #dropdown-live,
+.page-videos #dropdown-live,
+.page-games #dropdown-live,
+.page-shop #dropdown-live,
+.page-newsletter-subscription #dropdown-live
+
+.page-schedule #dropdown-live,
+.mt-amc_blogs #dropdown-live,
+.page-videos #dropdown-live,
+.page-games #dropdown-live,
+.page-shop #dropdown-live,
+.page-newsletter-subscription #dropdown-live{
+	top: 53px !important;
+}
+
+.page-schedule #nav-global ul,
+.page-videos #nav-global ul,
+.mt-amc_blogs #nav-global ul,
+.page-games #nav-global ul,
+.page-shop #nav-global ul,
+.page-newsletter-subscription #nav-global ul{
+	margin-top: 20px;
+}
+
+.page-schedule #body-b #body-c .dropdown .dropdown-in,
+.page-videos #body-b #body-c .dropdown .dropdown-in,
+.mt-amc_blogs #body-b #body-c .dropdown .dropdown-in,
+.page-games #body-b #body-c .dropdown .dropdown-in,
+.page-shop #body-b #body-c .dropdown .dropdown-in,
+.page-newsletter-subscription #body-b #body-c .dropdown .dropdown-in{
+	margin-top: 2px;
+}
+
+.page-schedule #body-b #body-c #dropdown-tve .dropdown-in,
+.page-videos #body-b #body-c #dropdown-tve .dropdown-in,
+.mt-amc_blogs #body-b #body-c #dropdown-tve .dropdown-in,
+.page-games #body-b #body-c #dropdown-tve .dropdown-in,
+.page-shop #body-b #body-c #dropdown-tve .dropdown-in,
+.page-newsletter-subscription #body-b #body-c #dropdown-tve .dropdown-in{
+	margin-top: 7px;
+}
+
+#nav-global-programming a{
+	font-size: 16px;
+}
+
+.page-schedule #nav-global-programming a,
+.page-videos #nav-global-programming a,
+.mt-amc_blogs #nav-global-programming a,
+.page-games #nav-global-programming a,
+.page-shop #nav-global-programming a,
+.page-newsletter-subscription #nav-global-programming a{
+	line-height: 25px;
+}
+
+.page-schedule #dropdown-shows,
+.page-videos #dropdown-shows,
+.mt-amc_blogs #dropdown-shows,
+.page-games #dropdown-shows,
+.page-shop #dropdown-shows,
+.page-newsletter-subscription #dropdown-shows{
+	position: absolute;
+	top: 52px !important;
+	left: 0px !important;
+}
+.page-schedule #dropdown-movies,
+.page-videos #dropdown-movies,
+.mt-amc_blogs #dropdown-movies,
+.page-games #dropdown-movies,
+.page-shop #dropdown-movies,
+.page-newsletter-subscription #dropdown-movies{
+	position: absolute;
+	top: 52px !important;
+	left: 0px !important;
+}
+
+body.mt-amc_blogs #dropdown-tve{
+	top: 48px !important;
+}
+
+ul#nav-global-programming li#nav-global-programming-tve{
+	margin-left: 0px;
+}
+
+#search{
+	top:0px;
+}
+
+.search-container{
+	margin-top: 20px;
+}
+
+#tve-menu{
+	float: right;
+	margin-right: 0px;
+	margin-top: 5px;
+	position: relative;
+}
+
+#tve-menu #availability{
+	position: absolute;
+	top: -40px;
+	right: 0px;
+	max-height: 30px;
+}
+
+#tve-menu #top #login a{
+	font-size: 14px;
+}
+
+html.js .dropdown .dropdown-in{
+	margin: 10px 0 0 5px;
+	width: 925px;
+}
+
+
+/*HIDE ALL TVE RESPONSIVE ELEMENTS ON WWW SITE*/
+.mobile-responsive{
+	display: none;
+}
+

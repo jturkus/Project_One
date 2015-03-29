@@ -1,0 +1,146 @@
+
+<!-- saved from url=(0063)http://www.amctv.com/full-episodes/static/newsletter-signup.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="main(1).css">
+  <link rel="stylesheet" type="text/css" href="newsletter-signup.css">
+
+  <script src="jquery.min(1).js"></script><style type="text/css"></style>
+  <script language="JavaScript" type="text/javascript" src="jquery.validate.js"></script>
+
+  <script type="text/javascript">
+
+  /***************
+  * Validation   *
+  ***************/
+
+  $().ready(function() {
+      // validate the Newsletter Sign up form when it is submitted
+      $("#newsletter-form").validate({
+          rules: {
+              email: {
+                  required: true,
+                  email: true
+              }
+          },
+          messages: {
+              email: "Please enter a valid email address"
+          }
+      });
+  });
+
+    function createCookie(name,value,days) {
+        var date = new Date();
+        if (days) {
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            var expires = "; expires="+date.toGMTString();
+        } else {
+            date.setTime(date.getTime()+(10*365*24*60*60*1000));
+            var expires = "; expires="+date.toGMTString();
+        }
+        document.cookie = name+"="+value+expires+"; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+  </script>
+</head>
+<body>
+  <div id="newsletter-signup-wrapper">
+    <a href="http://www.amctv.com/full-episodes/" target="_blank" id="logo"><img src="amc-logo-new-small.png"></a>
+    <h1>Sign up to get updates on your favorite shows:</h1>
+    <form id="newsletter-form" onsubmit="createCookie(&#39;tve-newsletter-subscribed&#39;, &#39;true&#39;, 0);" novalidate="novalidate">
+      <input name="email" id="email" type="email" class="required provider-text-field" value="Enter your email address" onfocus="this.value = this.value == &#39;Enter your email address&#39; ? &#39;&#39; : this.value;" onblur="this.value = this.value ? this.value : &#39;Enter your email address&#39;;">
+
+      <select name="mso">
+        <option value="NA">--Select Provider--</option>
+        <option value="Armstrong">Armstrong</option><option value="Atlantic Broadband">Atlantic Broadband</option><option value="AT&amp;T">AT&amp;T U-verse</option><option value="BEK">BEK Communications</option><option value="Blue Ridge">Blue Ridge</option><option value="Bresen">Bresnan</option><option value="Brighthouse">Bright House</option><option value="Broadstripe">Broadstripe</option><option value="CableOne">Cable ONE</option><option value="Charter">Charter</option><option value="Cox">Cox Communications</option><option value="DirecTV">DIRECTV</option><option value="DISH Network">DISH Network</option><option value="Knology">Knology</option><option value="PUERTO_RICO_LIBERTY_CABLEVISION">Liberty Cablevision of Puerto Rico </option><option value="Mediacom">Mediacom</option><option value="MetroCast">MetroCast</option><option value="Midcontinent">Midcontinent</option><option value="Cablevision">Optimum</option><option value="RCN">RCN</option><option value="Service Electric">Service Electric</option><option value="Suddenlink">Suddenlink</option><option value="Time Warner">Time Warner Cable</option><option value="Verizon">Verizon FiOS</option><option value="WideOpenWest">WOW!</option><option value="CANADA_BELL">Bell (Canada)</option><option value="CANADA_ROGERS">Rogers (Canada)</option><option value="CANADA_SHAW">Shaw (Canada)</option><option value="CANADA_TELUS">Telus (Canada)</option><option value="CANADA_VIDEOTRON">Videotron (Canada)</option><option value="Comcast">XFINITY</option><option value="Other">Other</option><option value="No Cable">No Cable</option>        
+      </select>
+      <p>Sign me up for the following:</p>
+      <div class="newsletter-list" style="overflow: hidden; height: auto;">
+      
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-amc-newsletter" name="newsletters[]" value="14017">
+          <label for="newsletter-amc-newsletter">AMC Newsletter</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-better-call-saul" name="newsletters[]" value="23387">
+          <label for="newsletter-better-call-saul">Better Call Saul</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-breaking-bad" name="newsletters[]" value="16174">
+          <label for="newsletter-breaking-bad">Breaking Bad</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-comic-book-men" name="newsletters[]" value="23755">
+          <label for="newsletter-comic-book-men">Comic Book Men</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-fear-the-walking-dead" name="newsletters[]" value="25440">
+          <label for="newsletter-fear-the-walking-dead">Fear The Walking Dead</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-halt-and-catch-fire" name="newsletters[]" value="23385">
+          <label for="newsletter-halt-and-catch-fire">Halt and Catch Fire</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-hell-on-wheels" name="newsletters[]" value="18265">
+          <label for="newsletter-hell-on-wheels">Hell On Wheels</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-humans" name="newsletters[]" value="25149">
+          <label for="newsletter-humans">Humans</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-into-the-badlands" name="newsletters[]" value="25441">
+          <label for="newsletter-into-the-badlands">Into the Badlands</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-mad-men" name="newsletters[]" value="16173">
+          <label for="newsletter-mad-men">Mad Men</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-the-walking-dead" name="newsletters[]" value="16245">
+          <label for="newsletter-the-walking-dead">The Walking Dead</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-turn" name="newsletters[]" value="23386">
+          <label for="newsletter-turn">TURN</label>
+        </div>
+        
+        <div class="newsletter">
+          <input type="checkbox" id="newsletter-partner-promotions" name="newsletters[]" value="16246">
+          <label for="newsletter-partner-promotions">Partner Promotions</label>
+        </div>
+              </div>
+      <div style="clear: both; font-size: 14px; margin: 20px auto;">By clicking Submit, I agree to the <a target="_blank" href="http://www.amctv.com/privacy" style="display: inline; color: #dbc577; text-decoration: none;">privacy policy</a>.</div>
+      <input type="submit" id="submit-button">
+
+    </form>
+  </div>
+
+
+</body></html>

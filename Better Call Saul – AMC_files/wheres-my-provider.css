@@ -1,0 +1,62 @@
+head{
+	display: none;
+}
+
+body {
+	background-image: none;
+	padding: 10px 35px;
+	text-align: center;
+}
+
+* {
+	font-weight: normal;
+	display: block;
+	margin: 10px auto;
+}
+
+#submit-button {
+	background-image: url('../img/submit-button.png');
+	padding: 10px;
+	width: 86px;
+	height: 36px;
+	border: none;
+	font-size: 16px;
+	display: block;
+	text-indent: -5000px;
+	cursor: pointer;
+}
+
+.provider-text-field {
+	width: 285px;
+	border: none;
+	padding: 4px;
+}
+
+#be-notified select{
+	width: 140px;
+}
+
+label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic
+}
+
+input.error { border: 1px dotted red; }
+
+@media all and (min-width: 230px) and (max-width: 250px) {
+
+	body {
+	background-image: none;
+	padding: 10px 10px;
+	text-align: center;
+	}
+
+	.provider-text-field {
+	width: 200px;
+	border: none;
+	padding: 4px;
+	}
+
+
+}

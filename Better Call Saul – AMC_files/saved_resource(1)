@@ -1,0 +1,28 @@
+
+;(function($) {
+
+			/* ADDED CUSTOM JS */
+
+
+
+/**
+				 * Carousel Callbacks
+				 */
+				cfctCarousel = {};
+				cfctCarousel.PagerClick = function(i, el) {
+					var _this = $(el);
+					var _overlay = _this.parents(".carousel").find(".car-overlay");
+					$(".car-header .car-title", _overlay).html($(".car-entry-title", _this).html());
+					$(".car-description", _overlay).html( $(".car-entry-description", _this).html());
+					$(".car-cta a", _overlay).attr("href", $(".car-entry-cta a", _this).attr("href"));
+				};
+				cfctCarousel.PagerAnchorBuilder = function(i, el) {
+					return "<li><a href=\"#\">" + (i+1) + "</a></li>";
+				};
+
+
+
+
+
+})(jQuery);		
+			

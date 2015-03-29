@@ -88,3 +88,9 @@ input#message {
   background-color: black;
   border-color: black;
 }
+
+.contact {
+  position: absolute;
+  left: 45%;
+  bottom: -28%;
+}

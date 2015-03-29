@@ -1,0 +1,258 @@
+.cfct-block-a,
+.cfct-block-b,
+.cfct-block-c {
+	width: 33.3%;
+}
+.cfct-block-ab,
+.cfct-block-bc {
+	width: 66.6%;
+}
+.cfct-block-abc {
+	width: 100%;
+}
+.cfct-block-d,
+.cfct-block-e {
+	width: 49.999%;
+}/* Client side */
+
+.cfct-build { /* Prevent overflow issues in IE */
+	overflow:hidden;
+	width:100%;
+}
+
+.cfct-row:after { /* Clear floats */
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.cfct-row {
+	display: block;
+	zoom: 1; /* Clearfix for IE */
+}
+
+.cfct-block {
+	display:inline; /* Double-margin float bug innoculation */
+	float:left;
+	/**
+	 * Prevent empty left-hand columns from collapsing by giving them a min-height.
+	 * Does not require min-height fast-hack because IE < 7 does not collapse empty elements
+	 */
+	min-height: 1px;
+	overflow: hidden; /* Overflow-proofing */
+}
+
+.cfct-module {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.cfct-block-a .cfct-module, 
+.cfct-block-ab .cfct-module,
+.cfct-block-abc .cfct-module,
+.cfct-block-d .cfct-module {
+	margin-left: 0;	
+}
+
+.cfct-block-c .cfct-module,
+.cfct-block-bc .cfct-module,
+.cfct-block-abc .cfct-module,
+.cfct-block-e .cfct-module {
+	margin-right: 0;
+}/* ADDED CUSTOM CSS */
+
+.boom{display:none;}
+				ul.amc-module-video-loop {
+					list-style: none;
+				}
+				.amc-module-video-loop li {
+					margin: 0px;
+					padding: 0px;
+				}
+				.amc-module-video-loop a img {
+					display: block;
+					border: none;
+				}
+
+.cfct-module-carousel {
+	border: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 1em;
+}
+.cfct-module-carousel div.car-content ul,
+.cfct-module-carousel div.car-content ul li {
+	margin: 0;
+	padding: 0;
+}
+.cfct-module-carousel .car-header,
+.cfct-module-carousel .car-description,
+.cfct-module-carousel .car-cta,
+.cfct-module-carousel .car-pagination {
+	margin: 12px 0;
+}
+.cfct-module-carousel .car-header h2.car-title {
+	margin: 0;
+}
+.cfct-module-carousel div.car-pagination ol {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.cfct-module-carousel .car-pagination ol li {
+	display: inline;
+	margin: 0 5px;
+	padding: 0;
+}
+.cfct-module-carousel .car-pagination ol li.active a {
+	color: #000;
+	font-weight: bold;
+}
+
+/* Module column floats */
+.rb-module-group .module-group-has-2-cols .cfct-group-col-1,
+.rb-module-group .module-group-has-2-cols .cfct-group-col-2,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-1,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-2,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-3 {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+/* Module column group margins */
+.rb-module-group .module-group-has-2-cols .cfct-group-col-1 .cfct-module,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-1 .cfct-module,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-2 .cfct-module {
+	margin-right: 10px;
+}
+.rb-module-group .module-group-has-2-cols .cfct-group-col-2 .cfct-module,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-2 .cfct-module,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-3 .cfct-module {
+	margin-left: 10px;
+}
+/* Module column group widths */
+.rb-module-group .module-group-has-2-cols .cfct-group-col-1,
+.rb-module-group .module-group-has-2-cols .cfct-group-col-2 {
+	width: 50%;
+}
+.rb-module-group .module-group-has-3-cols .cfct-group-col-1,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-2,
+.rb-module-group .module-group-has-3-cols .cfct-group-col-3 {
+	width: 33%;
+}
+
+.cfct-notice {
+					display: block;
+					position: relative;
+					padding: 0;
+					padding: 10px 0 10px 10px;
+				}
+				.cfct-notice .cfct-notice-inner {
+					display: block;
+					margin: 0;
+					padding: 0;
+					border-left: 0;
+					line-height: 1.5em;
+				}
+
+.cfct-pullquote {
+					display: block;
+					position: relative;
+					padding: 0;
+					padding: 10px 0 10px 10px;
+				}
+				.cfct-pullquote .cfct-pullquote-inner {
+					display: block;
+					margin: 0;
+					padding: 0;
+					border-left: 0;
+					line-height: 1.5em;
+				}
+				.cfct-pullquote .cfct-pullquote-open-quote, 
+				.cfct-pullquote .cfct-pullquote-close-quote {
+					font-size: 80px;
+					color: gray;
+					height: 18px;
+				}
+				.cfct-pullquote .cfct-pullquote-open-quote {
+					float: left;
+					margin-top: -10px;
+					line-height: .8em;
+				}
+				.cfct-pullquote .cfct-pullquote-close-quote {
+					float: right;
+					margin-top: 10px;
+					line-height: 0em;
+				}
+
+.entry div.cfct-sidebar > ul {
+					list-style-type: none;
+					list-style-image: none;
+					list-style-position: outside;
+					margin-left: 0;
+					padding-left: 0;
+				}
+				.entry div.cfct-sidebar > ul li {
+					margin: 0 0 5px 0;
+				}
+				.entry div.cfct-sidebar .widgettitle {
+					margin-top: 0;
+				}
+
+.boom{display:none;}
+				ul.cfct-module-video-loop {
+					list-style: none;
+				}
+				.cfct-module-video-loop li {
+					margin: 0px;
+					padding: 0px;
+				}
+				.cfct-module-video-loop a img {
+					display: block;
+					border: none;
+				}
+
+
+
+/* ADDED CUSTOM CSS */
+
+.cfct-stack-tower-left .cfct-stack-left {
+					display: inline;
+					float: left;
+					width: 33.33%;
+				}
+				.cfct-stack-tower-left .cfct-stack-right {
+					display: inline;
+					float: left;
+					width: 66.66%;
+				}
+				.cfct-stack-tower-left .cfct-stack-right .cfct-block-ab,
+				.cfct-stack-tower-left .cfct-stack-left .cfct-block-a {
+					width: 100%;
+				}
+				.cfct-stack-tower-left .cfct-stack-right .cfct-block-a,
+				.cfct-stack-tower-left .cfct-stack-right .cfct-block-b {
+					width: 50%;
+				}
+
+.cfct-stack-tower-right .cfct-stack-left {
+						display: inline;
+						float: left;
+						width: 66.66%;
+					}
+					.cfct-stack-tower-right .cfct-stack-right {
+						display: inline;
+						float: left;
+						width: 33.33%;
+					}
+					.cfct-stack-tower-right .cfct-stack-left .cfct-stack-ab,
+					.cfct-stack-tower-right .cfct-stack-right .cfct-stack-c {
+						width: 100%;
+					}
+					.cfct-stack-tower-right .cfct-stack-left .cfct-block-a,
+					.cfct-stack-tower-right .cfct-stack-left .cfct-block-b {
+						width: 50%;
+					}
