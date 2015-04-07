@@ -89,10 +89,12 @@ h5 {
 	font-weight: bold;
 	text-align: center;
 }
-
+.rest {
+	padding-top: 25%;
+}
 h3 {
     color: red;
-	font-size: 24px;
+	font-size: 24px;	
 	font-family: Verdana;
 	font-weight: bold;
 	text-align: center;
@@ -112,7 +114,7 @@ p {
 	word-wrap: break-word;
 	width: 500px;
 	position: relative;
-	left: 30%;
+	left: 30.7%;
 	text-align: center;
 	font-family: Verdana;
 	font-size: 16px;
@@ -284,6 +286,11 @@ input[type="submit"] {
   color: red;
   background-color: black;
   position: absolute;
-  top: 8%;
-  left: 2%;
+  top: 110%;
+  left: 14%;
+}
+
+.pic {
+	position: absolute;
+	left: 42.5%;
 }

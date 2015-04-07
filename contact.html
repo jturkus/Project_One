@@ -10,36 +10,104 @@
     <link rel="stylesheet" type="text/css" href="theme1.css">	
 </head>
 <body>
-<h3> MyMedia Recs </h3>
+<a href = "index.html"><h3> MyMedia Recs</h3> </a>
 <p> Your One Stop Shop For All Reviews </p>
-	<form action="index.html">
-    <input type="submit" value="BACK">    
-</form>
-<p> If you are interested in hiring me, learning more about the recommendations or have any lingering questions, please fill out the following form to contact me. </p>
+<p> If you are interested in hiring me or subscribing to the service. Please fill out the following form to contact me. </p>
 <center><img src = "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAIKAAAAJGM5MGFlZjc0LTJiMDgtNGRjYi1hMDdmLTUyOGFiODdhMDExZg.jpg">
 <div class = "linkedin">
 <a href = "www.linkedin.com/pub/jared-turkus/5a/735/b31/en"><img src = "https://fusiondigital.files.wordpress.com/2010/07/linkedin-icon.png"></a>
 </div>
 </center>
 <form id = "contactme">
-First name <br>
+<b>First name</b> <br>
 <input type = "text" name = "firstname">
 <br><br>
-Last name <br>
+<b>Last name</b> <br>
 <input type = "text" name = "lastname">
 <br><br>
-Email <br>
+<b>Email</b> <br>
 <input type = "text" name = "email">
 <br><br>
-Phone Number <br>
+<b>Phone Number</b> <br>
 <input type = "text" name = "phone">
 <br><br>
-Message <br>
-<input type = "text" name = "message" style = "width: 300px; height: 200px" id = "message">
-</form>
-<div class = "contact">
-<button type = "submit"> Submit </button>
+<b>Message</b> <br>
+<input type = "text" name = "message" id = "message"> <br> <br>
+<div class = "options">
+<b>Reason for Contact</b> <br> <br>
+Job Inquiry
+<input type = "checkbox" name = "jobs"> <br> <br>
+Subscription 
+<input type = "checkbox" name = "subscription">
 </div>
+<br>
+<div class = "data_head"><b> Credit Card Billing Information </b>
+</div>
+<div class = "data"> If you want to subscribe to the service, please enter your credit card data below. </div>
+<br> <br> <br>
+<!--Form code copied from "http://www.credit-card-processing.tiv.net/2007/10/html-form-for-entering-credit-card.html"-->
+<form action="my-credit-card-processing-script" method="post">
+<input type="hidden" name="Amount" value="14.95">
+<input type="hidden" name="Order_ID" value="18752">
+<table>
+<tr>
+<td>Cardholder's First Name:</td>
+<td><input type="text" name="First_Name"></td>
+</tr><tr>
+<td>Cardholder's Last Name:</td>
+<td><input type="text" name="Last_Name"></td>
+</tr><tr>
+<td>Credit Card Number:</td>
+<td><input type="text" name="Card_Num"></td>
+</tr><tr>
+<td colspan="2" align="center">
+<small>Please enter the expiration date as follows:
+two digits of month and two digits of year.
+For instance, January 2008 has to be entered as 0108:</small></td>
+</tr><tr>
+<td>Exp. date (mmyy):</td>
+<td><input type="text" name="Exp_Date" maxlength="4"></td>
+</tr><tr>
+<td colspan="2" align="center">
+<small>The Card Verification Code (Card ID or CVV2)
+is required for American Express,Visa and MasterCard.
+Please enter: for American Express - 4 digits on front of card;
+for Visa and Mastercard - last 3 digits on back of card:</small>
+</td>
+</tr><tr>
+<td>Card Number:</td>
+<td><input type="text" name="Card_Code"></td>
+</tr><tr>
+<td colspan="2" align="center"><small>
+Please enter the address at which the credit card bills are received:
+</small></td>
+</tr><tr>
+<td>Street Address:</td>
+<td><input type="text" name="Address"></td>
+</tr><tr>
+<td>City:</td>
+<td><input type="text" name="City"></td>
+</tr><tr>
+<td>State/Province:</td>
+<td><input type="text" name="State"></td>
+</tr><tr>
+<td>Zip/Postal Code:</td>
+<td><input type="text" name="Zip"></td>
+</tr><tr>
+<td>Country:</td>
+<td><input type="text" name="Country"></td>
+</tr><tr>
+<td colspan="2" align="center">
+<div class = "agree"> I agree to be charged $5 each month until I cancel the service. I acknowledge that cancellation of the servicerequires at least one week's notice and that if the week rolls over into another month, I will pay the charges for an
+additional month. Agreeing to these terms is required to purchase the subscription. </div>  
+<input type = "checkbox"> I agree
+<br> <br>
+<input type = "submit" value = "SUBMIT">
+</td>
+</tr>
+</table>
+</form>
+</form>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body

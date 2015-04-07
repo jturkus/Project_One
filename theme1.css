@@ -1,9 +1,13 @@
+body {
+  background-color: #eee;
+}
+
 input[type="submit"] {
   color: red;
   background-color: black;
   position: absolute;
-  top: 3%;
-  left: 2%;
+  top: 98%;
+  left: 41%;
 }
 
 h5 {
@@ -15,7 +19,7 @@ h5 {
 }
 
 h3 {
-    color: red;
+  color: red;
 	font-size: 24px;
 	font-family: Verdana;
 	font-weight: bold;
@@ -37,7 +41,7 @@ p {
 	word-wrap: break-word;
 	width: 500px;
 	position: relative;
-	left: 32%;
+	left: 30.7%;
 	text-align: center;
 	font-family: Verdana;
 	font-size: 16px;
@@ -50,8 +54,8 @@ form#contactme {
 
 button {
   position: absolute;
-  left: 48%;
-  top: 120%;
+  left: 50%;
+  top: 250%;
   background-color: black;
   color: red;
 }
@@ -78,9 +82,10 @@ button:active {
 }
 
 input#message {
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 50px;
   position: relative;
+  word-wrap: break-word;
 }
 
 .btn-default {
@@ -93,4 +98,44 @@ input#message {
   position: absolute;
   left: 45%;
   bottom: -28%;
+}
+
+.options {
+  position: absolute;
+  left: 1%;
+}
+
+table {
+  background-color: transparent;
+  position: absolute;
+  right: -35%;
+  bottom: -175%;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+.go {
+  position: absolute;
+}
+
+.data {
+  position: absolute;
+  left: 0%;
+  bottom: -30%;
+  width: 250px;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+.agree {
+  right: -100%;
+  bottom: -45%;
+  width: 450px;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+.data_head {
+  position: absolute;
+  bottom: -13%;
 }
